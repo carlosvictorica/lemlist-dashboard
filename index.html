@@ -15,14 +15,15 @@
     --amber: #854F0B; --amber-bg: #FAEEDA;
     --red: #A32D2D; --red-bg: #FCEBEB;
     --teal: #0F6E56; --teal-bg: #E1F5EE;
+    --purple: #534AB7; --purple-bg: #EEEDFE;
+    --coral: #993C1D; --coral-bg: #FAECE7;
     --radius: 8px; --radius-lg: 12px;
   }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg2); color: var(--text); min-height: 100vh; }
   .header { background: var(--bg); border-bottom: 0.5px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; z-index: 10; }
-  .header-left { display: flex; align-items: center; gap: 12px; }
   .logo { font-size: 15px; font-weight: 500; }
   .logo span { color: var(--text2); font-weight: 400; }
-  .last-updated { font-size: 12px; color: var(--text3); }
+  .last-updated { font-size: 12px; color: var(--text3); margin-left: 12px; }
   .header-right { display: flex; align-items: center; gap: 10px; }
   .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #888; }
   .status-dot.ok { background: #639922; }
@@ -35,7 +36,7 @@
   .btn:disabled { opacity: 0.4; cursor: not-allowed; }
   .btn-primary { background: var(--text); color: var(--bg); border-color: var(--text); }
   .btn-primary:hover { opacity: 0.85; background: var(--text); }
-  .main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+  .main { max-width: 1280px; margin: 0 auto; padding: 2rem; }
   .auth-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 2rem; max-width: 500px; margin: 4rem auto; }
   .auth-card h2 { font-size: 17px; font-weight: 500; margin-bottom: 8px; }
   .auth-card p { font-size: 13px; color: var(--text2); margin-bottom: 1.25rem; line-height: 1.6; }
@@ -45,23 +46,26 @@
   .auth-note { font-size: 11px; color: var(--text3); margin-top: 10px; }
   .error-msg { font-size: 13px; color: var(--red); margin-top: 10px; padding: 8px 12px; background: var(--red-bg); border-radius: var(--radius); display: none; }
   .controls { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 1.5rem; }
-  .pill-group { display: flex; gap: 4px; }
-  .pill { font-size: 12px; padding: 4px 14px; border-radius: 20px; border: 0.5px solid var(--border2); background: var(--bg); color: var(--text2); cursor: pointer; transition: all 0.15s; }
+  .pill-group { display: flex; gap: 4px; flex-wrap: wrap; }
+  .pill { font-size: 12px; padding: 4px 14px; border-radius: 20px; border: 0.5px solid var(--border2); background: var(--bg); color: var(--text2); cursor: pointer; transition: all 0.15s; white-space: nowrap; }
   .pill.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+  .pill-field.active { background: var(--purple); color: #fff; border-color: var(--purple); }
   .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 1.5rem; }
   .kpi-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; }
   .kpi-label { font-size: 12px; color: var(--text2); margin-bottom: 6px; }
   .kpi-value { font-size: 28px; font-weight: 500; line-height: 1; }
   .kpi-sub { font-size: 12px; color: var(--text3); margin-top: 6px; }
   .section-label { font-size: 12px; font-weight: 500; color: var(--text2); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 12px; }
-  .market-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 1.5rem; }
+  .market-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 1.5rem; }
   .market-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; }
   .market-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
   .market-tag { font-size: 12px; font-weight: 500; padding: 3px 10px; border-radius: 20px; }
-  .tag-us { background: var(--blue-bg); color: var(--blue); }
-  .tag-uki { background: var(--teal-bg); color: var(--teal); }
-  .tag-dach { background: var(--amber-bg); color: var(--amber); }
-  .tag-other { background: var(--bg3); color: var(--text2); }
+  .tag-US { background: var(--blue-bg); color: var(--blue); }
+  .tag-UKI { background: var(--teal-bg); color: var(--teal); }
+  .tag-DACH { background: var(--amber-bg); color: var(--amber); }
+  .tag-FR { background: var(--coral-bg); color: var(--coral); }
+  .tag-Field { background: var(--purple-bg); color: var(--purple); }
+  .tag-Other { background: var(--bg3); color: var(--text2); }
   .mstat { display: flex; justify-content: space-between; align-items: center; padding: 5px 0; border-bottom: 0.5px solid var(--border); font-size: 13px; }
   .mstat:last-child { border-bottom: none; }
   .mstat-label { color: var(--text2); }
@@ -82,17 +86,15 @@
   .bar-wrap { display: flex; align-items: center; gap: 8px; min-width: 100px; }
   .bar-bg { flex: 1; height: 5px; background: var(--bg3); border-radius: 3px; overflow: hidden; }
   .bar-fill { height: 100%; border-radius: 3px; }
-  .cam-name { max-width: 240px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cam-name { max-width: 220px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .cam-status { font-size: 11px; padding: 2px 7px; border-radius: 20px; border: 0.5px solid var(--border); color: var(--text2); }
   .tabs { display: flex; border-bottom: 0.5px solid var(--border); margin-bottom: 1.5rem; }
   .tab { font-size: 13px; padding: 8px 18px; cursor: pointer; color: var(--text2); border-bottom: 2px solid transparent; margin-bottom: -0.5px; }
   .tab.active { color: var(--text); border-bottom-color: var(--text); font-weight: 500; }
-  .empty-state { text-align: center; padding: 3rem; color: var(--text2); font-size: 13px; }
-  select { font-size: 12px; padding: 5px 8px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); cursor: pointer; }
-  input[type="text"], input[type="search"] { font-size: 12px; padding: 5px 10px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); }
+  select, input[type="search"] { font-size: 12px; padding: 5px 10px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); }
+  .field-badge { display: inline-block; font-size: 10px; padding: 1px 6px; border-radius: 20px; background: var(--purple-bg); color: var(--purple); margin-left: 4px; vertical-align: middle; }
   @media (max-width: 768px) {
     .kpi-grid { grid-template-columns: repeat(2, 1fr); }
-    .market-grid { grid-template-columns: 1fr; }
     .main { padding: 1rem; }
   }
 </style>
@@ -100,7 +102,7 @@
 <body>
 
 <div class="header">
-  <div class="header-left">
+  <div style="display:flex;align-items:center">
     <div class="logo">Lemlist <span>/ Campaign dashboard</span></div>
     <div class="last-updated" id="lastUpdated"></div>
   </div>
@@ -115,7 +117,7 @@
 
   <div id="authSection" class="auth-card">
     <h2>Connect to Lemlist</h2>
-    <p>Enter your Lemlist API key to load live campaign data. The key is stored only in your browser session and never shared.</p>
+    <p>Enter your Lemlist API key to load live campaign data. The key stays in your browser session only.</p>
     <div class="auth-row">
       <input type="password" id="apiKeyInput" placeholder="Your Lemlist API key..." onkeydown="if(event.key==='Enter')loadData()" />
       <button class="btn btn-primary" onclick="loadData()">Load data</button>
@@ -125,12 +127,16 @@
   </div>
 
   <div id="dashSection" style="display:none">
+
     <div class="controls">
       <div class="pill-group" id="marketFilter">
         <div class="pill active" data-market="all">All markets</div>
         <div class="pill" data-market="US">US</div>
         <div class="pill" data-market="UKI">UKI</div>
         <div class="pill" data-market="DACH">DACH</div>
+        <div class="pill" data-market="FR">FR</div>
+        <div class="pill pill-field" data-market="Field">Field marketing</div>
+        <div class="pill" data-market="Other">Other</div>
       </div>
       <div style="display:flex;align-items:center;gap:8px">
         <select id="statusFilter" onchange="render()">
@@ -170,7 +176,7 @@
     </div>
 
     <div id="tab-market">
-      <div class="section-label">Performance by market — since Jan 2026</div>
+      <div class="section-label">Performance by market — since Jan 2025</div>
       <div class="market-grid" id="marketGrid"></div>
     </div>
 
@@ -184,15 +190,15 @@
           <table>
             <thead>
               <tr>
-                <th style="width:26%">Campaign</th>
-                <th style="width:7%">Market</th>
+                <th style="width:24%">Campaign</th>
+                <th style="width:8%">Market</th>
                 <th style="width:7%">Status</th>
                 <th style="width:7%">Leads</th>
-                <th style="width:12%">Open rate</th>
-                <th style="width:12%">Click rate</th>
-                <th style="width:12%">Reply rate</th>
+                <th style="width:11%">Open rate</th>
+                <th style="width:11%">Click rate</th>
+                <th style="width:11%">Reply rate</th>
                 <th style="width:8%">Bounce</th>
-                <th style="width:9%">Signal</th>
+                <th style="width:13%">Signal</th>
               </tr>
             </thead>
             <tbody id="campaignBody"></tbody>
@@ -205,16 +211,24 @@
 
 <script>
 const PROXY = 'https://lemlist-proxy.carlos-victorica.workers.dev';
+const START_DATE = '2025-01-01T00:00:00.000Z';
+const MARKETS = ['US','UKI','DACH','FR','Field','Other'];
+
 let allCampaigns = [];
 let currentMarket = 'all';
 let apiKey = '';
 
 function detectMarket(name) {
-  const n = (name || '').toUpperCase();
-  if (/\bUKI\b|_UKI|UKI_|\bUK\b|IRELAND/.test(n)) return 'UKI';
-  if (/\bDACH\b|_DACH|DACH_|\bGERMANY\b|\bAUSTRIA\b/.test(n)) return 'DACH';
-  if (/\bUS\b|_US\b|\bUSA\b|UNITED.STATES|AMERICA/.test(n)) return 'US';
-  return 'Other';
+  const n = (name || '');
+  const u = n.toUpperCase();
+  const isField = /^Field[_\s-]/i.test(n) || /[_\s-]Field[_\s-]/i.test(n) || /shoptalk/i.test(n);
+  let market = 'Other';
+  if (/^US[_\s-]|[_\s-]US[_\s-]|[_\s-]US$/i.test(n) || /^US$/i.test(n)) market = 'US';
+  else if (/^UKI[_\s-]|[_\s-]UKI[_\s-]|[_\s-]UKI$/i.test(n)) market = 'UKI';
+  else if (/^DACH[_\s-]|[_\s-]DACH[_\s-]|[_\s-]DACH$/i.test(n)) market = 'DACH';
+  else if (/^FR[_\s-]|[_\s-]FR[_\s-]|[_\s-]FR$/i.test(n)) market = 'FR';
+  if (isField && market === 'Other') market = 'Other';
+  return { market, isField };
 }
 
 function pct(n, d) { return d > 0 ? (n / d * 100) : 0; }
@@ -246,11 +260,7 @@ async function proxyFetch(lemlistUrl, options = {}) {
   const proxyUrl = PROXY + '?url=' + encodeURIComponent(lemlistUrl);
   return fetch(proxyUrl, {
     ...options,
-    headers: {
-      'Authorization': 'Basic ' + b64,
-      'Content-Type': 'application/json',
-      ...(options.headers || {})
-    }
+    headers: { 'Authorization': 'Basic ' + b64, 'Content-Type': 'application/json' }
   });
 }
 
@@ -268,7 +278,6 @@ async function loadData() {
     const camRes = await proxyFetch('https://api.lemlist.com/api/campaigns?limit=100');
     if (camRes.status === 401) throw new Error('Invalid API key — check your Lemlist credentials');
     if (!camRes.ok) throw new Error('Lemlist API error: ' + camRes.status);
-
     const campaigns = await camRes.json();
     if (!Array.isArray(campaigns)) throw new Error('Unexpected response from Lemlist');
 
@@ -282,11 +291,7 @@ async function loadData() {
       try {
         const statsRes = await proxyFetch('https://api.lemlist.com/api/v2/campaigns/stats/batch', {
           method: 'POST',
-          body: JSON.stringify({
-            campaignIds: chunk,
-            startDate: '2026-01-01T00:00:00.000Z',
-            endDate: new Date().toISOString()
-          })
+          body: JSON.stringify({ campaignIds: chunk, startDate: START_DATE, endDate: new Date().toISOString() })
         });
         if (statsRes.ok) {
           const data = await statsRes.json();
@@ -301,10 +306,10 @@ async function loadData() {
 
     allCampaigns = campaigns.map(c => {
       const s = statsMap[c._id] || {};
+      const { market, isField } = detectMarket(c.name);
       return {
-        id: c._id,
-        name: c.name || 'Unnamed',
-        market: detectMarket(c.name),
+        id: c._id, name: c.name || 'Unnamed',
+        market, isField,
         status: c.status || 'unknown',
         nbLeads: s.nbLeads || 0,
         messagesSent: s.messagesSent || 0,
@@ -314,14 +319,13 @@ async function loadData() {
         messagesBounced: s.messagesBounced || 0,
         meetingBooked: s.meetingBooked || 0
       };
-    });
+    }).filter(c => c.messagesSent > 0);
 
-    const withData = allCampaigns.filter(c => c.messagesSent > 0).length;
     document.getElementById('authSection').style.display = 'none';
     document.getElementById('dashSection').style.display = 'block';
     document.getElementById('refreshBtn').disabled = false;
     document.getElementById('lastUpdated').textContent = 'Updated ' + new Date().toLocaleTimeString();
-    setStatus('ok', campaigns.length + ' campaigns · ' + withData + ' with data');
+    setStatus('ok', allCampaigns.length + ' campaigns with data');
     render();
 
   } catch(err) {
@@ -335,11 +339,12 @@ function getFiltered() {
   const statusFilter = document.getElementById('statusFilter')?.value || 'all';
   const search = (document.getElementById('searchBox')?.value || '').toLowerCase();
   return allCampaigns.filter(c => {
-    if (currentMarket !== 'all' && c.market !== currentMarket) return false;
+    if (currentMarket === 'Field' && !c.isField) return false;
+    if (currentMarket !== 'all' && currentMarket !== 'Field' && c.market !== currentMarket) return false;
     if (statusFilter === 'active' && c.status !== 'started') return false;
     if (statusFilter === 'ended' && c.status === 'started') return false;
     if (search && !c.name.toLowerCase().includes(search)) return false;
-    return c.messagesSent > 0;
+    return true;
   });
 }
 
@@ -370,14 +375,16 @@ function render() {
 }
 
 function renderMarkets() {
-  const tagClass = { US:'tag-us', UKI:'tag-uki', DACH:'tag-dach', Other:'tag-other' };
-  document.getElementById('marketGrid').innerHTML = ['US','UKI','DACH','Other'].map(mkt => {
-    const rows = allCampaigns.filter(c => c.market === mkt && c.messagesSent > 0);
+  const markets = ['US','UKI','DACH','FR','Field','Other'];
+  document.getElementById('marketGrid').innerHTML = markets.map(mkt => {
+    const rows = mkt === 'Field'
+      ? allCampaigns.filter(c => c.isField)
+      : allCampaigns.filter(c => c.market === mkt);
     if (!rows.length) return '';
     const k = aggKPIs(rows);
     return `<div class="market-card">
       <div class="market-header">
-        <span class="market-tag ${tagClass[mkt]}">${mkt}</span>
+        <span class="market-tag tag-${mkt}">${mkt === 'Field' ? 'Field marketing' : mkt}</span>
         <span style="font-size:12px;color:var(--text2)">${rows.length} campaign${rows.length!==1?'s':''}</span>
       </div>
       <div class="mstat"><span class="mstat-label">Leads</span><span class="mstat-val">${rows.reduce((s,r)=>s+r.nbLeads,0).toLocaleString()}</span></div>
@@ -391,11 +398,10 @@ function renderMarkets() {
 }
 
 function renderCampaigns(rows) {
-  const tagClass = { US:'tag-us', UKI:'tag-uki', DACH:'tag-dach', Other:'tag-other' };
   const sorted = [...rows].sort((a,b) => b.messagesSent - a.messagesSent);
   document.getElementById('campaignCount').textContent = sorted.length + ' campaigns';
   if (!sorted.length) {
-    document.getElementById('campaignBody').innerHTML = '<tr><td colspan="9" class="empty-state">No campaigns match your filters.</td></tr>';
+    document.getElementById('campaignBody').innerHTML = '<tr><td colspan="9" style="text-align:center;padding:2rem;color:var(--text2);font-size:13px">No campaigns match your filters.</td></tr>';
     return;
   }
   const bar = (v, max, color) =>
@@ -407,9 +413,10 @@ function renderCampaigns(rows) {
     const br = pct(c.messagesBounced, c.messagesSent);
     const [sigCls, sigLabel] = signal(c);
     const statusLabel = c.status === 'started' ? 'active' : c.status === 'draft' ? 'draft' : 'ended';
+    const fieldBadge = c.isField ? '<span class="field-badge">Field</span>' : '';
     return `<tr>
-      <td><div class="cam-name" title="${c.name}">${c.name}</div></td>
-      <td><span class="market-tag ${tagClass[c.market]}" style="font-size:11px;padding:2px 7px;border-radius:20px">${c.market}</span></td>
+      <td><div class="cam-name" title="${c.name}">${c.name}${fieldBadge}</div></td>
+      <td><span class="market-tag tag-${c.market}" style="font-size:11px;padding:2px 7px;border-radius:20px">${c.market}</span></td>
       <td><span class="cam-status">${statusLabel}</span></td>
       <td>${c.nbLeads.toLocaleString()}</td>
       <td>${bar(or,80,'#378ADD')}</td>
