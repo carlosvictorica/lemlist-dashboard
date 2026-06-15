@@ -49,7 +49,7 @@
   .pill-group { display: flex; gap: 4px; flex-wrap: wrap; }
   .pill { font-size: 12px; padding: 4px 14px; border-radius: 20px; border: 0.5px solid var(--border2); background: var(--bg); color: var(--text2); cursor: pointer; transition: all 0.15s; white-space: nowrap; }
   .pill.active { background: var(--text); color: var(--bg); border-color: var(--text); }
-  .pill-field.active { background: var(--purple); color: #fff; border-color: var(--purple); }
+  .pill[data-market="Field"].active { background: var(--purple); color: #fff; border-color: var(--purple); }
   .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 1.5rem; }
   .kpi-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; }
   .kpi-label { font-size: 12px; color: var(--text2); margin-bottom: 6px; }
@@ -93,10 +93,7 @@
   .tab.active { color: var(--text); border-bottom-color: var(--text); font-weight: 500; }
   select, input[type="search"] { font-size: 12px; padding: 5px 10px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); }
   .field-badge { display: inline-block; font-size: 10px; padding: 1px 6px; border-radius: 20px; background: var(--purple-bg); color: var(--purple); margin-left: 4px; vertical-align: middle; }
-  @media (max-width: 768px) {
-    .kpi-grid { grid-template-columns: repeat(2, 1fr); }
-    .main { padding: 1rem; }
-  }
+  @media (max-width: 768px) { .kpi-grid { grid-template-columns: repeat(2, 1fr); } .main { padding: 1rem; } }
 </style>
 </head>
 <body>
@@ -114,7 +111,6 @@
 </div>
 
 <div class="main">
-
   <div id="authSection" class="auth-card">
     <h2>Connect to Lemlist</h2>
     <p>Enter your Lemlist API key to load live campaign data. The key stays in your browser session only.</p>
@@ -127,7 +123,6 @@
   </div>
 
   <div id="dashSection" style="display:none">
-
     <div class="controls">
       <div class="pill-group" id="marketFilter">
         <div class="pill active" data-market="all">All markets</div>
@@ -135,39 +130,21 @@
         <div class="pill" data-market="UKI">UKI</div>
         <div class="pill" data-market="DACH">DACH</div>
         <div class="pill" data-market="FR">FR</div>
-        <div class="pill pill-field" data-market="Field">Field marketing</div>
+        <div class="pill" data-market="Field">Field marketing</div>
         <div class="pill" data-market="Other">Other</div>
       </div>
-      <div style="display:flex;align-items:center;gap:8px">
-        <select id="statusFilter" onchange="render()">
-          <option value="all">All campaigns</option>
-          <option value="active">Active only</option>
-          <option value="ended">Ended only</option>
-        </select>
-      </div>
+      <select id="statusFilter" onchange="render()">
+        <option value="all">All campaigns</option>
+        <option value="active">Active only</option>
+        <option value="ended">Ended only</option>
+      </select>
     </div>
 
     <div class="kpi-grid">
-      <div class="kpi-card">
-        <div class="kpi-label">Open rate</div>
-        <div class="kpi-value" id="kpiOpen">—</div>
-        <div class="kpi-sub" id="kpiOpenSub"></div>
-      </div>
-      <div class="kpi-card">
-        <div class="kpi-label">Click rate</div>
-        <div class="kpi-value" id="kpiClick">—</div>
-        <div class="kpi-sub" id="kpiClickSub"></div>
-      </div>
-      <div class="kpi-card">
-        <div class="kpi-label">Reply rate</div>
-        <div class="kpi-value" id="kpiReply">—</div>
-        <div class="kpi-sub" id="kpiReplySub"></div>
-      </div>
-      <div class="kpi-card">
-        <div class="kpi-label">Bounce rate</div>
-        <div class="kpi-value" id="kpiBounce">—</div>
-        <div class="kpi-sub" id="kpiBounceSub"></div>
-      </div>
+      <div class="kpi-card"><div class="kpi-label">Open rate</div><div class="kpi-value" id="kpiOpen">—</div><div class="kpi-sub" id="kpiOpenSub"></div></div>
+      <div class="kpi-card"><div class="kpi-label">Click rate</div><div class="kpi-value" id="kpiClick">—</div><div class="kpi-sub" id="kpiClickSub"></div></div>
+      <div class="kpi-card"><div class="kpi-label">Reply rate</div><div class="kpi-value" id="kpiReply">—</div><div class="kpi-sub" id="kpiReplySub"></div></div>
+      <div class="kpi-card"><div class="kpi-label">Bounce rate</div><div class="kpi-value" id="kpiBounce">—</div><div class="kpi-sub" id="kpiBounceSub"></div></div>
     </div>
 
     <div class="tabs">
@@ -212,22 +189,43 @@
 <script>
 const PROXY = 'https://lemlist-proxy.carlos-victorica.workers.dev';
 const START_DATE = '2025-01-01T00:00:00.000Z';
-const MARKETS = ['US','UKI','DACH','FR','Field','Other'];
 
 let allCampaigns = [];
 let currentMarket = 'all';
 let apiKey = '';
 
 function detectMarket(name) {
-  const n = (name || '');
+  const n = name || '';
   const u = n.toUpperCase();
-  const isField = /^Field[_\s-]/i.test(n) || /[_\s-]Field[_\s-]/i.test(n) || /shoptalk/i.test(n);
+
+  const isField = /field/i.test(n) || /shoptalk/i.test(n);
+
   let market = 'Other';
-  if (/^US[_\s-]|[_\s-]US[_\s-]|[_\s-]US$/i.test(n) || /^US$/i.test(n)) market = 'US';
-  else if (/^UKI[_\s-]|[_\s-]UKI[_\s-]|[_\s-]UKI$/i.test(n)) market = 'UKI';
-  else if (/^DACH[_\s-]|[_\s-]DACH[_\s-]|[_\s-]DACH$/i.test(n)) market = 'DACH';
-  else if (/^FR[_\s-]|[_\s-]FR[_\s-]|[_\s-]FR$/i.test(n)) market = 'FR';
-  if (isField && market === 'Other') market = 'Other';
+
+  const tokens = u.split(/[\s_\-\[\]]+/).filter(Boolean);
+
+  const marketMap = {
+    'US': 'US', 'USA': 'US',
+    'UKI': 'UKI', 'UK': 'UKI', 'IRELAND': 'UKI',
+    'DACH': 'DACH', 'DE': 'DACH', 'AT': 'DACH', 'CH': 'DACH', 'GERMANY': 'DACH',
+    'FR': 'FR', 'FRANCE': 'FR',
+  };
+
+  for (const token of tokens) {
+    if (marketMap[token]) {
+      market = marketMap[token];
+      break;
+    }
+  }
+
+  if (market === 'Other') {
+    if (/\bUS\b/i.test(n)) market = 'US';
+    else if (/\bUKI\b/i.test(n)) market = 'UKI';
+    else if (/\bDACH\b/i.test(n)) market = 'DACH';
+    else if (/\bFR\b/i.test(n) || /_FR_|_FR$|^FR_/i.test(n)) market = 'FR';
+    else if (/EMEA/i.test(n)) market = 'Other';
+  }
+
   return { market, isField };
 }
 
@@ -264,6 +262,25 @@ async function proxyFetch(lemlistUrl, options = {}) {
   });
 }
 
+async function fetchAllCampaigns() {
+  let all = [];
+  let offset = 0;
+  const limit = 100;
+
+  while (true) {
+    const url = `https://api.lemlist.com/api/campaigns?limit=${limit}&offset=${offset}&version=v2`;
+    const res = await proxyFetch(url);
+    if (!res.ok) throw new Error('Lemlist API error: ' + res.status);
+    const batch = await res.json();
+    if (!Array.isArray(batch) || batch.length === 0) break;
+    all = all.concat(batch);
+    if (batch.length < limit) break;
+    offset += limit;
+  }
+
+  return all;
+}
+
 async function loadData() {
   const keyInput = document.getElementById('apiKeyInput');
   const key = keyInput ? keyInput.value.trim() : apiKey;
@@ -275,11 +292,8 @@ async function loadData() {
   document.getElementById('refreshBtn').disabled = true;
 
   try {
-    const camRes = await proxyFetch('https://api.lemlist.com/api/campaigns?limit=100');
-    if (camRes.status === 401) throw new Error('Invalid API key — check your Lemlist credentials');
-    if (!camRes.ok) throw new Error('Lemlist API error: ' + camRes.status);
-    const campaigns = await camRes.json();
-    if (!Array.isArray(campaigns)) throw new Error('Unexpected response from Lemlist');
+    const campaigns = await fetchAllCampaigns();
+    if (!campaigns.length) throw new Error('No campaigns found');
 
     setStatus('loading', campaigns.length + ' campaigns found, loading stats...');
 
@@ -291,7 +305,11 @@ async function loadData() {
       try {
         const statsRes = await proxyFetch('https://api.lemlist.com/api/v2/campaigns/stats/batch', {
           method: 'POST',
-          body: JSON.stringify({ campaignIds: chunk, startDate: START_DATE, endDate: new Date().toISOString() })
+          body: JSON.stringify({
+            campaignIds: chunk,
+            startDate: START_DATE,
+            endDate: new Date().toISOString()
+          })
         });
         if (statsRes.ok) {
           const data = await statsRes.json();
@@ -375,8 +393,7 @@ function render() {
 }
 
 function renderMarkets() {
-  const markets = ['US','UKI','DACH','FR','Field','Other'];
-  document.getElementById('marketGrid').innerHTML = markets.map(mkt => {
+  document.getElementById('marketGrid').innerHTML = ['US','UKI','DACH','FR','Field','Other'].map(mkt => {
     const rows = mkt === 'Field'
       ? allCampaigns.filter(c => c.isField)
       : allCampaigns.filter(c => c.market === mkt);
