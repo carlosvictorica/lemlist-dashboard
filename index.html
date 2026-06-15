@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lemlist Campaign Dashboard</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #ffffff; --bg2: #f7f7f5; --bg3: #f0efe9;
+    --border: rgba(0,0,0,0.1); --border2: rgba(0,0,0,0.18);
+    --text: #1a1a1a; --text2: #6b6b6b; --text3: #9a9a9a;
+    --blue: #185FA5; --blue-bg: #E6F1FB;
+    --green: #3B6D11; --green-bg: #EAF3DE;
+    --amber: #854F0B; --amber-bg: #FAEEDA;
+    --red: #A32D2D; --red-bg: #FCEBEB;
+    --teal: #0F6E56; --teal-bg: #E1F5EE;
+    --radius: 8px; --radius-lg: 12px;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg2); color: var(--text); min-height: 100vh; }
+  .header { background: var(--bg); border-bottom: 0.5px solid var(--border); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; z-index: 10; }
+  .header-left { display: flex; align-items: center; gap: 12px; }
+  .logo { font-size: 15px; font-weight: 500; }
+  .logo span { color: var(--text2); font-weight: 400; }
+  .last-updated { font-size: 12px; color: var(--text3); }
+  .header-right { display: flex; align-items: center; gap: 10px; }
+  .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #888; }
+  .status-dot.ok { background: #639922; }
+  .status-dot.loading { background: #BA7517; animation: pulse 1s infinite; }
+  .status-dot.error { background: #E24B4A; }
+  .status-text { font-size: 12px; color: var(--text2); }
+  @keyframes pulse { 0%,100%{opacity:1}50%{opacity:0.3} }
+  .btn { font-size: 13px; padding: 6px 14px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.15s; }
+  .btn:hover { background: var(--bg3); }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .btn-primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+  .btn-primary:hover { opacity: 0.85; background: var(--text); }
+  .main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+  .auth-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 2rem; max-width: 500px; margin: 4rem auto; }
+  .auth-card h2 { font-size: 17px; font-weight: 500; margin-bottom: 8px; }
+  .auth-card p { font-size: 13px; color: var(--text2); margin-bottom: 1.25rem; line-height: 1.6; }
+  .auth-row { display: flex; gap: 8px; }
+  .auth-row input { flex: 1; font-size: 13px; padding: 8px 12px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); font-family: monospace; }
+  .auth-row input:focus { outline: none; border-color: #378ADD; box-shadow: 0 0 0 2px rgba(55,138,221,0.15); }
+  .auth-note { font-size: 11px; color: var(--text3); margin-top: 10px; }
+  .error-msg { font-size: 13px; color: var(--red); margin-top: 10px; padding: 8px 12px; background: var(--red-bg); border-radius: var(--radius); display: none; }
+  .controls { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 1.5rem; }
+  .pill-group { display: flex; gap: 4px; }
+  .pill { font-size: 12px; padding: 4px 14px; border-radius: 20px; border: 0.5px solid var(--border2); background: var(--bg); color: var(--text2); cursor: pointer; transition: all 0.15s; }
+  .pill.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 1.5rem; }
+  .kpi-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; }
+  .kpi-label { font-size: 12px; color: var(--text2); margin-bottom: 6px; }
+  .kpi-value { font-size: 28px; font-weight: 500; line-height: 1; }
+  .kpi-sub { font-size: 12px; color: var(--text3); margin-top: 6px; }
+  .section-label { font-size: 12px; font-weight: 500; color: var(--text2); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 12px; }
+  .market-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 1.5rem; }
+  .market-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; }
+  .market-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+  .market-tag { font-size: 12px; font-weight: 500; padding: 3px 10px; border-radius: 20px; }
+  .tag-us { background: var(--blue-bg); color: var(--blue); }
+  .tag-uki { background: var(--teal-bg); color: var(--teal); }
+  .tag-dach { background: var(--amber-bg); color: var(--amber); }
+  .tag-other { background: var(--bg3); color: var(--text2); }
+  .mstat { display: flex; justify-content: space-between; align-items: center; padding: 5px 0; border-bottom: 0.5px solid var(--border); font-size: 13px; }
+  .mstat:last-child { border-bottom: none; }
+  .mstat-label { color: var(--text2); }
+  .mstat-val { font-weight: 500; }
+  .table-section { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 1.5rem; }
+  .table-header { padding: 1rem 1.25rem; border-bottom: 0.5px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  thead th { text-align: left; font-weight: 500; font-size: 12px; color: var(--text2); padding: 8px 12px; border-bottom: 0.5px solid var(--border); white-space: nowrap; }
+  tbody td { padding: 9px 12px; border-bottom: 0.5px solid var(--border); color: var(--text); vertical-align: middle; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: var(--bg2); }
+  .badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 500; white-space: nowrap; }
+  .badge-green { background: var(--green-bg); color: var(--green); }
+  .badge-red { background: var(--red-bg); color: var(--red); }
+  .badge-amber { background: var(--amber-bg); color: var(--amber); }
+  .badge-gray { background: var(--bg3); color: var(--text2); }
+  .bar-wrap { display: flex; align-items: center; gap: 8px; min-width: 100px; }
+  .bar-bg { flex: 1; height: 5px; background: var(--bg3); border-radius: 3px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 3px; }
+  .cam-name { max-width: 240px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cam-status { font-size: 11px; padding: 2px 7px; border-radius: 20px; border: 0.5px solid var(--border); color: var(--text2); }
+  .tabs { display: flex; border-bottom: 0.5px solid var(--border); margin-bottom: 1.5rem; }
+  .tab { font-size: 13px; padding: 8px 18px; cursor: pointer; color: var(--text2); border-bottom: 2px solid transparent; margin-bottom: -0.5px; }
+  .tab.active { color: var(--text); border-bottom-color: var(--text); font-weight: 500; }
+  .empty-state { text-align: center; padding: 3rem; color: var(--text2); font-size: 13px; }
+  select { font-size: 12px; padding: 5px 8px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); cursor: pointer; }
+  input[type="text"], input[type="search"] { font-size: 12px; padding: 5px 10px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); }
+  @media (max-width: 768px) {
+    .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    .market-grid { grid-template-columns: 1fr; }
+    .main { padding: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <div class="logo">Lemlist <span>/ Campaign dashboard</span></div>
+    <div class="last-updated" id="lastUpdated"></div>
+  </div>
+  <div class="header-right">
+    <div class="status-dot" id="statusDot"></div>
+    <div class="status-text" id="statusText">Not loaded</div>
+    <button class="btn" id="refreshBtn" onclick="loadData()" disabled>&#8635; Refresh</button>
+  </div>
+</div>
+
+<div class="main">
+
+  <div id="authSection" class="auth-card">
+    <h2>Connect to Lemlist</h2>
+    <p>Enter your Lemlist API key to load live campaign data. The key is stored only in your browser session and never shared.</p>
+    <div class="auth-row">
+      <input type="password" id="apiKeyInput" placeholder="Your Lemlist API key..." onkeydown="if(event.key==='Enter')loadData()" />
+      <button class="btn btn-primary" onclick="loadData()">Load data</button>
+    </div>
+    <p class="auth-note">Lemlist → Settings → Integrations → API</p>
+    <div class="error-msg" id="errorMsg"></div>
+  </div>
+
+  <div id="dashSection" style="display:none">
+    <div class="controls">
+      <div class="pill-group" id="marketFilter">
+        <div class="pill active" data-market="all">All markets</div>
+        <div class="pill" data-market="US">US</div>
+        <div class="pill" data-market="UKI">UKI</div>
+        <div class="pill" data-market="DACH">DACH</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <select id="statusFilter" onchange="render()">
+          <option value="all">All campaigns</option>
+          <option value="active">Active only</option>
+          <option value="ended">Ended only</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">Open rate</div>
+        <div class="kpi-value" id="kpiOpen">—</div>
+        <div class="kpi-sub" id="kpiOpenSub"></div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Click rate</div>
+        <div class="kpi-value" id="kpiClick">—</div>
+        <div class="kpi-sub" id="kpiClickSub"></div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Reply rate</div>
+        <div class="kpi-value" id="kpiReply">—</div>
+        <div class="kpi-sub" id="kpiReplySub"></div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Bounce rate</div>
+        <div class="kpi-value" id="kpiBounce">—</div>
+        <div class="kpi-sub" id="kpiBounceSub"></div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="market" onclick="switchTab(this)">Market overview</div>
+      <div class="tab" data-tab="campaigns" onclick="switchTab(this)">Campaign breakdown</div>
+    </div>
+
+    <div id="tab-market">
+      <div class="section-label">Performance by market — since Jan 2026</div>
+      <div class="market-grid" id="marketGrid"></div>
+    </div>
+
+    <div id="tab-campaigns" style="display:none">
+      <div class="table-section">
+        <div class="table-header">
+          <span class="section-label" style="margin:0" id="campaignCount"></span>
+          <input type="search" id="searchBox" placeholder="Search campaigns..." oninput="render()" style="width:200px" />
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th style="width:26%">Campaign</th>
+                <th style="width:7%">Market</th>
+                <th style="width:7%">Status</th>
+                <th style="width:7%">Leads</th>
+                <th style="width:12%">Open rate</th>
+                <th style="width:12%">Click rate</th>
+                <th style="width:12%">Reply rate</th>
+                <th style="width:8%">Bounce</th>
+                <th style="width:9%">Signal</th>
+              </tr>
+            </thead>
+            <tbody id="campaignBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const PROXY = 'https://lemlist-proxy.carlos-victorica.workers.dev';
+let allCampaigns = [];
+let currentMarket = 'all';
+let apiKey = '';
+
+function detectMarket(name) {
+  const n = (name || '').toUpperCase();
+  if (/\bUKI\b|_UKI|UKI_|\bUK\b|IRELAND/.test(n)) return 'UKI';
+  if (/\bDACH\b|_DACH|DACH_|\bGERMANY\b|\bAUSTRIA\b/.test(n)) return 'DACH';
+  if (/\bUS\b|_US\b|\bUSA\b|UNITED.STATES|AMERICA/.test(n)) return 'US';
+  return 'Other';
+}
+
+function pct(n, d) { return d > 0 ? (n / d * 100) : 0; }
+function fmt(v) { return v.toFixed(1) + '%'; }
+
+function signal(c) {
+  const or = pct(c.opened, c.messagesSent);
+  const rr = pct(c.replied, c.messagesSent);
+  const br = pct(c.messagesBounced, c.messagesSent);
+  if (br >= 6) return ['badge-amber', 'Bounce risk'];
+  if (or >= 40 && rr >= 5) return ['badge-green', 'Top performer'];
+  if (or < 25 || rr < 2) return ['badge-red', 'Needs review'];
+  return ['badge-gray', 'On track'];
+}
+
+function setStatus(state, text) {
+  document.getElementById('statusDot').className = 'status-dot ' + state;
+  document.getElementById('statusText').textContent = text;
+}
+
+function showError(msg) {
+  const el = document.getElementById('errorMsg');
+  el.textContent = msg;
+  el.style.display = 'block';
+}
+
+async function proxyFetch(lemlistUrl, options = {}) {
+  const b64 = btoa(':' + apiKey);
+  const proxyUrl = PROXY + '?url=' + encodeURIComponent(lemlistUrl);
+  return fetch(proxyUrl, {
+    ...options,
+    headers: {
+      'Authorization': 'Basic ' + b64,
+      'Content-Type': 'application/json',
+      ...(options.headers || {})
+    }
+  });
+}
+
+async function loadData() {
+  const keyInput = document.getElementById('apiKeyInput');
+  const key = keyInput ? keyInput.value.trim() : apiKey;
+  if (!key) { showError('Please enter your Lemlist API key.'); return; }
+  apiKey = key;
+
+  document.getElementById('errorMsg').style.display = 'none';
+  setStatus('loading', 'Fetching campaigns...');
+  document.getElementById('refreshBtn').disabled = true;
+
+  try {
+    const camRes = await proxyFetch('https://api.lemlist.com/api/campaigns?limit=100');
+    if (camRes.status === 401) throw new Error('Invalid API key — check your Lemlist credentials');
+    if (!camRes.ok) throw new Error('Lemlist API error: ' + camRes.status);
+
+    const campaigns = await camRes.json();
+    if (!Array.isArray(campaigns)) throw new Error('Unexpected response from Lemlist');
+
+    setStatus('loading', campaigns.length + ' campaigns found, loading stats...');
+
+    const ids = campaigns.map(c => c._id).filter(Boolean);
+    let results = [];
+
+    for (let i = 0; i < ids.length; i += 50) {
+      const chunk = ids.slice(i, i + 50);
+      try {
+        const statsRes = await proxyFetch('https://api.lemlist.com/api/v2/campaigns/stats/batch', {
+          method: 'POST',
+          body: JSON.stringify({
+            campaignIds: chunk,
+            startDate: '2026-01-01T00:00:00.000Z',
+            endDate: new Date().toISOString()
+          })
+        });
+        if (statsRes.ok) {
+          const data = await statsRes.json();
+          const res = data.results || data.data || data || [];
+          results = results.concat(Array.isArray(res) ? res : []);
+        }
+      } catch(e) { console.warn('Stats chunk failed', e); }
+    }
+
+    const statsMap = {};
+    results.forEach(r => { if (r.campaignId) statsMap[r.campaignId] = r; });
+
+    allCampaigns = campaigns.map(c => {
+      const s = statsMap[c._id] || {};
+      return {
+        id: c._id,
+        name: c.name || 'Unnamed',
+        market: detectMarket(c.name),
+        status: c.status || 'unknown',
+        nbLeads: s.nbLeads || 0,
+        messagesSent: s.messagesSent || 0,
+        opened: s.opened || 0,
+        clicked: s.clicked || 0,
+        replied: s.replied || 0,
+        messagesBounced: s.messagesBounced || 0,
+        meetingBooked: s.meetingBooked || 0
+      };
+    });
+
+    const withData = allCampaigns.filter(c => c.messagesSent > 0).length;
+    document.getElementById('authSection').style.display = 'none';
+    document.getElementById('dashSection').style.display = 'block';
+    document.getElementById('refreshBtn').disabled = false;
+    document.getElementById('lastUpdated').textContent = 'Updated ' + new Date().toLocaleTimeString();
+    setStatus('ok', campaigns.length + ' campaigns · ' + withData + ' with data');
+    render();
+
+  } catch(err) {
+    setStatus('error', err.message);
+    showError(err.message);
+    document.getElementById('refreshBtn').disabled = false;
+  }
+}
+
+function getFiltered() {
+  const statusFilter = document.getElementById('statusFilter')?.value || 'all';
+  const search = (document.getElementById('searchBox')?.value || '').toLowerCase();
+  return allCampaigns.filter(c => {
+    if (currentMarket !== 'all' && c.market !== currentMarket) return false;
+    if (statusFilter === 'active' && c.status !== 'started') return false;
+    if (statusFilter === 'ended' && c.status === 'started') return false;
+    if (search && !c.name.toLowerCase().includes(search)) return false;
+    return c.messagesSent > 0;
+  });
+}
+
+function aggKPIs(rows) {
+  const sent = rows.reduce((s,r) => s + r.messagesSent, 0);
+  const opened = rows.reduce((s,r) => s + r.opened, 0);
+  const clicked = rows.reduce((s,r) => s + r.clicked, 0);
+  const replied = rows.reduce((s,r) => s + r.replied, 0);
+  const bounced = rows.reduce((s,r) => s + r.messagesBounced, 0);
+  return { sent, opened, clicked, replied, bounced,
+    open: pct(opened,sent), click: pct(clicked,sent),
+    reply: pct(replied,sent), bounce: pct(bounced,sent) };
+}
+
+function render() {
+  const rows = getFiltered();
+  const kpis = aggKPIs(rows);
+  document.getElementById('kpiOpen').textContent = fmt(kpis.open);
+  document.getElementById('kpiClick').textContent = fmt(kpis.click);
+  document.getElementById('kpiReply').textContent = fmt(kpis.reply);
+  document.getElementById('kpiBounce').textContent = fmt(kpis.bounce);
+  document.getElementById('kpiOpenSub').textContent = kpis.opened.toLocaleString() + ' opens · ' + kpis.sent.toLocaleString() + ' sent';
+  document.getElementById('kpiClickSub').textContent = kpis.clicked.toLocaleString() + ' total clicks';
+  document.getElementById('kpiReplySub').textContent = kpis.replied.toLocaleString() + ' total replies';
+  document.getElementById('kpiBounceSub').textContent = kpis.bounced.toLocaleString() + ' bounced';
+  renderMarkets();
+  renderCampaigns(rows);
+}
+
+function renderMarkets() {
+  const tagClass = { US:'tag-us', UKI:'tag-uki', DACH:'tag-dach', Other:'tag-other' };
+  document.getElementById('marketGrid').innerHTML = ['US','UKI','DACH','Other'].map(mkt => {
+    const rows = allCampaigns.filter(c => c.market === mkt && c.messagesSent > 0);
+    if (!rows.length) return '';
+    const k = aggKPIs(rows);
+    return `<div class="market-card">
+      <div class="market-header">
+        <span class="market-tag ${tagClass[mkt]}">${mkt}</span>
+        <span style="font-size:12px;color:var(--text2)">${rows.length} campaign${rows.length!==1?'s':''}</span>
+      </div>
+      <div class="mstat"><span class="mstat-label">Leads</span><span class="mstat-val">${rows.reduce((s,r)=>s+r.nbLeads,0).toLocaleString()}</span></div>
+      <div class="mstat"><span class="mstat-label">Messages sent</span><span class="mstat-val">${k.sent.toLocaleString()}</span></div>
+      <div class="mstat"><span class="mstat-label">Open rate</span><span class="mstat-val">${fmt(k.open)}</span></div>
+      <div class="mstat"><span class="mstat-label">Click rate</span><span class="mstat-val">${fmt(k.click)}</span></div>
+      <div class="mstat"><span class="mstat-label">Reply rate</span><span class="mstat-val">${fmt(k.reply)}</span></div>
+      <div class="mstat"><span class="mstat-label">Bounce rate</span><span class="mstat-val" style="color:${k.bounce>=6?'var(--red)':'inherit'}">${fmt(k.bounce)}</span></div>
+    </div>`;
+  }).join('');
+}
+
+function renderCampaigns(rows) {
+  const tagClass = { US:'tag-us', UKI:'tag-uki', DACH:'tag-dach', Other:'tag-other' };
+  const sorted = [...rows].sort((a,b) => b.messagesSent - a.messagesSent);
+  document.getElementById('campaignCount').textContent = sorted.length + ' campaigns';
+  if (!sorted.length) {
+    document.getElementById('campaignBody').innerHTML = '<tr><td colspan="9" class="empty-state">No campaigns match your filters.</td></tr>';
+    return;
+  }
+  const bar = (v, max, color) =>
+    `<div class="bar-wrap"><div class="bar-bg"><div class="bar-fill" style="width:${Math.min(v/max*100,100).toFixed(0)}%;background:${color}"></div></div><span style="font-size:12px;min-width:36px;text-align:right">${fmt(v)}</span></div>`;
+  document.getElementById('campaignBody').innerHTML = sorted.map(c => {
+    const or = pct(c.opened, c.messagesSent);
+    const cr = pct(c.clicked, c.messagesSent);
+    const rr = pct(c.replied, c.messagesSent);
+    const br = pct(c.messagesBounced, c.messagesSent);
+    const [sigCls, sigLabel] = signal(c);
+    const statusLabel = c.status === 'started' ? 'active' : c.status === 'draft' ? 'draft' : 'ended';
+    return `<tr>
+      <td><div class="cam-name" title="${c.name}">${c.name}</div></td>
+      <td><span class="market-tag ${tagClass[c.market]}" style="font-size:11px;padding:2px 7px;border-radius:20px">${c.market}</span></td>
+      <td><span class="cam-status">${statusLabel}</span></td>
+      <td>${c.nbLeads.toLocaleString()}</td>
+      <td>${bar(or,80,'#378ADD')}</td>
+      <td>${bar(cr,20,'#1D9E75')}</td>
+      <td>${bar(rr,15,'#D85A30')}</td>
+      <td style="color:${br>=6?'var(--red)':'var(--text)'}">${fmt(br)}</td>
+      <td><span class="badge ${sigCls}">${sigLabel}</span></td>
+    </tr>`;
+  }).join('');
+}
+
+function switchTab(el) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  const tab = el.dataset.tab;
+  document.getElementById('tab-market').style.display = tab === 'market' ? '' : 'none';
+  document.getElementById('tab-campaigns').style.display = tab === 'campaigns' ? '' : 'none';
+}
+
+document.querySelectorAll('#marketFilter .pill').forEach(p => {
+  p.onclick = () => {
+    document.querySelectorAll('#marketFilter .pill').forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    currentMarket = p.dataset.market;
+    if (allCampaigns.length) render();
+  };
+});
+</script>
+</body>
+</html>
