@@ -42,9 +42,13 @@
   .auth-card p { font-size: 13px; color: var(--text2); margin-bottom: 1.25rem; line-height: 1.6; }
   .auth-row { display: flex; gap: 8px; }
   .auth-row input { flex: 1; font-size: 13px; padding: 8px 12px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); font-family: monospace; }
-  .auth-row input:focus { outline: none; border-color: #378ADD; box-shadow: 0 0 0 2px rgba(55,138,221,0.15); }
+  .auth-row input:focus { outline: none; border-color: #378ADD; }
   .auth-note { font-size: 11px; color: var(--text3); margin-top: 10px; }
   .error-msg { font-size: 13px; color: var(--red); margin-top: 10px; padding: 8px 12px; background: var(--red-bg); border-radius: var(--radius); display: none; }
+  .progress-bar-wrap { margin-top: 12px; display: none; }
+  .progress-bar-bg { height: 4px; background: var(--bg3); border-radius: 2px; overflow: hidden; }
+  .progress-bar-fill { height: 100%; background: #378ADD; border-radius: 2px; transition: width 0.2s; }
+  .progress-label { font-size: 11px; color: var(--text3); margin-top: 6px; }
   .controls { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 1.5rem; }
   .pill-group { display: flex; gap: 4px; flex-wrap: wrap; }
   .pill { font-size: 12px; padding: 4px 14px; border-radius: 20px; border: 0.5px solid var(--border2); background: var(--bg); color: var(--text2); cursor: pointer; transition: all 0.15s; white-space: nowrap; }
@@ -113,12 +117,16 @@
 <div class="main">
   <div id="authSection" class="auth-card">
     <h2>Connect to Lemlist</h2>
-    <p>Enter your Lemlist API key to load live campaign data. The key stays in your browser session only.</p>
+    <p>Enter your Lemlist API key to load live data. Loading all campaigns takes about 20-30 seconds on first load.</p>
     <div class="auth-row">
       <input type="password" id="apiKeyInput" placeholder="Your Lemlist API key..." onkeydown="if(event.key==='Enter')loadData()" />
       <button class="btn btn-primary" onclick="loadData()">Load data</button>
     </div>
     <p class="auth-note">Lemlist → Settings → Integrations → API</p>
+    <div class="progress-bar-wrap" id="progressWrap">
+      <div class="progress-bar-bg"><div class="progress-bar-fill" id="progressFill" style="width:0%"></div></div>
+      <div class="progress-label" id="progressLabel"></div>
+    </div>
     <div class="error-msg" id="errorMsg"></div>
   </div>
 
@@ -189,6 +197,8 @@
 <script>
 const PROXY = 'https://lemlist-proxy.carlos-victorica.workers.dev';
 const START_DATE = '2025-01-01T00:00:00.000Z';
+const CONCURRENCY = 5;
+const RATE_DELAY = 150;
 
 let allCampaigns = [];
 let currentMarket = 'all';
@@ -196,36 +206,18 @@ let apiKey = '';
 
 function detectMarket(name) {
   const n = name || '';
-  const u = n.toUpperCase();
-
   const isField = /field/i.test(n) || /shoptalk/i.test(n);
-
-  let market = 'Other';
-
-  const tokens = u.split(/[\s_\-\[\]]+/).filter(Boolean);
-
-  const marketMap = {
+  const tokens = n.toUpperCase().split(/[\s_\-\[\]\/\.]+/).filter(Boolean);
+  const map = {
     'US': 'US', 'USA': 'US',
     'UKI': 'UKI', 'UK': 'UKI', 'IRELAND': 'UKI',
-    'DACH': 'DACH', 'DE': 'DACH', 'AT': 'DACH', 'CH': 'DACH', 'GERMANY': 'DACH',
+    'DACH': 'DACH', 'DE': 'DACH', 'AT': 'DACH', 'CH': 'DACH', 'GERMANY': 'DACH', 'AUSTRIA': 'DACH',
     'FR': 'FR', 'FRANCE': 'FR',
   };
-
-  for (const token of tokens) {
-    if (marketMap[token]) {
-      market = marketMap[token];
-      break;
-    }
+  let market = 'Other';
+  for (const t of tokens) {
+    if (map[t]) { market = map[t]; break; }
   }
-
-  if (market === 'Other') {
-    if (/\bUS\b/i.test(n)) market = 'US';
-    else if (/\bUKI\b/i.test(n)) market = 'UKI';
-    else if (/\bDACH\b/i.test(n)) market = 'DACH';
-    else if (/\bFR\b/i.test(n) || /_FR_|_FR$|^FR_/i.test(n)) market = 'FR';
-    else if (/EMEA/i.test(n)) market = 'Other';
-  }
-
   return { market, isField };
 }
 
@@ -247,6 +239,12 @@ function setStatus(state, text) {
   document.getElementById('statusText').textContent = text;
 }
 
+function setProgress(done, total) {
+  const pct = total > 0 ? Math.round(done / total * 100) : 0;
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressLabel').textContent = `Loading stats: ${done} / ${total} campaigns`;
+}
+
 function showError(msg) {
   const el = document.getElementById('errorMsg');
   el.textContent = msg;
@@ -263,22 +261,46 @@ async function proxyFetch(lemlistUrl, options = {}) {
 }
 
 async function fetchAllCampaigns() {
-  let all = [];
-  let offset = 0;
-  const limit = 100;
-
+  let all = [], offset = 0;
   while (true) {
-    const url = `https://api.lemlist.com/api/campaigns?limit=${limit}&offset=${offset}&version=v2`;
-    const res = await proxyFetch(url);
-    if (!res.ok) throw new Error('Lemlist API error: ' + res.status);
+    const res = await proxyFetch(`https://api.lemlist.com/api/campaigns?limit=100&offset=${offset}&version=v2`);
+    if (!res.ok) throw new Error('Auth failed — check your API key (status ' + res.status + ')');
     const batch = await res.json();
-    if (!Array.isArray(batch) || batch.length === 0) break;
+    if (!Array.isArray(batch) || !batch.length) break;
     all = all.concat(batch);
-    if (batch.length < limit) break;
-    offset += limit;
+    if (batch.length < 100) break;
+    offset += 100;
+  }
+  return all;
+}
+
+async function fetchCampaignStats(campaignId) {
+  const url = `https://api.lemlist.com/api/v2/campaigns/${campaignId}/stats?startDate=${START_DATE}&endDate=${new Date().toISOString()}`;
+  try {
+    const res = await proxyFetch(url);
+    if (!res.ok) return null;
+    return await res.json();
+  } catch(e) { return null; }
+}
+
+async function fetchStatsWithConcurrency(campaigns, onProgress) {
+  const results = new Array(campaigns.length).fill(null);
+  let done = 0;
+
+  async function worker(queue) {
+    while (queue.length > 0) {
+      const { idx, campaign } = queue.shift();
+      await new Promise(r => setTimeout(r, RATE_DELAY));
+      results[idx] = await fetchCampaignStats(campaign._id);
+      done++;
+      onProgress(done, campaigns.length);
+    }
   }
 
-  return all;
+  const queue = campaigns.map((c, i) => ({ idx: i, campaign: c }));
+  const workers = Array.from({ length: CONCURRENCY }, () => worker(queue));
+  await Promise.all(workers);
+  return results;
 }
 
 async function loadData() {
@@ -288,42 +310,25 @@ async function loadData() {
   apiKey = key;
 
   document.getElementById('errorMsg').style.display = 'none';
+  document.getElementById('progressWrap').style.display = 'block';
   setStatus('loading', 'Fetching campaigns...');
   document.getElementById('refreshBtn').disabled = true;
+  setProgress(0, 1);
 
   try {
     const campaigns = await fetchAllCampaigns();
     if (!campaigns.length) throw new Error('No campaigns found');
 
-    setStatus('loading', campaigns.length + ' campaigns found, loading stats...');
+    setStatus('loading', `Fetching stats for ${campaigns.length} campaigns...`);
+    setProgress(0, campaigns.length);
 
-    const ids = campaigns.map(c => c._id).filter(Boolean);
-    let results = [];
+    const statsResults = await fetchStatsWithConcurrency(campaigns, (done, total) => {
+      setProgress(done, total);
+      setStatus('loading', `Loading stats: ${done}/${total}...`);
+    });
 
-    for (let i = 0; i < ids.length; i += 50) {
-      const chunk = ids.slice(i, i + 50);
-      try {
-        const statsRes = await proxyFetch('https://api.lemlist.com/api/v2/campaigns/stats/batch', {
-          method: 'POST',
-          body: JSON.stringify({
-            campaignIds: chunk,
-            startDate: START_DATE,
-            endDate: new Date().toISOString()
-          })
-        });
-        if (statsRes.ok) {
-          const data = await statsRes.json();
-          const res = data.results || data.data || data || [];
-          results = results.concat(Array.isArray(res) ? res : []);
-        }
-      } catch(e) { console.warn('Stats chunk failed', e); }
-    }
-
-    const statsMap = {};
-    results.forEach(r => { if (r.campaignId) statsMap[r.campaignId] = r; });
-
-    allCampaigns = campaigns.map(c => {
-      const s = statsMap[c._id] || {};
+    allCampaigns = campaigns.map((c, i) => {
+      const s = statsResults[i] || {};
       const { market, isField } = detectMarket(c.name);
       return {
         id: c._id, name: c.name || 'Unnamed',
@@ -339,6 +344,7 @@ async function loadData() {
       };
     }).filter(c => c.messagesSent > 0);
 
+    document.getElementById('progressWrap').style.display = 'none';
     document.getElementById('authSection').style.display = 'none';
     document.getElementById('dashSection').style.display = 'block';
     document.getElementById('refreshBtn').disabled = false;
@@ -349,19 +355,20 @@ async function loadData() {
   } catch(err) {
     setStatus('error', err.message);
     showError(err.message);
+    document.getElementById('progressWrap').style.display = 'none';
     document.getElementById('refreshBtn').disabled = false;
   }
 }
 
 function getFiltered() {
-  const statusFilter = document.getElementById('statusFilter')?.value || 'all';
-  const search = (document.getElementById('searchBox')?.value || '').toLowerCase();
+  const sf = document.getElementById('statusFilter')?.value || 'all';
+  const s = (document.getElementById('searchBox')?.value || '').toLowerCase();
   return allCampaigns.filter(c => {
     if (currentMarket === 'Field' && !c.isField) return false;
     if (currentMarket !== 'all' && currentMarket !== 'Field' && c.market !== currentMarket) return false;
-    if (statusFilter === 'active' && c.status !== 'started') return false;
-    if (statusFilter === 'ended' && c.status === 'started') return false;
-    if (search && !c.name.toLowerCase().includes(search)) return false;
+    if (sf === 'active' && c.status !== 'started') return false;
+    if (sf === 'ended' && c.status === 'started') return false;
+    if (s && !c.name.toLowerCase().includes(s)) return false;
     return true;
   });
 }
@@ -379,24 +386,22 @@ function aggKPIs(rows) {
 
 function render() {
   const rows = getFiltered();
-  const kpis = aggKPIs(rows);
-  document.getElementById('kpiOpen').textContent = fmt(kpis.open);
-  document.getElementById('kpiClick').textContent = fmt(kpis.click);
-  document.getElementById('kpiReply').textContent = fmt(kpis.reply);
-  document.getElementById('kpiBounce').textContent = fmt(kpis.bounce);
-  document.getElementById('kpiOpenSub').textContent = kpis.opened.toLocaleString() + ' opens · ' + kpis.sent.toLocaleString() + ' sent';
-  document.getElementById('kpiClickSub').textContent = kpis.clicked.toLocaleString() + ' total clicks';
-  document.getElementById('kpiReplySub').textContent = kpis.replied.toLocaleString() + ' total replies';
-  document.getElementById('kpiBounceSub').textContent = kpis.bounced.toLocaleString() + ' bounced';
+  const k = aggKPIs(rows);
+  document.getElementById('kpiOpen').textContent = fmt(k.open);
+  document.getElementById('kpiClick').textContent = fmt(k.click);
+  document.getElementById('kpiReply').textContent = fmt(k.reply);
+  document.getElementById('kpiBounce').textContent = fmt(k.bounce);
+  document.getElementById('kpiOpenSub').textContent = k.opened.toLocaleString() + ' opens · ' + k.sent.toLocaleString() + ' sent';
+  document.getElementById('kpiClickSub').textContent = k.clicked.toLocaleString() + ' total clicks';
+  document.getElementById('kpiReplySub').textContent = k.replied.toLocaleString() + ' total replies';
+  document.getElementById('kpiBounceSub').textContent = k.bounced.toLocaleString() + ' bounced';
   renderMarkets();
   renderCampaigns(rows);
 }
 
 function renderMarkets() {
   document.getElementById('marketGrid').innerHTML = ['US','UKI','DACH','FR','Field','Other'].map(mkt => {
-    const rows = mkt === 'Field'
-      ? allCampaigns.filter(c => c.isField)
-      : allCampaigns.filter(c => c.market === mkt);
+    const rows = mkt === 'Field' ? allCampaigns.filter(c => c.isField) : allCampaigns.filter(c => c.market === mkt);
     if (!rows.length) return '';
     const k = aggKPIs(rows);
     return `<div class="market-card">
