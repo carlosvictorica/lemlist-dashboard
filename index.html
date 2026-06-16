@@ -25,30 +25,13 @@
   .logo span { color: var(--text2); font-weight: 400; }
   .last-updated { font-size: 12px; color: var(--text3); margin-left: 12px; }
   .header-right { display: flex; align-items: center; gap: 10px; }
-  .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #888; }
-  .status-dot.ok { background: #639922; }
-  .status-dot.loading { background: #BA7517; animation: pulse 1s infinite; }
-  .status-dot.error { background: #E24B4A; }
+  .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #639922; }
   .status-text { font-size: 12px; color: var(--text2); }
-  @keyframes pulse { 0%,100%{opacity:1}50%{opacity:0.3} }
   .btn { font-size: 13px; padding: 6px 14px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.15s; }
   .btn:hover { background: var(--bg3); }
-  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
   .btn-primary { background: var(--text); color: var(--bg); border-color: var(--text); }
   .btn-primary:hover { opacity: 0.85; background: var(--text); }
   .main { max-width: 1280px; margin: 0 auto; padding: 2rem; }
-  .auth-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 2rem; max-width: 500px; margin: 4rem auto; }
-  .auth-card h2 { font-size: 17px; font-weight: 500; margin-bottom: 8px; }
-  .auth-card p { font-size: 13px; color: var(--text2); margin-bottom: 1.25rem; line-height: 1.6; }
-  .auth-row { display: flex; gap: 8px; }
-  .auth-row input { flex: 1; font-size: 13px; padding: 8px 12px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); font-family: monospace; }
-  .auth-row input:focus { outline: none; border-color: #378ADD; }
-  .auth-note { font-size: 11px; color: var(--text3); margin-top: 10px; }
-  .error-msg { font-size: 13px; color: var(--red); margin-top: 10px; padding: 8px 12px; background: var(--red-bg); border-radius: var(--radius); display: none; }
-  .progress-bar-wrap { margin-top: 12px; display: none; }
-  .progress-bar-bg { height: 4px; background: var(--bg3); border-radius: 2px; overflow: hidden; }
-  .progress-bar-fill { height: 100%; background: #378ADD; border-radius: 2px; transition: width 0.2s; }
-  .progress-label { font-size: 11px; color: var(--text3); margin-top: 6px; }
   .controls { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 1.5rem; }
   .pill-group { display: flex; gap: 4px; flex-wrap: wrap; }
   .pill { font-size: 12px; padding: 4px 14px; border-radius: 20px; border: 0.5px solid var(--border2); background: var(--bg); color: var(--text2); cursor: pointer; transition: all 0.15s; white-space: nowrap; }
@@ -109,28 +92,12 @@
   </div>
   <div class="header-right">
     <div class="status-dot" id="statusDot"></div>
-    <div class="status-text" id="statusText">Not loaded</div>
-    <button class="btn" id="refreshBtn" onclick="loadData()" disabled>&#8635; Refresh</button>
+    <div class="status-text" id="statusText">Loading...</div>
   </div>
 </div>
 
 <div class="main">
-  <div id="authSection" class="auth-card">
-    <h2>Connect to Lemlist</h2>
-    <p>Enter your Lemlist API key to load live data. Loading all campaigns takes about 20-30 seconds on first load.</p>
-    <div class="auth-row">
-      <input type="password" id="apiKeyInput" placeholder="Your Lemlist API key..." onkeydown="if(event.key==='Enter')loadData()" />
-      <button class="btn btn-primary" onclick="loadData()">Load data</button>
-    </div>
-    <p class="auth-note">Lemlist → Settings → Integrations → API</p>
-    <div class="progress-bar-wrap" id="progressWrap">
-      <div class="progress-bar-bg"><div class="progress-bar-fill" id="progressFill" style="width:0%"></div></div>
-      <div class="progress-label" id="progressLabel"></div>
-    </div>
-    <div class="error-msg" id="errorMsg"></div>
-  </div>
-
-  <div id="dashSection" style="display:none">
+  <div id="dashSection">
     <div class="controls">
       <div class="pill-group" id="marketFilter">
         <div class="pill active" data-market="all">All markets</div>
@@ -161,7 +128,7 @@
     </div>
 
     <div id="tab-market">
-      <div class="section-label">Performance by market — since Jan 2025</div>
+      <div class="section-label">Performance by market</div>
       <div class="market-grid" id="marketGrid"></div>
     </div>
 
@@ -195,31 +162,8 @@
 </div>
 
 <script>
-const PROXY = 'https://lemlist-proxy.carlos-victorica.workers.dev';
-const START_DATE = '2025-01-01T00:00:00.000Z';
-const CONCURRENCY = 5;
-const RATE_DELAY = 150;
-
 let allCampaigns = [];
 let currentMarket = 'all';
-let apiKey = '';
-
-function detectMarket(name) {
-  const n = name || '';
-  const isField = /field/i.test(n) || /shoptalk/i.test(n);
-  const tokens = n.toUpperCase().split(/[\s_\-\[\]\/\.]+/).filter(Boolean);
-  const map = {
-    'US': 'US', 'USA': 'US',
-    'UKI': 'UKI', 'UK': 'UKI', 'IRELAND': 'UKI',
-    'DACH': 'DACH', 'DE': 'DACH', 'AT': 'DACH', 'CH': 'DACH', 'GERMANY': 'DACH', 'AUSTRIA': 'DACH',
-    'FR': 'FR', 'FRANCE': 'FR',
-  };
-  let market = 'Other';
-  for (const t of tokens) {
-    if (map[t]) { market = map[t]; break; }
-  }
-  return { market, isField };
-}
 
 function pct(n, d) { return d > 0 ? (n / d * 100) : 0; }
 function fmt(v) { return v.toFixed(1) + '%'; }
@@ -234,129 +178,20 @@ function signal(c) {
   return ['badge-gray', 'On track'];
 }
 
-function setStatus(state, text) {
-  document.getElementById('statusDot').className = 'status-dot ' + state;
-  document.getElementById('statusText').textContent = text;
-}
-
-function setProgress(done, total) {
-  const pct = total > 0 ? Math.round(done / total * 100) : 0;
-  document.getElementById('progressFill').style.width = pct + '%';
-  document.getElementById('progressLabel').textContent = `Loading stats: ${done} / ${total} campaigns`;
-}
-
-function showError(msg) {
-  const el = document.getElementById('errorMsg');
-  el.textContent = msg;
-  el.style.display = 'block';
-}
-
-async function proxyFetch(lemlistUrl, options = {}) {
-  const b64 = btoa(':' + apiKey);
-  const proxyUrl = PROXY + '?url=' + encodeURIComponent(lemlistUrl);
-  return fetch(proxyUrl, {
-    ...options,
-    headers: { 'Authorization': 'Basic ' + b64, 'Content-Type': 'application/json' }
-  });
-}
-
-async function fetchAllCampaigns() {
-  let all = [], offset = 0;
-  while (true) {
-    const res = await proxyFetch(`https://api.lemlist.com/api/campaigns?limit=100&offset=${offset}&version=v2`);
-    if (!res.ok) throw new Error('Auth failed — check your API key (status ' + res.status + ')');
-    const batch = await res.json();
-    if (!Array.isArray(batch) || !batch.length) break;
-    all = all.concat(batch);
-    if (batch.length < 100) break;
-    offset += 100;
-  }
-  return all;
-}
-
-async function fetchCampaignStats(campaignId) {
-  const url = `https://api.lemlist.com/api/v2/campaigns/${campaignId}/stats?startDate=${START_DATE}&endDate=${new Date().toISOString()}`;
-  try {
-    const res = await proxyFetch(url);
-    if (!res.ok) return null;
-    return await res.json();
-  } catch(e) { return null; }
-}
-
-async function fetchStatsWithConcurrency(campaigns, onProgress) {
-  const results = new Array(campaigns.length).fill(null);
-  let done = 0;
-
-  async function worker(queue) {
-    while (queue.length > 0) {
-      const { idx, campaign } = queue.shift();
-      await new Promise(r => setTimeout(r, RATE_DELAY));
-      results[idx] = await fetchCampaignStats(campaign._id);
-      done++;
-      onProgress(done, campaigns.length);
-    }
-  }
-
-  const queue = campaigns.map((c, i) => ({ idx: i, campaign: c }));
-  const workers = Array.from({ length: CONCURRENCY }, () => worker(queue));
-  await Promise.all(workers);
-  return results;
-}
-
 async function loadData() {
-  const keyInput = document.getElementById('apiKeyInput');
-  const key = keyInput ? keyInput.value.trim() : apiKey;
-  if (!key) { showError('Please enter your Lemlist API key.'); return; }
-  apiKey = key;
-
-  document.getElementById('errorMsg').style.display = 'none';
-  document.getElementById('progressWrap').style.display = 'block';
-  setStatus('loading', 'Fetching campaigns...');
-  document.getElementById('refreshBtn').disabled = true;
-  setProgress(0, 1);
-
   try {
-    const campaigns = await fetchAllCampaigns();
-    if (!campaigns.length) throw new Error('No campaigns found');
-
-    setStatus('loading', `Fetching stats for ${campaigns.length} campaigns...`);
-    setProgress(0, campaigns.length);
-
-    const statsResults = await fetchStatsWithConcurrency(campaigns, (done, total) => {
-      setProgress(done, total);
-      setStatus('loading', `Loading stats: ${done}/${total}...`);
-    });
-
-    allCampaigns = campaigns.map((c, i) => {
-      const s = statsResults[i] || {};
-      const { market, isField } = detectMarket(c.name);
-      return {
-        id: c._id, name: c.name || 'Unnamed',
-        market, isField,
-        status: c.status || 'unknown',
-        nbLeads: s.nbLeads || 0,
-        messagesSent: s.messagesSent || 0,
-        opened: s.opened || 0,
-        clicked: s.clicked || 0,
-        replied: s.replied || 0,
-        messagesBounced: s.messagesBounced || 0,
-        meetingBooked: s.meetingBooked || 0
-      };
-    }).filter(c => c.messagesSent > 0);
-
-    document.getElementById('progressWrap').style.display = 'none';
-    document.getElementById('authSection').style.display = 'none';
-    document.getElementById('dashSection').style.display = 'block';
-    document.getElementById('refreshBtn').disabled = false;
-    document.getElementById('lastUpdated').textContent = 'Updated ' + new Date().toLocaleTimeString();
-    setStatus('ok', allCampaigns.length + ' campaigns with data');
+    const res = await fetch('lemlist-data.json?t=' + Date.now());
+    if (!res.ok) throw new Error('lemlist-data.json not found');
+    const json = await res.json();
+    allCampaigns = json.campaigns || [];
+    const d = new Date(json.generatedAt);
+    document.getElementById('lastUpdated').textContent = 'Data from ' + d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) + ' ' + d.toLocaleTimeString();
+    document.getElementById('statusDot').style.background = '#639922';
+    document.getElementById('statusText').textContent = allCampaigns.length + ' campaigns';
     render();
-
-  } catch(err) {
-    setStatus('error', err.message);
-    showError(err.message);
-    document.getElementById('progressWrap').style.display = 'none';
-    document.getElementById('refreshBtn').disabled = false;
+  } catch(e) {
+    document.getElementById('statusDot').style.background = '#E24B4A';
+    document.getElementById('statusText').textContent = 'No data file found';
   }
 }
 
@@ -463,9 +298,11 @@ document.querySelectorAll('#marketFilter .pill').forEach(p => {
     document.querySelectorAll('#marketFilter .pill').forEach(x => x.classList.remove('active'));
     p.classList.add('active');
     currentMarket = p.dataset.market;
-    if (allCampaigns.length) render();
+    render();
   };
 });
+
+loadData();
 </script>
 </body>
 </html>
