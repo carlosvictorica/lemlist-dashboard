@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-26T14:31:23.496Z",
-  "totalCampaigns": 148,
+  "generatedAt": "2026-06-26T15:01:25.167Z",
+  "totalCampaigns": 137,
   "campaigns": [
     {
       "id": "cam_5NkuYzDzD4Wp3d445",
@@ -14,7 +14,8 @@
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2024-07-23T08:47:18.136Z"
     },
     {
       "id": "cam_ZKMYTp6z8rdKwGwer",
@@ -28,105 +29,8 @@
       "clicked": 1,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_S2j5uoe69WHLttanb",
-      "name": "2408_ES_Retail_2.1.7_LKD",
-      "market": "Other",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 57,
-      "messagesSent": 1,
-      "opened": 0,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_D2b89snQiJDRzhT39",
-      "name": "2408_ES_Retail_2.1.10_LKD_GPT",
-      "market": "Other",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 76,
-      "messagesSent": 2,
-      "opened": 2,
-      "clicked": 0,
-      "replied": 1,
-      "messagesBounced": 0,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_Lqz57RvEtNxa44AAc",
-      "name": "2407_FR_Tourism_Marketers",
-      "market": "FR",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 138,
-      "messagesSent": 2,
-      "opened": 4,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_NQjSxCWujq4vkGNF8",
-      "name": "2411_FR_Wellness-Hospitality",
-      "market": "FR",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 648,
-      "messagesSent": 1,
-      "opened": 27,
-      "clicked": 22,
-      "replied": 3,
-      "messagesBounced": 0,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_qBoMXTn3vdNXt6xXT",
-      "name": "2501_FR_Education",
-      "market": "FR",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 398,
-      "messagesSent": 1792,
-      "opened": 800,
-      "clicked": 74,
-      "replied": 30,
-      "messagesBounced": 11,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_6NBqJaAdsXs6CZLfx",
-      "name": "2501_UK_Klaviyo",
-      "market": "UKI",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 465,
-      "messagesSent": 238,
-      "opened": 55,
-      "clicked": 5,
-      "replied": 0,
-      "messagesBounced": 1,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_QL8aAzFuXzTNMMNrx",
-      "name": "2501_US_Klaviyo",
-      "market": "US",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 1641,
-      "messagesSent": 1712,
-      "opened": 606,
-      "clicked": 27,
-      "replied": 3,
-      "messagesBounced": 19,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2024-07-24T10:51:17.199Z"
     },
     {
       "id": "cam_z3mf2tzpJSuaAPMtm",
@@ -140,7 +44,8 @@
       "clicked": 160,
       "replied": 14,
       "messagesBounced": 58,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-02-05T15:51:27.301Z"
     },
     {
       "id": "cam_53ERHpSWhTEAfWdgf",
@@ -154,7 +59,8 @@
       "clicked": 1,
       "replied": 20,
       "messagesBounced": 2,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-02-14T12:38:28.166Z"
     },
     {
       "id": "cam_EfAeaNeSMx9YCvTCX",
@@ -168,7 +74,8 @@
       "clicked": 9,
       "replied": 44,
       "messagesBounced": 8,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-02-25T11:41:15.599Z"
     },
     {
       "id": "cam_XnAop6AxG66cNCZqY",
@@ -182,7 +89,8 @@
       "clicked": 16,
       "replied": 2,
       "messagesBounced": 6,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-03-05T21:14:45.041Z"
     },
     {
       "id": "cam_6xCmamhk4SH5NP7uf",
@@ -196,7 +104,8 @@
       "clicked": 47,
       "replied": 1,
       "messagesBounced": 3,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-03-07T16:12:00.453Z"
     },
     {
       "id": "cam_GweEcxYFXEp2Y63Cq",
@@ -210,7 +119,8 @@
       "clicked": 22,
       "replied": 5,
       "messagesBounced": 7,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-03-21T16:38:41.560Z"
     },
     {
       "id": "cam_HdDCQxTzaLJhca4tm",
@@ -224,7 +134,8 @@
       "clicked": 26,
       "replied": 15,
       "messagesBounced": 2,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-04-02T12:05:28.219Z"
     },
     {
       "id": "cam_vgo8qsYpq4aBwc7Gq",
@@ -238,7 +149,8 @@
       "clicked": 170,
       "replied": 12,
       "messagesBounced": 29,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-04-04T08:02:44.489Z"
     },
     {
       "id": "cam_JTXziwznyTWQxafaF",
@@ -252,7 +164,8 @@
       "clicked": 0,
       "replied": 26,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-04-04T12:26:01.266Z"
     },
     {
       "id": "cam_9n57Mn287esS8reH7",
@@ -266,7 +179,8 @@
       "clicked": 193,
       "replied": 4,
       "messagesBounced": 55,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-04-10T13:43:40.908Z"
     },
     {
       "id": "cam_gEv5gNwwEoXBmBPgo",
@@ -280,7 +194,8 @@
       "clicked": 0,
       "replied": 5,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-04-11T09:10:11.067Z"
     },
     {
       "id": "cam_CuktNQ2P7riSa5bq9",
@@ -294,7 +209,8 @@
       "clicked": 220,
       "replied": 2,
       "messagesBounced": 50,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-04-11T09:12:55.593Z"
     },
     {
       "id": "cam_rQepFA7XFGAxP5KAG",
@@ -308,7 +224,8 @@
       "clicked": 0,
       "replied": 21,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-04-11T09:20:17.127Z"
     },
     {
       "id": "cam_Lc9rZGxbwFtEoyB6Q",
@@ -322,7 +239,8 @@
       "clicked": 370,
       "replied": 20,
       "messagesBounced": 89,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-04-11T09:23:52.890Z"
     },
     {
       "id": "cam_5xtoymbHJqJvCsaaa",
@@ -336,7 +254,8 @@
       "clicked": 0,
       "replied": 7,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-04-11T09:28:44.322Z"
     },
     {
       "id": "cam_KoqsL34ong4tMko2E",
@@ -350,7 +269,8 @@
       "clicked": 207,
       "replied": 16,
       "messagesBounced": 40,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-04-11T09:29:50.509Z"
     },
     {
       "id": "cam_9mXpsWDnbegAXvHEq",
@@ -364,7 +284,8 @@
       "clicked": 72,
       "replied": 9,
       "messagesBounced": 12,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-04-25T09:43:11.457Z"
     },
     {
       "id": "cam_ELjhCSyzRntPrSWSa",
@@ -378,7 +299,8 @@
       "clicked": 98,
       "replied": 15,
       "messagesBounced": 16,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-05-08T08:53:37.159Z"
     },
     {
       "id": "cam_fRzMZYFGyvptXg6Zy",
@@ -392,7 +314,8 @@
       "clicked": 354,
       "replied": 30,
       "messagesBounced": 59,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-05-08T09:02:17.491Z"
     },
     {
       "id": "cam_aCaqGmA7u98duBsyP",
@@ -406,7 +329,8 @@
       "clicked": 234,
       "replied": 7,
       "messagesBounced": 59,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-05-08T09:04:38.623Z"
     },
     {
       "id": "cam_r3xiMuMqT9YZbiaQL",
@@ -420,7 +344,8 @@
       "clicked": 144,
       "replied": 8,
       "messagesBounced": 46,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-05-08T09:07:33.855Z"
     },
     {
       "id": "cam_qFNGzQdnA5w9YPrqt",
@@ -434,7 +359,8 @@
       "clicked": 6,
       "replied": 2,
       "messagesBounced": 1,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-06-02T18:32:48.836Z"
     },
     {
       "id": "cam_7Kyvkm2bDR3BdhfpH",
@@ -448,7 +374,8 @@
       "clicked": 52,
       "replied": 4,
       "messagesBounced": 14,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-06-04T02:13:25.700Z"
     },
     {
       "id": "cam_RN7ze5AjvbGsfWDAB",
@@ -462,7 +389,8 @@
       "clicked": 245,
       "replied": 3,
       "messagesBounced": 61,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-06-04T14:35:24.720Z"
     },
     {
       "id": "cam_GJc7vT5ii4YKhvy46",
@@ -476,7 +404,8 @@
       "clicked": 23,
       "replied": 5,
       "messagesBounced": 6,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-06-05T07:17:50.333Z"
     },
     {
       "id": "cam_tWHo3CMpTTJ487NJ9",
@@ -490,7 +419,8 @@
       "clicked": 86,
       "replied": 23,
       "messagesBounced": 26,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-06-13T14:00:56.677Z"
     },
     {
       "id": "cam_Fvgtk3hwAb38YpqsE",
@@ -504,7 +434,8 @@
       "clicked": 244,
       "replied": 20,
       "messagesBounced": 77,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-06-13T14:04:31.953Z"
     },
     {
       "id": "cam_qg9bRNz5AxDxFqduB",
@@ -518,7 +449,8 @@
       "clicked": 47,
       "replied": 0,
       "messagesBounced": 45,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-06-13T14:06:11.316Z"
     },
     {
       "id": "cam_s3ikPuXxu7Adn8Ler",
@@ -532,7 +464,8 @@
       "clicked": 0,
       "replied": 4,
       "messagesBounced": 49,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-06-13T14:08:24.967Z"
     },
     {
       "id": "cam_FYWJ5yp69ZQCnCeEF",
@@ -546,7 +479,8 @@
       "clicked": 35,
       "replied": 0,
       "messagesBounced": 27,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-06-17T09:04:52.907Z"
     },
     {
       "id": "cam_sfMdPL8GptGu7yQPK",
@@ -560,7 +494,8 @@
       "clicked": 99,
       "replied": 0,
       "messagesBounced": 49,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-06-17T09:09:43.823Z"
     },
     {
       "id": "cam_b7iqKPLsWP3EFuJRs",
@@ -574,7 +509,8 @@
       "clicked": 202,
       "replied": 2,
       "messagesBounced": 32,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-06-17T09:11:47.260Z"
     },
     {
       "id": "cam_AMDPRFR8GAxfkiP22",
@@ -588,7 +524,8 @@
       "clicked": 105,
       "replied": 3,
       "messagesBounced": 31,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-06-17T09:13:06.748Z"
     },
     {
       "id": "cam_zfWRmB2Ap77nZT63d",
@@ -602,7 +539,8 @@
       "clicked": 47,
       "replied": 6,
       "messagesBounced": 36,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-06-26T14:48:49.958Z"
     },
     {
       "id": "cam_gj5JpENsBNLPrWCZx",
@@ -616,7 +554,8 @@
       "clicked": 0,
       "replied": 2,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-06-26T14:49:52.699Z"
     },
     {
       "id": "cam_yBAB5PcpDGuo9CerE",
@@ -630,7 +569,8 @@
       "clicked": 43,
       "replied": 30,
       "messagesBounced": 20,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-07-24T08:59:15.473Z"
     },
     {
       "id": "cam_pnpG4fuDjTC65khQY",
@@ -644,7 +584,8 @@
       "clicked": 84,
       "replied": 31,
       "messagesBounced": 21,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-07-24T13:41:54.155Z"
     },
     {
       "id": "cam_LGeCvFYgvp92y5Dxd",
@@ -658,7 +599,8 @@
       "clicked": 0,
       "replied": 40,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-08-13T14:09:47.504Z"
     },
     {
       "id": "cam_AzadBvASJFYsgfyQE",
@@ -672,7 +614,8 @@
       "clicked": 157,
       "replied": 0,
       "messagesBounced": 12,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-08-25T21:04:32.556Z"
     },
     {
       "id": "cam_pYg9jDqaEzy6FiyWG",
@@ -686,7 +629,8 @@
       "clicked": 2,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-08-26T01:40:46.735Z"
     },
     {
       "id": "cam_HoCBA5qJd6Dnq79cx",
@@ -700,7 +644,8 @@
       "clicked": 0,
       "replied": 18,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-09-02T21:35:30.216Z"
     },
     {
       "id": "cam_4zmbkmJFKdx5tfP7y",
@@ -714,7 +659,8 @@
       "clicked": 13,
       "replied": 0,
       "messagesBounced": 16,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-09-04T16:21:15.258Z"
     },
     {
       "id": "cam_buYecvPvP9gWsWCNS",
@@ -728,7 +674,8 @@
       "clicked": 124,
       "replied": 7,
       "messagesBounced": 76,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-09-24T14:32:28.620Z"
     },
     {
       "id": "cam_EQ8LbLdpmymeMw2BK",
@@ -742,7 +689,8 @@
       "clicked": 138,
       "replied": 11,
       "messagesBounced": 68,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-09-24T14:35:58.721Z"
     },
     {
       "id": "cam_Ka8nzNCJXg5XTbsKo",
@@ -756,7 +704,8 @@
       "clicked": 13,
       "replied": 1,
       "messagesBounced": 8,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-09-24T14:36:21.943Z"
     },
     {
       "id": "cam_7WBo3GMETwgvz56QL",
@@ -770,7 +719,8 @@
       "clicked": 10,
       "replied": 4,
       "messagesBounced": 9,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-09-24T14:36:34.626Z"
     },
     {
       "id": "cam_QTHFhJcT46yXWmNWt",
@@ -784,7 +734,8 @@
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-09-25T16:21:20.365Z"
     },
     {
       "id": "cam_ddT3x2km8AigXthdq",
@@ -798,119 +749,8 @@
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_nXBjhLk4JMtcZwBaS",
-      "name": "[ABX][Clay][FR] Past champions | CTO",
-      "market": "FR",
-      "isField": false,
-      "status": "paused",
-      "nbLeads": 4,
-      "messagesSent": 6,
-      "opened": 2,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_sbkv77b4cjBwLBNWS",
-      "name": "[ABX][Clay][US] New Hire | B2C Industries | E-commerce roles",
-      "market": "US",
-      "isField": false,
-      "status": "running",
-      "nbLeads": 123,
-      "messagesSent": 286,
-      "opened": 99,
-      "clicked": 26,
-      "replied": 0,
-      "messagesBounced": 10,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_QqM6vv454T5HNafkf",
-      "name": "[ABX][Clay][US] New Hire | B2C Industries | CTO roles",
-      "market": "US",
-      "isField": false,
-      "status": "running",
-      "nbLeads": 60,
-      "messagesSent": 135,
-      "opened": 53,
-      "clicked": 9,
-      "replied": 0,
-      "messagesBounced": 1,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_j3zdWwWBE9d6SLRAM",
-      "name": "[ABX][Clay][US] New Hire | B2C Industries | Senior marketer roles",
-      "market": "US",
-      "isField": false,
-      "status": "running",
-      "nbLeads": 2044,
-      "messagesSent": 4655,
-      "opened": 1838,
-      "clicked": 209,
-      "replied": 5,
-      "messagesBounced": 136,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_Ww6ujH99xTR5jybZ5",
-      "name": "[ABX][Clay][US] New Hire | B2C Industries | Marketer roles",
-      "market": "US",
-      "isField": false,
-      "status": "running",
-      "nbLeads": 368,
-      "messagesSent": 665,
-      "opened": 247,
-      "clicked": 35,
-      "replied": 1,
-      "messagesBounced": 25,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_ugnSdqkxdNbv5zHza",
-      "name": "[ABX][Clay][DE] New Hire | B2C Industries | E-commerce roles",
-      "market": "DACH",
-      "isField": false,
-      "status": "paused",
-      "nbLeads": 58,
-      "messagesSent": 40,
-      "opened": 26,
-      "clicked": 4,
-      "replied": 0,
-      "messagesBounced": 2,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_fha9dCjZ3TdMrm2BJ",
-      "name": "[ABX][Clay][DE] New Hire | B2C Industries | Senior marketer roles",
-      "market": "DACH",
-      "isField": false,
-      "status": "paused",
-      "nbLeads": 349,
-      "messagesSent": 181,
-      "opened": 85,
-      "clicked": 24,
-      "replied": 0,
-      "messagesBounced": 19,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_yTTXnixWdhLwBBvBZ",
-      "name": "[ABX][Clay][DE] New Hire | B2C Industries | Marketer roles",
-      "market": "DACH",
-      "isField": false,
-      "status": "paused",
-      "nbLeads": 76,
-      "messagesSent": 32,
-      "opened": 13,
-      "clicked": 1,
-      "replied": 0,
-      "messagesBounced": 1,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-09-25T16:26:34.660Z"
     },
     {
       "id": "cam_3agwp4ABXCEWYWqt4",
@@ -924,7 +764,8 @@
       "clicked": 3,
       "replied": 6,
       "messagesBounced": 4,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-10-13T15:54:37.869Z"
     },
     {
       "id": "cam_HTXsMdEE3BHukeKdj",
@@ -938,7 +779,8 @@
       "clicked": 0,
       "replied": 2,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-10-13T15:55:02.489Z"
     },
     {
       "id": "cam_fSHcSYa4SWizx3HKy",
@@ -952,7 +794,8 @@
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-10-14T08:17:52.861Z"
     },
     {
       "id": "cam_pkxTj4WMoiaTj3psA",
@@ -966,7 +809,8 @@
       "clicked": 216,
       "replied": 8,
       "messagesBounced": 211,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-10-14T11:46:57.757Z"
     },
     {
       "id": "cam_nMu23w42x8PNajbfD",
@@ -980,7 +824,8 @@
       "clicked": 25,
       "replied": 0,
       "messagesBounced": 38,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-10-16T12:00:38.983Z"
     },
     {
       "id": "cam_5nGfBSfdXL6bh9X4i",
@@ -994,7 +839,8 @@
       "clicked": 25,
       "replied": 2,
       "messagesBounced": 14,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-10-16T14:35:06.824Z"
     },
     {
       "id": "cam_7WLY92pKkc9hsgAvN",
@@ -1008,7 +854,8 @@
       "clicked": 0,
       "replied": 7,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-10-22T15:43:12.469Z"
     },
     {
       "id": "cam_ewcxuZNrRs7YPjhSL",
@@ -1022,7 +869,8 @@
       "clicked": 0,
       "replied": 25,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-10-28T04:07:17.956Z"
     },
     {
       "id": "cam_QtHTX47uJdXb7SFbz",
@@ -1036,7 +884,8 @@
       "clicked": 27,
       "replied": 7,
       "messagesBounced": 15,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-11-04T09:29:13.561Z"
     },
     {
       "id": "cam_St88PPDuTJSdExMqQ",
@@ -1050,7 +899,8 @@
       "clicked": 0,
       "replied": 2,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-11-05T14:57:15.383Z"
     },
     {
       "id": "cam_CxR9Bgea5TW6ZzCTb",
@@ -1064,7 +914,8 @@
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-11-11T18:30:17.942Z"
     },
     {
       "id": "cam_MA6oRqm3nTWAn3hqw",
@@ -1078,7 +929,8 @@
       "clicked": 755,
       "replied": 4,
       "messagesBounced": 158,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-11-18T20:18:59.605Z"
     },
     {
       "id": "cam_GQPd6pQ7Gzz9EyK9M",
@@ -1092,7 +944,8 @@
       "clicked": 182,
       "replied": 2,
       "messagesBounced": 43,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-11-18T20:30:27.348Z"
     },
     {
       "id": "cam_8FbbKKAKwmiJmDdAA",
@@ -1106,63 +959,23 @@
       "clicked": 140,
       "replied": 3,
       "messagesBounced": 41,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-11-18T20:38:49.210Z"
     },
     {
-      "id": "cam_b6Qi4FKrubh83txfd",
-      "name": "US - Channing LinkedIn Audience Expansion Campaign",
-      "market": "US",
-      "isField": false,
-      "status": "running",
-      "nbLeads": 1989,
-      "messagesSent": 339,
-      "opened": 339,
-      "clicked": 0,
-      "replied": 29,
-      "messagesBounced": 0,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_2iFjid6pNf2hiMHtf",
-      "name": "NRF Campaign",
-      "market": "Other",
-      "isField": false,
-      "status": "paused",
-      "nbLeads": 598,
-      "messagesSent": 565,
-      "opened": 203,
-      "clicked": 0,
-      "replied": 45,
-      "messagesBounced": 22,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_ubiQ35Q9GmQ7JQ6Np",
+      "id": "cam_YAgvbLZiCXBhdKqFp",
       "name": "AI - CSV - Brian’s Campaign",
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 15,
-      "messagesSent": 10,
-      "opened": 5,
+      "nbLeads": 23,
+      "messagesSent": 110,
+      "opened": 58,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_xmNyzgrdJuW2X4qBY",
-      "name": "Brian's campaign (1)",
-      "market": "Other",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 14,
-      "messagesSent": 53,
-      "opened": 0,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 5,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2025-12-22T20:28:42.400Z"
     },
     {
       "id": "cam_diNW8h2W27x2p5Zry",
@@ -1176,7 +989,8 @@
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 5,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-01-06T15:12:18.080Z"
     },
     {
       "id": "cam_JRRbaSdLgnge2fE3P",
@@ -1190,7 +1004,8 @@
       "clicked": 0,
       "replied": 2,
       "messagesBounced": 40,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-01-06T18:56:17.558Z"
     },
     {
       "id": "cam_6FeW7EFf6xyNawZuK",
@@ -1204,7 +1019,8 @@
       "clicked": 0,
       "replied": 1,
       "messagesBounced": 13,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-01-09T21:10:35.571Z"
     },
     {
       "id": "cam_FsojruwMGhDXtjdWb",
@@ -1218,7 +1034,8 @@
       "clicked": 0,
       "replied": 3,
       "messagesBounced": 1,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-01-12T10:03:15.122Z"
     },
     {
       "id": "cam_evv9QkzwEefzCtC9o",
@@ -1232,7 +1049,8 @@
       "clicked": 0,
       "replied": 2,
       "messagesBounced": 5,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-01-13T09:15:43.329Z"
     },
     {
       "id": "cam_Pv9FbmxmL4HGN66sY",
@@ -1246,7 +1064,8 @@
       "clicked": 0,
       "replied": 1,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-01-13T13:42:56.132Z"
     },
     {
       "id": "cam_nxut76cf4Wv8ZDccS",
@@ -1260,7 +1079,8 @@
       "clicked": 1,
       "replied": 3,
       "messagesBounced": 3,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-01-20T14:57:56.369Z"
     },
     {
       "id": "cam_QKdZ34gTug7SMEYkX",
@@ -1274,7 +1094,8 @@
       "clicked": 6,
       "replied": 1,
       "messagesBounced": 11,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-01-23T17:22:13.871Z"
     },
     {
       "id": "cam_z9E69ygkn7aHzKTEY",
@@ -1288,7 +1109,8 @@
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-01-26T21:24:39.445Z"
     },
     {
       "id": "cam_by4AAmBqZ2XsKiznk",
@@ -1302,7 +1124,8 @@
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 1,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-01-27T13:44:58.915Z"
     },
     {
       "id": "cam_HyGQKCavveQXjWous",
@@ -1316,7 +1139,8 @@
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 3,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-01-27T17:24:28.725Z"
     },
     {
       "id": "cam_zPuRwhWEQS3cQhnZc",
@@ -1330,7 +1154,128 @@
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-01-27T19:23:44.012Z"
+    },
+    {
+      "id": "cam_8rxWhN7MrskaroDDY",
+      "name": "AI - Lookalike - Brian’s Campaign",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 48,
+      "messagesSent": 195,
+      "opened": 82,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 4,
+      "meetingBooked": 0,
+      "createdAt": "2026-01-28T22:40:59.483Z"
+    },
+    {
+      "id": "cam_ne5hvKrnTN8WSbt2c",
+      "name": "Nurture",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 1,
+      "messagesSent": 5,
+      "opened": 5,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-01-28T23:06:02.120Z"
+    },
+    {
+      "id": "cam_xQHy6ZFiqdeZawj5B",
+      "name": "Nurture",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 1,
+      "messagesSent": 5,
+      "opened": 5,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-01-29T14:35:18.250Z"
+    },
+    {
+      "id": "cam_Ryro7YDFofLEzjh8m",
+      "name": "Nurture",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 1,
+      "messagesSent": 5,
+      "opened": 4,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-01-29T16:17:41.849Z"
+    },
+    {
+      "id": "cam_FZdemCksDKJaHqoia",
+      "name": "Nurture",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 2,
+      "messagesSent": 10,
+      "opened": 8,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-01-29T16:47:34.599Z"
+    },
+    {
+      "id": "cam_dys7X2kW8fvpLAmjR",
+      "name": "Tabetha x Matthew Retail Outbound February 2026",
+      "market": "Other",
+      "isField": false,
+      "status": "paused",
+      "nbLeads": 113,
+      "messagesSent": 287,
+      "opened": 107,
+      "clicked": 0,
+      "replied": 2,
+      "messagesBounced": 5,
+      "meetingBooked": 0,
+      "createdAt": "2026-01-29T20:12:32.270Z"
+    },
+    {
+      "id": "cam_m7TBiewwm4BBDX7ip",
+      "name": "Wallet Cadence",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 31,
+      "messagesSent": 133,
+      "opened": 44,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 3,
+      "meetingBooked": 0,
+      "createdAt": "2026-02-02T16:12:36.060Z"
+    },
+    {
+      "id": "cam_PRY6bc6CqPo23RQks",
+      "name": "CTO",
+      "market": "Other",
+      "isField": false,
+      "status": "running",
+      "nbLeads": 127,
+      "messagesSent": 564,
+      "opened": 240,
+      "clicked": 0,
+      "replied": 2,
+      "messagesBounced": 6,
+      "meetingBooked": 0,
+      "createdAt": "2026-02-04T20:14:37.814Z"
     },
     {
       "id": "cam_XJjx2gSmE942vZLWG",
@@ -1344,7 +1289,8 @@
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-02-05T22:15:19.443Z"
     },
     {
       "id": "cam_kzA8G34zHJsJoCvGg",
@@ -1358,7 +1304,8 @@
       "clicked": 6,
       "replied": 0,
       "messagesBounced": 1,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-02-06T19:23:42.279Z"
     },
     {
       "id": "cam_9iFF6GfPGQpJixx3Z",
@@ -1372,7 +1319,8 @@
       "clicked": 0,
       "replied": 29,
       "messagesBounced": 22,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-02-09T18:43:23.143Z"
     },
     {
       "id": "cam_Lb5JhFyCw8WwQLD9v",
@@ -1386,7 +1334,8 @@
       "clicked": 0,
       "replied": 34,
       "messagesBounced": 11,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-02-09T18:50:56.844Z"
     },
     {
       "id": "cam_WNz8LnfJE8Qj76S2z",
@@ -1400,119 +1349,173 @@
       "clicked": 18,
       "replied": 19,
       "messagesBounced": 41,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-02-09T18:51:54.160Z"
     },
     {
-      "id": "cam_BLyKaR3DPvikp7YbP",
-      "name": "Matthew Wingstop account outreach 2026 Jan-Feb Copy Copy",
+      "id": "cam_XNGJfN3Tg23bfLui7",
+      "name": "10 Step Automated Cadence",
       "market": "Other",
       "isField": false,
       "status": "ended",
-      "nbLeads": 4,
-      "messagesSent": 5,
-      "opened": 4,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0
+      "nbLeads": 377,
+      "messagesSent": 3111,
+      "opened": 1003,
+      "clicked": 136,
+      "replied": 6,
+      "messagesBounced": 71,
+      "meetingBooked": 0,
+      "createdAt": "2026-03-06T15:41:03.130Z"
     },
     {
-      "id": "cam_egB4dkY6gd9cToHK9",
-      "name": "Matthew Target Accounts - February 2026",
+      "id": "cam_pdW4RCFxFPREAfgdb",
+      "name": "Email API - Trigger Points",
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 45,
-      "messagesSent": 82,
-      "opened": 48,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 6,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_SeNyHqC9QpC6kcAmd",
-      "name": "Shoptalk Speaker Invite",
-      "market": "Other",
-      "isField": true,
-      "status": "paused",
-      "nbLeads": 20,
-      "messagesSent": 7,
-      "opened": 4,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_PZsm8KDd59hWtHqZz",
-      "name": "Multi-Unit Franchising Conference Speakers",
-      "market": "Other",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 1,
-      "messagesSent": 1,
-      "opened": 1,
-      "clicked": 0,
+      "nbLeads": 69,
+      "messagesSent": 331,
+      "opened": 168,
+      "clicked": 39,
       "replied": 1,
-      "messagesBounced": 0,
-      "meetingBooked": 0
+      "messagesBounced": 6,
+      "meetingBooked": 0,
+      "createdAt": "2026-03-06T18:26:16.257Z"
     },
     {
-      "id": "cam_SmzFM8TiKNHRWGrmC",
-      "name": "Shoptalk Dinner Invite -  Past Field SQOs or SQLs",
+      "id": "cam_XJoBsbb7iuL8Ej5ku",
+      "name": "Shoptalk co-host partner inquiry",
       "market": "Other",
       "isField": true,
       "status": "paused",
-      "nbLeads": 118,
-      "messagesSent": 32,
-      "opened": 6,
+      "nbLeads": 40,
+      "messagesSent": 11,
+      "opened": 9,
       "clicked": 0,
-      "replied": 3,
-      "messagesBounced": 3,
-      "meetingBooked": 0
+      "replied": 5,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-03-07T02:06:46.502Z"
     },
     {
-      "id": "cam_xh87y6urL3DNduxhJ",
-      "name": "Brian's campaign (11)",
+      "id": "cam_7ynuYWJg37QGS5D2R",
+      "name": "AI - Linkedin - Tabetha’s Campaign",
       "market": "Other",
       "isField": false,
       "status": "ended",
       "nbLeads": 17,
-      "messagesSent": 17,
-      "opened": 0,
+      "messagesSent": 57,
+      "opened": 29,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 2,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-03-09T18:26:42.859Z"
     },
     {
-      "id": "cam_rgtiTM8Wxjt6XfRPB",
-      "name": "Joe 14 touchpoint cadence (targeted accounts)",
+      "id": "cam_wAPCucbGbjqQZTpjS",
+      "name": "SEQ-US-RETAIL-WARM-MAIL",
+      "market": "US",
+      "isField": false,
+      "status": "paused",
+      "nbLeads": 341,
+      "messagesSent": 765,
+      "opened": 341,
+      "clicked": 0,
+      "replied": 3,
+      "messagesBounced": 17,
+      "meetingBooked": 0,
+      "createdAt": "2026-03-10T00:07:52.556Z"
+    },
+    {
+      "id": "cam_esaaSMfGhm3yWsAya",
+      "name": "Pickett | 1:1 Cadence",
       "market": "Other",
       "isField": false,
-      "status": "ended",
-      "nbLeads": 18,
-      "messagesSent": 89,
-      "opened": 43,
-      "clicked": 3,
-      "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0
+      "status": "paused",
+      "nbLeads": 81,
+      "messagesSent": 249,
+      "opened": 91,
+      "clicked": 0,
+      "replied": 1,
+      "messagesBounced": 6,
+      "meetingBooked": 0,
+      "createdAt": "2026-03-10T15:20:48.881Z"
     },
     {
-      "id": "cam_dfZqEbnANzAubXjnj",
-      "name": "Email API Play",
+      "id": "cam_xD4qEwmL6PtY87Bxt",
+      "name": "Tabetha's Best 10 Steps",
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 89,
-      "messagesSent": 334,
-      "opened": 108,
+      "nbLeads": 215,
+      "messagesSent": 1744,
+      "opened": 714,
+      "clicked": 68,
+      "replied": 3,
+      "messagesBounced": 11,
+      "meetingBooked": 0,
+      "createdAt": "2026-03-10T19:57:18.916Z"
+    },
+    {
+      "id": "cam_FHKunD6hG7zyvExAM",
+      "name": "David's 10 steps",
+      "market": "Other",
+      "isField": false,
+      "status": "running",
+      "nbLeads": 83,
+      "messagesSent": 779,
+      "opened": 284,
+      "clicked": 28,
+      "replied": 0,
+      "messagesBounced": 6,
+      "meetingBooked": 0,
+      "createdAt": "2026-03-11T17:57:50.723Z"
+    },
+    {
+      "id": "cam_uGsc3RRX7tNgxY4js",
+      "name": "SEQ-US-MEDIA-WARM-MAIL",
+      "market": "US",
+      "isField": false,
+      "status": "paused",
+      "nbLeads": 73,
+      "messagesSent": 150,
+      "opened": 57,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 5,
+      "meetingBooked": 0,
+      "createdAt": "2026-03-11T19:37:48.427Z"
+    },
+    {
+      "id": "cam_KX5LrKcKp5cjWMSCc",
+      "name": "SEQ-US-LIFESTYLE-WARM-MAIL",
+      "market": "US",
+      "isField": false,
+      "status": "paused",
+      "nbLeads": 67,
+      "messagesSent": 79,
+      "opened": 16,
       "clicked": 0,
       "replied": 1,
       "messagesBounced": 5,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-03-11T19:56:40.252Z"
+    },
+    {
+      "id": "cam_sb2HX8hW7rCPjobgq",
+      "name": "SEQ-US-RETAIL-WARM-LINKEDIN",
+      "market": "US",
+      "isField": false,
+      "status": "running",
+      "nbLeads": 374,
+      "messagesSent": 51,
+      "opened": 44,
+      "clicked": 0,
+      "replied": 3,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-03-12T19:00:18.966Z"
     },
     {
       "id": "cam_mcibzqrExbFpLNB6L",
@@ -1526,7 +1529,8 @@
       "clicked": 0,
       "replied": 3,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-03-12T19:05:58.873Z"
     },
     {
       "id": "cam_HPfbxCtLgoxDY3w3m",
@@ -1540,7 +1544,8 @@
       "clicked": 0,
       "replied": 1,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-03-12T19:09:36.239Z"
     },
     {
       "id": "cam_29KWd6aLyz9rj3o8G",
@@ -1554,231 +1559,203 @@
       "clicked": 8,
       "replied": 1,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-03-19T21:14:01.513Z"
     },
     {
-      "id": "cam_TWFpx6HW3j75Fd6Zc",
-      "name": "Shoptalk - Agency outreach",
-      "market": "Other",
-      "isField": true,
+      "id": "cam_7nRjFKi6mnTeBhB48",
+      "name": "Partnerships - US - Batch 2 - April 2026",
+      "market": "US",
+      "isField": false,
       "status": "ended",
-      "nbLeads": 22,
-      "messagesSent": 22,
-      "opened": 10,
+      "nbLeads": 27,
+      "messagesSent": 93,
+      "opened": 49,
       "clicked": 2,
-      "replied": 0,
-      "messagesBounced": 1,
-      "meetingBooked": 0
+      "replied": 5,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-04-14T13:27:52.185Z"
     },
     {
-      "id": "cam_NTZ3KhJ8jXSQz5nHg",
-      "name": "Shoptalk Dinner Invite - Last minute",
-      "market": "Other",
-      "isField": true,
-      "status": "paused",
-      "nbLeads": 159,
-      "messagesSent": 106,
-      "opened": 65,
-      "clicked": 0,
-      "replied": 2,
-      "messagesBounced": 1,
-      "meetingBooked": 0
+      "id": "cam_2SqQhzKsTSK8BqBH6",
+      "name": "PTR_UK_Klaviyo_Batch2",
+      "market": "UKI",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 56,
+      "messagesSent": 175,
+      "opened": 78,
+      "clicked": 2,
+      "replied": 3,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-04-14T13:29:34.016Z"
     },
     {
-      "id": "cam_jLBWJJFR4j9Fd3ekJ",
-      "name": "Shoptalk - Dinner - perosnal note from Channing",
+      "id": "cam_6mG8QFeXwJiag6ask",
+      "name": "CONFIRMED - Retail Tech Show London 2026 Attendees",
       "market": "Other",
-      "isField": true,
+      "isField": false,
       "status": "paused",
-      "nbLeads": 32,
-      "messagesSent": 14,
-      "opened": 14,
-      "clicked": 0,
+      "nbLeads": 683,
+      "messagesSent": 185,
+      "opened": 134,
+      "clicked": 12,
+      "replied": 11,
+      "messagesBounced": 7,
+      "meetingBooked": 0,
+      "createdAt": "2026-04-14T17:11:17.318Z"
+    },
+    {
+      "id": "cam_TY3hTbhBaYkHaJK8C",
+      "name": "PREDICTED - Retail Tech Show London 2026 Attendees-",
+      "market": "Other",
+      "isField": false,
+      "status": "paused",
+      "nbLeads": 217,
+      "messagesSent": 171,
+      "opened": 102,
+      "clicked": 7,
+      "replied": 15,
+      "messagesBounced": 7,
+      "meetingBooked": 0,
+      "createdAt": "2026-04-14T17:31:49.857Z"
+    },
+    {
+      "id": "cam_cSAAQcJuZZfyWcYnG",
+      "name": "SubSummit past connections",
+      "market": "Other",
+      "isField": false,
+      "status": "paused",
+      "nbLeads": 112,
+      "messagesSent": 110,
+      "opened": 43,
+      "clicked": 7,
       "replied": 7,
-      "messagesBounced": 0,
-      "meetingBooked": 0
+      "messagesBounced": 7,
+      "meetingBooked": 0,
+      "createdAt": "2026-04-15T16:22:47.165Z"
     },
     {
-      "id": "cam_euCKkpwkqYqkEaRnu",
-      "name": "PTR_UK_Klaviyo_Batch 1",
-      "market": "UKI",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 38,
-      "messagesSent": 120,
-      "opened": 39,
-      "clicked": 0,
-      "replied": 6,
-      "messagesBounced": 2,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_SEmCWEj5kWtnoKhqE",
-      "name": "Partnerships - US - Batch 1 - March 2026 - Email +LKD",
-      "market": "US",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 41,
-      "messagesSent": 125,
-      "opened": 63,
-      "clicked": 5,
-      "replied": 6,
-      "messagesBounced": 0,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_RajbEu8xCQhqtdR4b",
-      "name": "Partnerships - US - Batch 2 - April 2026 - LKD only",
+      "id": "cam_g9NnAf7jyWn5BtuYH",
+      "name": "SEQ-US-RETAIL-WARM-MAIL V4-2",
       "market": "US",
       "isField": false,
       "status": "running",
-      "nbLeads": 5,
-      "messagesSent": 2,
-      "opened": 1,
-      "clicked": 0,
+      "nbLeads": 373,
+      "messagesSent": 825,
+      "opened": 354,
+      "clicked": 36,
       "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0
+      "messagesBounced": 8,
+      "meetingBooked": 0,
+      "createdAt": "2026-04-16T00:12:23.962Z"
     },
     {
-      "id": "cam_3TF8dtia3Zfp5EAoi",
-      "name": "2604_PTR_UK_Retail_Tech",
-      "market": "UKI",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 17,
-      "messagesSent": 25,
-      "opened": 7,
-      "clicked": 1,
-      "replied": 0,
-      "messagesBounced": 11,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_td9XYBhDTirZj7WzP",
-      "name": "TR - ABM",
-      "market": "Other",
+      "id": "cam_4sdAz27AFAqseE2Dy",
+      "name": "SEQ-US-MEDIA-WARM-MAIL V4-2",
+      "market": "US",
       "isField": false,
       "status": "running",
-      "nbLeads": 25,
-      "messagesSent": 81,
-      "opened": 31,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 5,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_YqB9vrK6Jurhf4uLc",
-      "name": "SEQ-NORDIC-WARM-MAIL",
-      "market": "Other",
-      "isField": false,
-      "status": "paused",
-      "nbLeads": 138,
+      "nbLeads": 127,
       "messagesSent": 231,
-      "opened": 163,
-      "clicked": 4,
-      "replied": 7,
-      "messagesBounced": 28,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_DdfcWjfpqHErXuWRG",
-      "name": "Pickett - Alium V2",
-      "market": "Other",
-      "isField": false,
-      "status": "running",
-      "nbLeads": 16,
-      "messagesSent": 36,
-      "opened": 8,
-      "clicked": 0,
+      "opened": 87,
+      "clicked": 3,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-04-16T00:21:22.106Z"
     },
     {
-      "id": "cam_kR66CvonjDLTeajCt",
-      "name": "PTR_UK_Bloomreach_Batch 3",
-      "market": "UKI",
+      "id": "cam_E4xypnLtDKqShv53E",
+      "name": "SEQ-US-LIFESTYLE-WARM-MAIL V4-2",
+      "market": "US",
       "isField": false,
       "status": "running",
-      "nbLeads": 48,
-      "messagesSent": 161,
-      "opened": 71,
+      "nbLeads": 78,
+      "messagesSent": 115,
+      "opened": 37,
       "clicked": 2,
-      "replied": 6,
-      "messagesBounced": 5,
-      "meetingBooked": 0
+      "replied": 0,
+      "messagesBounced": 1,
+      "meetingBooked": 0,
+      "createdAt": "2026-04-16T00:26:55.954Z"
     },
     {
-      "id": "cam_dAqpRrBy69iKkJQug",
-      "name": "MLS Campaign",
+      "id": "cam_ZKRgdAwomDb7bBDF4",
+      "name": "Franchise Engagement survey 2026",
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 52,
-      "messagesSent": 192,
-      "opened": 103,
-      "clicked": 0,
+      "nbLeads": 120,
+      "messagesSent": 200,
+      "opened": 77,
+      "clicked": 5,
       "replied": 0,
-      "messagesBounced": 1,
-      "meetingBooked": 0
+      "messagesBounced": 8,
+      "meetingBooked": 0,
+      "createdAt": "2026-04-20T11:19:06.918Z"
     },
     {
-      "id": "cam_Wo5MAAHfGkd5Bjiyg",
-      "name": "Brian's campaign (17)",
+      "id": "cam_btergBLGs9bqA5Pkm",
+      "name": "Email API - No trigger points V2",
       "market": "Other",
       "isField": false,
       "status": "running",
       "nbLeads": 32,
-      "messagesSent": 147,
-      "opened": 45,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 2,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_TnNaqa7BtJpwgJkrA",
-      "name": "NHL Campaign",
-      "market": "Other",
-      "isField": false,
-      "status": "running",
-      "nbLeads": 60,
-      "messagesSent": 236,
-      "opened": 87,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 2,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_RQrjtfSqcFK3nTNk3",
-      "name": "Media Campaign",
-      "market": "Other",
-      "isField": false,
-      "status": "running",
-      "nbLeads": 20,
-      "messagesSent": 85,
+      "messagesSent": 63,
       "opened": 19,
       "clicked": 0,
       "replied": 0,
-      "messagesBounced": 2,
-      "meetingBooked": 0
+      "messagesBounced": 1,
+      "meetingBooked": 0,
+      "createdAt": "2026-04-20T14:25:26.669Z"
     },
     {
-      "id": "cam_Zk5NSruZdbdEzhjno",
-      "name": "PTR_UK_Bloomreach_Batch 4",
-      "market": "UKI",
+      "id": "cam_gbBKGATfM8ZLpgj6q",
+      "name": "SubSummmit 2026 (registered attendees)",
+      "market": "Other",
       "isField": false,
-      "status": "running",
-      "nbLeads": 42,
-      "messagesSent": 137,
-      "opened": 62,
-      "clicked": 1,
-      "replied": 3,
-      "messagesBounced": 4,
-      "meetingBooked": 0
+      "status": "paused",
+      "nbLeads": 1825,
+      "messagesSent": 42,
+      "opened": 22,
+      "clicked": 2,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-04-20T17:44:51.445Z"
+    },
+    {
+      "id": "cam_7ECNG2CHKPBH8WaEr",
+      "name": "OMR Festival 2026 - PRO Attendees",
+      "market": "Other",
+      "isField": false,
+      "status": "paused",
+      "nbLeads": 279,
+      "messagesSent": 303,
+      "opened": 176,
+      "clicked": 26,
+      "replied": 14,
+      "messagesBounced": 44,
+      "meetingBooked": 0,
+      "createdAt": "2026-04-22T09:49:02.344Z"
+    },
+    {
+      "id": "cam_7TozsLeTKfYemMYLJ",
+      "name": "Alium",
+      "market": "Other",
+      "isField": false,
+      "status": "archived",
+      "nbLeads": 19,
+      "messagesSent": 3,
+      "opened": 3,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-04-22T18:18:12.888Z"
     },
     {
       "id": "cam_gPExNoQNhps33PeDP",
@@ -1792,7 +1769,8 @@
       "clicked": 1,
       "replied": 0,
       "messagesBounced": 58,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-05-19T09:05:51.320Z"
     },
     {
       "id": "cam_3gJPezrKax574QtuS",
@@ -1806,7 +1784,8 @@
       "clicked": 20,
       "replied": 4,
       "messagesBounced": 19,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-05-19T09:27:26.325Z"
     },
     {
       "id": "cam_ikAAGJY9xDvYGzWCG",
@@ -1820,7 +1799,8 @@
       "clicked": 36,
       "replied": 5,
       "messagesBounced": 21,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-05-19T09:28:39.250Z"
     },
     {
       "id": "cam_4HbXpCaYQcfq4nc29",
@@ -1834,7 +1814,8 @@
       "clicked": 9,
       "replied": 1,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-05-19T20:25:44.451Z"
     },
     {
       "id": "cam_NCET7oE8nXdK2T6Po",
@@ -1848,7 +1829,8 @@
       "clicked": 13,
       "replied": 0,
       "messagesBounced": 13,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-05-20T11:30:29.415Z"
     },
     {
       "id": "cam_a3ZEYb9hCs3BmPTiB",
@@ -1862,7 +1844,8 @@
       "clicked": 0,
       "replied": 1,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-05-20T11:49:26.504Z"
     },
     {
       "id": "cam_EkcxE5bj3rHL3Cvqc",
@@ -1876,147 +1859,113 @@
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 12,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-05-20T11:54:59.545Z"
     },
     {
-      "id": "cam_qiZYpypBxEaYMFp5e",
-      "name": "CommerceNext 1x1 extended invites",
-      "market": "Other",
-      "isField": false,
-      "status": "paused",
-      "nbLeads": 26,
-      "messagesSent": 24,
-      "opened": 13,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_f2ZbHeB3fsFBmq5Jb",
-      "name": "TR - ALIUM - Courtney Stone @ JustFab",
+      "id": "cam_Bgaf2mGFj59qPncst",
+      "name": "DT Email API - Gaming companies",
       "market": "Other",
       "isField": false,
       "status": "ended",
-      "nbLeads": 1,
-      "messagesSent": 6,
-      "opened": 0,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_nQqZmNk3qua6aAJLD",
-      "name": "Pickett | 1:1 Cadence v3",
-      "market": "Other",
-      "isField": false,
-      "status": "running",
-      "nbLeads": 52,
-      "messagesSent": 102,
-      "opened": 48,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 2,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_zsGKTDepAHsKXua8W",
-      "name": "Brevo Wallet - Contacts New",
-      "market": "Other",
-      "isField": false,
-      "status": "paused",
-      "nbLeads": 1152,
-      "messagesSent": 687,
-      "opened": 180,
-      "clicked": 29,
-      "replied": 1,
-      "messagesBounced": 200,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_MKor92Cf9ePb6MTpw",
-      "name": "Franchise Engagement survey 2026 Copy",
-      "market": "Other",
-      "isField": false,
-      "status": "running",
-      "nbLeads": 104,
-      "messagesSent": 170,
-      "opened": 74,
-      "clicked": 0,
-      "replied": 2,
-      "messagesBounced": 2,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_BgzwChmM4iyTcDrsF",
-      "name": "TR - ABM -  Diane Damra @ Omni Hotels",
-      "market": "Other",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 1,
-      "messagesSent": 1,
-      "opened": 0,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 1,
-      "meetingBooked": 0
-    },
-    {
-      "id": "cam_LfNhfcwaa2bLYiRAa",
-      "name": "TR - ABM - Bradley Simon @ Vida",
-      "market": "Other",
-      "isField": false,
-      "status": "running",
-      "nbLeads": 1,
-      "messagesSent": 4,
-      "opened": 4,
+      "nbLeads": 32,
+      "messagesSent": 183,
+      "opened": 37,
       "clicked": 4,
       "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0
+      "messagesBounced": 3,
+      "meetingBooked": 0,
+      "createdAt": "2026-05-21T17:10:58.970Z"
     },
     {
-      "id": "cam_QmZt64zmGRau9vjKC",
-      "name": "TR - 1:1 ABM - Jessica Elkouby @ Sunrise Brands",
-      "market": "Other",
+      "id": "cam_YbzhFQHEgWqKumHBF",
+      "name": "SEQ-US-LIFESTYLE-WARM V6",
+      "market": "US",
       "isField": false,
       "status": "running",
-      "nbLeads": 1,
-      "messagesSent": 4,
-      "opened": 4,
+      "nbLeads": 127,
+      "messagesSent": 272,
+      "opened": 83,
+      "clicked": 3,
+      "replied": 2,
+      "messagesBounced": 5,
+      "meetingBooked": 0,
+      "createdAt": "2026-05-22T00:12:18.116Z"
+    },
+    {
+      "id": "cam_irLQxCggLj7nGZW79",
+      "name": "SEQ-US-MEDIA-WARM-LINKEDIN-V2",
+      "market": "US",
+      "isField": false,
+      "status": "running",
+      "nbLeads": 207,
+      "messagesSent": 19,
+      "opened": 8,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-05-22T00:55:27.792Z"
     },
     {
-      "id": "cam_pzdR8YGtadHdSQEdf",
-      "name": "TR - 1:1 ABM - Emily Corley @ Darn Tough Vermont",
+      "id": "cam_fqSargbJ5CAxcANM2",
+      "name": "SEQ-US-LIFESTYLE-WARM-LINKEDIN-V2",
+      "market": "US",
+      "isField": false,
+      "status": "running",
+      "nbLeads": 127,
+      "messagesSent": 31,
+      "opened": 18,
+      "clicked": 0,
+      "replied": 1,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-05-22T01:06:52.277Z"
+    },
+    {
+      "id": "cam_eHHPFwXHoipiogT63",
+      "name": "CommerceNext 2026 (registered attendees)",
+      "market": "Other",
+      "isField": false,
+      "status": "paused",
+      "nbLeads": 1082,
+      "messagesSent": 802,
+      "opened": 344,
+      "clicked": 46,
+      "replied": 58,
+      "messagesBounced": 57,
+      "meetingBooked": 0,
+      "createdAt": "2026-05-22T15:19:43.748Z"
+    },
+    {
+      "id": "cam_jYHwCLjMXeMkeisJD",
+      "name": "Bulldozer - Leads",
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 1,
-      "messagesSent": 4,
-      "opened": 0,
+      "nbLeads": 20,
+      "messagesSent": 28,
+      "opened": 6,
       "clicked": 0,
       "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0
+      "messagesBounced": 2,
+      "meetingBooked": 0,
+      "createdAt": "2026-05-26T14:31:54.911Z"
     },
     {
-      "id": "cam_c8Wup9twvx48Gk2X4",
-      "name": "TR - 1:1 ABM - Samir Sheth @ Oura",
-      "market": "Other",
+      "id": "cam_N63zZwNPJLdbKmica",
+      "name": "DACH ABM May 2026 V1 - combined",
+      "market": "DACH",
       "isField": false,
-      "status": "running",
-      "nbLeads": 1,
-      "messagesSent": 4,
-      "opened": 4,
-      "clicked": 0,
+      "status": "paused",
+      "nbLeads": 446,
+      "messagesSent": 396,
+      "opened": 238,
+      "clicked": 27,
       "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0
+      "messagesBounced": 22,
+      "meetingBooked": 0,
+      "createdAt": "2026-05-27T11:52:48.992Z"
     },
     {
       "id": "cam_4Txhhsmsz7EfxYbZ4",
@@ -2030,7 +1979,8 @@
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-06-09T15:10:00.526Z"
     },
     {
       "id": "cam_nR289uZKq6PrajPnQ",
@@ -2044,7 +1994,8 @@
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-06-09T15:15:49.566Z"
     },
     {
       "id": "cam_oJvfERbFJ588r789d",
@@ -2058,7 +2009,8 @@
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-06-09T15:21:54.425Z"
     },
     {
       "id": "cam_cjkdYRBDEZFaXXYxo",
@@ -2072,7 +2024,38 @@
       "clicked": 97,
       "replied": 2,
       "messagesBounced": 69,
-      "meetingBooked": 0
+      "meetingBooked": 0,
+      "createdAt": "2026-06-11T12:07:30.854Z"
+    },
+    {
+      "id": "cam_wxAfs5pxXeqZtQLRw",
+      "name": "Isabel's campaign (1)",
+      "market": "Other",
+      "isField": false,
+      "status": "running",
+      "nbLeads": 267,
+      "messagesSent": 5,
+      "opened": 1,
+      "clicked": 1,
+      "replied": 1,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-06-24T19:50:04.581Z"
+    },
+    {
+      "id": "cam_CD3X6C3mSZPpatdJb",
+      "name": "IB Generic",
+      "market": "Other",
+      "isField": false,
+      "status": "running",
+      "nbLeads": 267,
+      "messagesSent": 33,
+      "opened": 14,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-06-24T21:16:43.649Z"
     }
   ]
 }

@@ -30,13 +30,19 @@
   .btn { font-size: 13px; padding: 6px 14px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: background 0.15s; }
   .btn:hover { background: var(--bg3); }
   .btn-primary { background: var(--text); color: var(--bg); border-color: var(--text); }
-  .btn-primary:hover { opacity: 0.85; background: var(--text); }
   .main { max-width: 1280px; margin: 0 auto; padding: 2rem; }
-  .controls { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 1.5rem; }
+  .filters-bar { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1rem 1.25rem; margin-bottom: 1.5rem; display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .filter-group { display: flex; align-items: center; gap: 8px; }
+  .filter-label { font-size: 12px; color: var(--text2); white-space: nowrap; }
   .pill-group { display: flex; gap: 4px; flex-wrap: wrap; }
-  .pill { font-size: 12px; padding: 4px 14px; border-radius: 20px; border: 0.5px solid var(--border2); background: var(--bg); color: var(--text2); cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+  .pill { font-size: 12px; padding: 4px 12px; border-radius: 20px; border: 0.5px solid var(--border2); background: var(--bg2); color: var(--text2); cursor: pointer; transition: all 0.15s; white-space: nowrap; }
   .pill.active { background: var(--text); color: var(--bg); border-color: var(--text); }
   .pill[data-market="Field"].active { background: var(--purple); color: #fff; border-color: var(--purple); }
+  .divider { width: 0.5px; height: 24px; background: var(--border); }
+  select { font-size: 12px; padding: 5px 10px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); cursor: pointer; }
+  .custom-range { display: none; align-items: center; gap: 6px; }
+  .custom-range.visible { display: flex; }
+  .custom-range input { font-size: 12px; padding: 4px 8px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); }
   .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 1.5rem; }
   .kpi-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; }
   .kpi-label { font-size: 12px; color: var(--text2); margin-bottom: 6px; }
@@ -75,11 +81,12 @@
   .bar-fill { height: 100%; border-radius: 3px; }
   .cam-name { max-width: 220px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .cam-status { font-size: 11px; padding: 2px 7px; border-radius: 20px; border: 0.5px solid var(--border); color: var(--text2); }
+  .cam-status.running { background: var(--green-bg); color: var(--green); border-color: var(--green-bg); }
   .tabs { display: flex; border-bottom: 0.5px solid var(--border); margin-bottom: 1.5rem; }
   .tab { font-size: 13px; padding: 8px 18px; cursor: pointer; color: var(--text2); border-bottom: 2px solid transparent; margin-bottom: -0.5px; }
   .tab.active { color: var(--text); border-bottom-color: var(--text); font-weight: 500; }
-  select, input[type="search"] { font-size: 12px; padding: 5px 10px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); }
   .field-badge { display: inline-block; font-size: 10px; padding: 1px 6px; border-radius: 20px; background: var(--purple-bg); color: var(--purple); margin-left: 4px; vertical-align: middle; }
+  input[type="search"] { font-size: 12px; padding: 5px 10px; border-radius: var(--radius); border: 0.5px solid var(--border2); background: var(--bg); color: var(--text); }
   @media (max-width: 768px) { .kpi-grid { grid-template-columns: repeat(2, 1fr); } .main { padding: 1rem; } }
 </style>
 </head>
@@ -97,65 +104,92 @@
 </div>
 
 <div class="main">
-  <div id="dashSection">
-    <div class="controls">
+  <div class="filters-bar">
+    <div class="filter-group">
+      <span class="filter-label">Market</span>
       <div class="pill-group" id="marketFilter">
-        <div class="pill active" data-market="all">All markets</div>
+        <div class="pill active" data-market="all">All</div>
         <div class="pill" data-market="US">US</div>
         <div class="pill" data-market="UKI">UKI</div>
         <div class="pill" data-market="DACH">DACH</div>
         <div class="pill" data-market="FR">FR</div>
-        <div class="pill" data-market="Field">Field marketing</div>
+        <div class="pill" data-market="Field">Field</div>
         <div class="pill" data-market="Other">Other</div>
       </div>
+    </div>
+    <div class="divider"></div>
+    <div class="filter-group">
+      <span class="filter-label">Status</span>
       <select id="statusFilter" onchange="render()">
-        <option value="all">All campaigns</option>
-        <option value="active">Active only</option>
-        <option value="ended">Ended only</option>
+        <option value="all">All</option>
+        <option value="active">Active</option>
+        <option value="ended">Ended</option>
+        <option value="paused">Paused</option>
+        <option value="archived">Archived</option>
       </select>
     </div>
-
-    <div class="kpi-grid">
-      <div class="kpi-card"><div class="kpi-label">Open rate</div><div class="kpi-value" id="kpiOpen">—</div><div class="kpi-sub" id="kpiOpenSub"></div></div>
-      <div class="kpi-card"><div class="kpi-label">Click rate</div><div class="kpi-value" id="kpiClick">—</div><div class="kpi-sub" id="kpiClickSub"></div></div>
-      <div class="kpi-card"><div class="kpi-label">Reply rate</div><div class="kpi-value" id="kpiReply">—</div><div class="kpi-sub" id="kpiReplySub"></div></div>
-      <div class="kpi-card"><div class="kpi-label">Bounce rate</div><div class="kpi-value" id="kpiBounce">—</div><div class="kpi-sub" id="kpiBounceSub"></div></div>
+    <div class="divider"></div>
+    <div class="filter-group">
+      <span class="filter-label">Period</span>
+      <select id="dateFilter" onchange="onDateFilterChange()">
+        <option value="all">All time</option>
+        <option value="this_week">This week</option>
+        <option value="last_week">Last week</option>
+        <option value="this_month">This month</option>
+        <option value="last_month">Last month</option>
+        <option value="this_quarter">This quarter</option>
+        <option value="last_quarter">Last quarter</option>
+        <option value="this_year">This year</option>
+        <option value="custom">Custom range</option>
+      </select>
     </div>
-
-    <div class="tabs">
-      <div class="tab active" data-tab="market" onclick="switchTab(this)">Market overview</div>
-      <div class="tab" data-tab="campaigns" onclick="switchTab(this)">Campaign breakdown</div>
+    <div class="custom-range" id="customRange">
+      <input type="date" id="dateFrom" onchange="render()" />
+      <span style="font-size:12px;color:var(--text2)">to</span>
+      <input type="date" id="dateTo" onchange="render()" />
     </div>
+  </div>
 
-    <div id="tab-market">
-      <div class="section-label">Performance by market</div>
-      <div class="market-grid" id="marketGrid"></div>
-    </div>
+  <div class="kpi-grid">
+    <div class="kpi-card"><div class="kpi-label">Open rate</div><div class="kpi-value" id="kpiOpen">—</div><div class="kpi-sub" id="kpiOpenSub"></div></div>
+    <div class="kpi-card"><div class="kpi-label">Click rate</div><div class="kpi-value" id="kpiClick">—</div><div class="kpi-sub" id="kpiClickSub"></div></div>
+    <div class="kpi-card"><div class="kpi-label">Reply rate</div><div class="kpi-value" id="kpiReply">—</div><div class="kpi-sub" id="kpiReplySub"></div></div>
+    <div class="kpi-card"><div class="kpi-label">Bounce rate</div><div class="kpi-value" id="kpiBounce">—</div><div class="kpi-sub" id="kpiBounceSub"></div></div>
+  </div>
 
-    <div id="tab-campaigns" style="display:none">
-      <div class="table-section">
-        <div class="table-header">
-          <span class="section-label" style="margin:0" id="campaignCount"></span>
-          <input type="search" id="searchBox" placeholder="Search campaigns..." oninput="render()" style="width:200px" />
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th style="width:24%">Campaign</th>
-                <th style="width:8%">Market</th>
-                <th style="width:7%">Status</th>
-                <th style="width:7%">Leads</th>
-                <th style="width:11%">Open rate</th>
-                <th style="width:11%">Click rate</th>
-                <th style="width:11%">Reply rate</th>
-                <th style="width:8%">Bounce</th>
-                <th style="width:13%">Signal</th>
-              </tr>
-            </thead>
-            <tbody id="campaignBody"></tbody>
-          </table>
-        </div>
+  <div class="tabs">
+    <div class="tab active" data-tab="market" onclick="switchTab(this)">Market overview</div>
+    <div class="tab" data-tab="campaigns" onclick="switchTab(this)">Campaign breakdown</div>
+  </div>
+
+  <div id="tab-market">
+    <div class="section-label">Performance by market</div>
+    <div class="market-grid" id="marketGrid"></div>
+  </div>
+
+  <div id="tab-campaigns" style="display:none">
+    <div class="table-section">
+      <div class="table-header">
+        <span class="section-label" style="margin:0" id="campaignCount"></span>
+        <input type="search" id="searchBox" placeholder="Search campaigns..." oninput="render()" style="width:200px" />
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:24%">Campaign</th>
+              <th style="width:8%">Market</th>
+              <th style="width:7%">Status</th>
+              <th style="width:7%">Leads</th>
+              <th style="width:11%">Open rate</th>
+              <th style="width:11%">Click rate</th>
+              <th style="width:11%">Reply rate</th>
+              <th style="width:8%">Bounce</th>
+              <th style="width:13%">Signal</th>
+            </tr>
+          </thead>
+          <tbody id="campaignBody"></tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -178,6 +212,64 @@ function signal(c) {
   return ['badge-gray', 'On track'];
 }
 
+function getDateRange(filter) {
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = now.getMonth();
+  const d = now.getDate();
+  const dow = now.getDay();
+
+  switch(filter) {
+    case 'this_week': {
+      const start = new Date(now);
+      start.setDate(d - (dow === 0 ? 6 : dow - 1));
+      start.setHours(0,0,0,0);
+      return { from: start, to: now };
+    }
+    case 'last_week': {
+      const start = new Date(now);
+      start.setDate(d - (dow === 0 ? 6 : dow - 1) - 7);
+      start.setHours(0,0,0,0);
+      const end = new Date(start);
+      end.setDate(start.getDate() + 6);
+      end.setHours(23,59,59,999);
+      return { from: start, to: end };
+    }
+    case 'this_month':
+      return { from: new Date(y, m, 1), to: now };
+    case 'last_month':
+      return { from: new Date(y, m-1, 1), to: new Date(y, m, 0, 23, 59, 59) };
+    case 'this_quarter': {
+      const q = Math.floor(m / 3);
+      return { from: new Date(y, q*3, 1), to: now };
+    }
+    case 'last_quarter': {
+      const q = Math.floor(m / 3);
+      const lq = q === 0 ? 3 : q - 1;
+      const ly = q === 0 ? y - 1 : y;
+      return { from: new Date(ly, lq*3, 1), to: new Date(ly, lq*3+3, 0, 23, 59, 59) };
+    }
+    case 'this_year':
+      return { from: new Date(y, 0, 1), to: now };
+    case 'custom': {
+      const from = document.getElementById('dateFrom').value;
+      const to = document.getElementById('dateTo').value;
+      return {
+        from: from ? new Date(from) : null,
+        to: to ? new Date(to + 'T23:59:59') : null
+      };
+    }
+    default: return null;
+  }
+}
+
+function onDateFilterChange() {
+  const filter = document.getElementById('dateFilter').value;
+  const customRange = document.getElementById('customRange');
+  customRange.classList.toggle('visible', filter === 'custom');
+  render();
+}
+
 async function loadData() {
   try {
     const res = await fetch('lemlist-data.json?t=' + Date.now());
@@ -198,12 +290,22 @@ async function loadData() {
 function getFiltered() {
   const sf = document.getElementById('statusFilter')?.value || 'all';
   const s = (document.getElementById('searchBox')?.value || '').toLowerCase();
+  const dateFilter = document.getElementById('dateFilter')?.value || 'all';
+  const range = dateFilter !== 'all' ? getDateRange(dateFilter) : null;
+
   return allCampaigns.filter(c => {
     if (currentMarket === 'Field' && !c.isField) return false;
     if (currentMarket !== 'all' && currentMarket !== 'Field' && c.market !== currentMarket) return false;
-    if (sf === 'active' && c.status !== 'started') return false;
-    if (sf === 'ended' && c.status === 'started') return false;
+    if (sf === 'active' && c.status !== 'running') return false;
+    if (sf === 'ended' && c.status !== 'ended') return false;
+    if (sf === 'paused' && c.status !== 'paused') return false;
+    if (sf === 'archived' && c.status !== 'archived') return false;
     if (s && !c.name.toLowerCase().includes(s)) return false;
+    if (range && c.createdAt) {
+      const created = new Date(c.createdAt);
+      if (range.from && created < range.from) return false;
+      if (range.to && created > range.to) return false;
+    }
     return true;
   });
 }
@@ -235,8 +337,11 @@ function render() {
 }
 
 function renderMarkets() {
+  const filtered = getFiltered();
   document.getElementById('marketGrid').innerHTML = ['US','UKI','DACH','FR','Field','Other'].map(mkt => {
-    const rows = mkt === 'Field' ? allCampaigns.filter(c => c.isField) : allCampaigns.filter(c => c.market === mkt);
+    const rows = mkt === 'Field'
+      ? filtered.filter(c => c.isField)
+      : filtered.filter(c => c.market === mkt);
     if (!rows.length) return '';
     const k = aggKPIs(rows);
     return `<div class="market-card">
@@ -255,7 +360,7 @@ function renderMarkets() {
 }
 
 function renderCampaigns(rows) {
-  const sorted = [...rows].sort((a,b) => b.messagesSent - a.messagesSent);
+  const sorted = [...rows].sort((a,b) => new Date(b.createdAt||0) - new Date(a.createdAt||0));
   document.getElementById('campaignCount').textContent = sorted.length + ' campaigns';
   if (!sorted.length) {
     document.getElementById('campaignBody').innerHTML = '<tr><td colspan="9" style="text-align:center;padding:2rem;color:var(--text2);font-size:13px">No campaigns match your filters.</td></tr>';
@@ -269,12 +374,13 @@ function renderCampaigns(rows) {
     const rr = pct(c.replied, c.messagesSent);
     const br = pct(c.messagesBounced, c.messagesSent);
     const [sigCls, sigLabel] = signal(c);
-    const statusLabel = c.status === 'started' ? 'active' : c.status === 'draft' ? 'draft' : 'ended';
+    const isRunning = c.status === 'running';
+    const statusLabel = isRunning ? 'active' : c.status;
     const fieldBadge = c.isField ? '<span class="field-badge">Field</span>' : '';
     return `<tr>
       <td><div class="cam-name" title="${c.name}">${c.name}${fieldBadge}</div></td>
       <td><span class="market-tag tag-${c.market}" style="font-size:11px;padding:2px 7px;border-radius:20px">${c.market}</span></td>
-      <td><span class="cam-status">${statusLabel}</span></td>
+      <td><span class="cam-status ${isRunning ? 'running' : ''}">${statusLabel}</span></td>
       <td>${c.nbLeads.toLocaleString()}</td>
       <td>${bar(or,80,'#378ADD')}</td>
       <td>${bar(cr,20,'#1D9E75')}</td>
