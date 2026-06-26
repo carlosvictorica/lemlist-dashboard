@@ -4,7 +4,7 @@ const path = require('path');
 
 // ─── CONFIG ───────────────────────────────────────────────────────────────────
 const API_KEY = process.env.LEMLIST_API_KEY || '';
-const START_DATE = '2025-01-01T00:00:00.000Z';
+
 const OUTPUT_FILE = path.join(__dirname, 'lemlist-data.json');
 const CONCURRENCY = 5;
 const RATE_DELAY_MS = 150;
@@ -51,7 +51,7 @@ async function fetchAllCampaigns() {
 }
 
 async function fetchStats(campaignId) {
-  const url = `https://api.lemlist.com/api/v2/campaigns/${campaignId}/stats?startDate=${START_DATE}&endDate=${new Date().toISOString()}`;
+  const url = `https://api.lemlist.com/api/v2/campaigns/${campaignId}/stats`;
   try { return await get(url); }
   catch(e) { return null; }
 }
@@ -123,7 +123,7 @@ async function main() {
       meetingBooked: s.meetingBooked || 0,
       createdAt: c.createdAt || null
     };
-  }).filter(c => c.messagesSent > 0);
+  }).filter(c => c.messagesSent > 0 || c.nbLeads > 0 || c.status === 'running' || c.status === 'paused');
 
   const output = {
     generatedAt: new Date().toISOString(),
