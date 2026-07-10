@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-09T12:52:13.939Z",
-  "totalCampaigns": 242,
+  "generatedAt": "2026-07-10T08:29:04.252Z",
+  "totalCampaigns": 230,
   "campaigns": [
     {
       "id": "cam_siZaB66x3sjkmrY8W",
@@ -15,7 +15,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2024-05-28T12:21:41.359Z"
+      "createdAt": "2024-05-28T12:21:41.359Z",
+      "sequenceId": "seq_59aN4QTJLsHnRhzii"
     },
     {
       "id": "cam_NNp9fMsGh66ATr5Gi",
@@ -30,7 +31,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2024-07-05T10:00:37.491Z"
+      "createdAt": "2024-07-05T10:00:37.491Z",
+      "sequenceId": "seq_wHjhMkDkMggCMuvW5"
     },
     {
       "id": "cam_54G28xafJ5wdebS6x",
@@ -45,7 +47,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2024-07-05T10:07:00.814Z"
+      "createdAt": "2024-07-05T10:07:00.814Z",
+      "sequenceId": "seq_YKccAR6XRw3Cfv9Xt"
     },
     {
       "id": "cam_igsZ5oXZyGd5QpbY3",
@@ -60,7 +63,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2024-07-09T12:22:03.656Z"
+      "createdAt": "2024-07-09T12:22:03.656Z",
+      "sequenceId": "seq_ER4vhsQ8AyudvJZgi"
     },
     {
       "id": "cam_rmRRKWDw7YG8oyzKP",
@@ -75,7 +79,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2024-07-09T15:51:12.347Z"
+      "createdAt": "2024-07-09T15:51:12.347Z",
+      "sequenceId": "seq_W8AuXtF6DppNs76FQ"
     },
     {
       "id": "cam_N4oxPgBPgxFLnCvv3",
@@ -90,7 +95,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2024-07-09T16:01:56.317Z"
+      "createdAt": "2024-07-09T16:01:56.317Z",
+      "sequenceId": "seq_P4pRkurxYsJPfwTP3"
     },
     {
       "id": "cam_oNXntiRPF4QKW9P34",
@@ -105,7 +111,200 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2024-07-12T09:18:25.953Z"
+      "createdAt": "2024-07-12T09:18:25.953Z",
+      "sequenceId": "seq_d7rsaBzNrWLvczf8m"
+    },
+    {
+      "id": "cam_uHCAyXorYTeLamvRW",
+      "name": "Mateo's warm",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 200,
+      "messagesSent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2024-07-25T15:31:11.251Z",
+      "sequenceId": "seq_gtZr3AvDQkCx7YuWN"
+    },
+    {
+      "id": "cam_bmkfEFpRrbG5SpydH",
+      "name": "2407_ES_Retail_2.1.2_LKD",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 56,
+      "messagesSent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2024-08-01T09:42:19.132Z",
+      "sequenceId": "seq_5eygbYsvaSFEBZGPE"
+    },
+    {
+      "id": "cam_2MdHKJj8KfvmDLuBp",
+      "name": "2407_ES_Retail_2.1.3_LKD",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 61,
+      "messagesSent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2024-08-01T09:44:12.571Z",
+      "sequenceId": "seq_yH6tPynhmP575PAPd"
+    },
+    {
+      "id": "cam_LN3k8as9aE43PpB6J",
+      "name": "2407_ES_Retail_2.1.4_LKD",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 54,
+      "messagesSent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2024-08-01T09:45:12.625Z",
+      "sequenceId": "seq_sKNMrrf5kugrfuyCd"
+    },
+    {
+      "id": "cam_5Z7pWmnXojzCKWZwg",
+      "name": "2408_ES_Retail_2.1.5_LKD",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 59,
+      "messagesSent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2024-08-08T10:06:59.701Z",
+      "sequenceId": "seq_AEZuPPdQcWx4Saf2r"
+    },
+    {
+      "id": "cam_ZMH27QsxdjGPu9sv8",
+      "name": "2408_ES_Retail_2.1.6_LKD",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 59,
+      "messagesSent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2024-08-08T10:11:57.213Z",
+      "sequenceId": "seq_gRRQGaGxxrWHchbof"
+    },
+    {
+      "id": "cam_S2j5uoe69WHLttanb",
+      "name": "2408_ES_Retail_2.1.7_LKD",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 57,
+      "messagesSent": 1,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2024-08-08T10:13:21.999Z",
+      "sequenceId": "seq_unSn36TZNuzkGADQF"
+    },
+    {
+      "id": "cam_Y6oTuMmHmwzfdcjs5",
+      "name": "2408_ES_Retail_2.1.8_LKD",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 62,
+      "messagesSent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2024-08-08T10:14:03.092Z",
+      "sequenceId": "seq_bndXE3rnrfY45K6ux"
+    },
+    {
+      "id": "cam_Ndv7vr2aW7n2L4mCJ",
+      "name": "2408_ES_Retail_2.1.9_LKD_GPT",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 17,
+      "messagesSent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2024-08-22T07:03:31.760Z",
+      "sequenceId": "seq_NqJGtqvNa8J3boYd9"
+    },
+    {
+      "id": "cam_D2b89snQiJDRzhT39",
+      "name": "2408_ES_Retail_2.1.10_LKD_GPT",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 76,
+      "messagesSent": 2,
+      "opened": 2,
+      "clicked": 0,
+      "replied": 1,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2024-08-28T13:48:22.273Z",
+      "sequenceId": "seq_tR6EMn8dsiANhJYvw"
+    },
+    {
+      "id": "cam_43iisfPCCepX7hYHK",
+      "name": "2408_ES_Retail_2.1.11_LKD_GPT",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 74,
+      "messagesSent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2024-08-28T13:54:32.126Z",
+      "sequenceId": "seq_be7qkQLibHFB82gjJ"
+    },
+    {
+      "id": "cam_iLstnzf5GybbAyi56",
+      "name": "2407_US_Clothing_1.1_Marketers Cleaned",
+      "market": "US",
+      "isField": false,
+      "status": "archived",
+      "nbLeads": 425,
+      "messagesSent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2024-09-05T14:16:45.806Z",
+      "sequenceId": "seq_kHhYLwyNybw4S2XA2"
     },
     {
       "id": "cam_Lqz57RvEtNxa44AAc",
@@ -120,7 +319,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2024-09-11T10:59:08.059Z"
+      "createdAt": "2024-09-11T10:59:08.059Z",
+      "sequenceId": "seq_NWLgDFK2hi65NLqqA"
     },
     {
       "id": "cam_6krNzPpwdQLQTupTd",
@@ -135,7 +335,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2024-09-12T10:50:45.166Z"
+      "createdAt": "2024-09-12T10:50:45.166Z",
+      "sequenceId": "seq_nSFm6pEf3cNTZqJzS"
     },
     {
       "id": "cam_uS8nMrR6Wz8dMNkhm",
@@ -150,7 +351,8 @@
       "replied": 1,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2024-10-14T08:27:47.191Z"
+      "createdAt": "2024-10-14T08:27:47.191Z",
+      "sequenceId": "seq_uALyre5QQyZcuvpno"
     },
     {
       "id": "cam_Rna3DhqM4defw98Yx",
@@ -165,7 +367,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2024-10-15T21:25:55.948Z"
+      "createdAt": "2024-10-15T21:25:55.948Z",
+      "sequenceId": "seq_TmAiY5c3uyJ9RwZBs"
     },
     {
       "id": "cam_R763BBi2CowGxsxpp",
@@ -180,7 +383,8 @@
       "replied": 2,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2024-10-21T00:03:28.128Z"
+      "createdAt": "2024-10-21T00:03:28.128Z",
+      "sequenceId": "seq_Z2EFXNcLDCT6hcddr"
     },
     {
       "id": "cam_9DE8FmZLv7ALudrjj",
@@ -195,7 +399,8 @@
       "replied": 1,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2024-10-21T15:12:00.876Z"
+      "createdAt": "2024-10-21T15:12:00.876Z",
+      "sequenceId": "seq_zGsMYDqCERFaaZmAu"
     },
     {
       "id": "cam_Nad9CXiCZvz7F3HJ5",
@@ -210,7 +415,8 @@
       "replied": 5,
       "messagesBounced": 72,
       "meetingBooked": 0,
-      "createdAt": "2024-10-24T12:12:15.507Z"
+      "createdAt": "2024-10-24T12:12:15.507Z",
+      "sequenceId": "seq_gSX6nvjJCjffKQwd5"
     },
     {
       "id": "cam_PkvCh82DakxCPocNy",
@@ -225,337 +431,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2024-10-31T10:21:24.025Z"
-    },
-    {
-      "id": "cam_NQjSxCWujq4vkGNF8",
-      "name": "2411_FR_Wellness-Hospitality",
-      "market": "FR",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 648,
-      "messagesSent": 1,
-      "opened": 27,
-      "clicked": 22,
-      "replied": 3,
-      "messagesBounced": 0,
-      "meetingBooked": 0,
-      "createdAt": "2024-11-04T16:41:35.078Z"
-    },
-    {
-      "id": "cam_THtJ6LQ7QfFZY23TY",
-      "name": "2411_DE_Retail",
-      "market": "DACH",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 2809,
-      "messagesSent": 3665,
-      "opened": 1801,
-      "clicked": 722,
-      "replied": 46,
-      "messagesBounced": 64,
-      "meetingBooked": 0,
-      "createdAt": "2024-11-27T18:58:09.120Z"
-    },
-    {
-      "id": "cam_ebnQxgufdqRp3Letc",
-      "name": "2501_US_SaaS-Media",
-      "market": "US",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 900,
-      "messagesSent": 996,
-      "opened": 270,
-      "clicked": 9,
-      "replied": 7,
-      "messagesBounced": 4,
-      "meetingBooked": 0,
-      "createdAt": "2025-01-15T09:57:51.262Z"
-    },
-    {
-      "id": "cam_qBoMXTn3vdNXt6xXT",
-      "name": "2501_FR_Education",
-      "market": "FR",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 398,
-      "messagesSent": 1792,
-      "opened": 800,
-      "clicked": 74,
-      "replied": 30,
-      "messagesBounced": 11,
-      "meetingBooked": 0,
-      "createdAt": "2025-01-16T11:50:26.341Z"
-    },
-    {
-      "id": "cam_6NBqJaAdsXs6CZLfx",
-      "name": "2501_UK_Klaviyo",
-      "market": "UKI",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 465,
-      "messagesSent": 238,
-      "opened": 55,
-      "clicked": 5,
-      "replied": 0,
-      "messagesBounced": 1,
-      "meetingBooked": 0,
-      "createdAt": "2025-01-20T09:15:17.153Z"
-    },
-    {
-      "id": "cam_QL8aAzFuXzTNMMNrx",
-      "name": "2501_US_Klaviyo",
-      "market": "US",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 1641,
-      "messagesSent": 1712,
-      "opened": 606,
-      "clicked": 27,
-      "replied": 3,
-      "messagesBounced": 19,
-      "meetingBooked": 0,
-      "createdAt": "2025-01-20T13:41:53.294Z"
-    },
-    {
-      "id": "cam_z3mf2tzpJSuaAPMtm",
-      "name": "2502_FR_CRM-Audit",
-      "market": "FR",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 571,
-      "messagesSent": 2050,
-      "opened": 691,
-      "clicked": 160,
-      "replied": 14,
-      "messagesBounced": 58,
-      "meetingBooked": 0,
-      "createdAt": "2025-02-05T15:51:27.301Z"
-    },
-    {
-      "id": "cam_53ERHpSWhTEAfWdgf",
-      "name": "2502_PTR_US_Klaviyo",
-      "market": "US",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 202,
-      "messagesSent": 894,
-      "opened": 268,
-      "clicked": 1,
-      "replied": 20,
-      "messagesBounced": 2,
-      "meetingBooked": 0,
-      "createdAt": "2025-02-14T12:38:28.166Z"
-    },
-    {
-      "id": "cam_EfAeaNeSMx9YCvTCX",
-      "name": "2502_PTR_US_Email_Mkt",
-      "market": "US",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 341,
-      "messagesSent": 1469,
-      "opened": 560,
-      "clicked": 9,
-      "replied": 44,
-      "messagesBounced": 8,
-      "meetingBooked": 0,
-      "createdAt": "2025-02-25T11:41:15.599Z"
-    },
-    {
-      "id": "cam_XnAop6AxG66cNCZqY",
-      "name": "24% reply rate targeting Marketing managers",
-      "market": "Other",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 104,
-      "messagesSent": 184,
-      "opened": 89,
-      "clicked": 16,
-      "replied": 2,
-      "messagesBounced": 6,
-      "meetingBooked": 0,
-      "createdAt": "2025-03-05T21:14:45.041Z"
-    },
-    {
-      "id": "cam_6xCmamhk4SH5NP7uf",
-      "name": "2503_UK_Dotdigital",
-      "market": "UKI",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 735,
-      "messagesSent": 238,
-      "opened": 106,
-      "clicked": 47,
-      "replied": 1,
-      "messagesBounced": 3,
-      "meetingBooked": 0,
-      "createdAt": "2025-03-07T16:12:00.453Z"
-    },
-    {
-      "id": "cam_GweEcxYFXEp2Y63Cq",
-      "name": "2503_ES_Retail-Forum-2025",
-      "market": "Other",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 76,
-      "messagesSent": 140,
-      "opened": 56,
-      "clicked": 22,
-      "replied": 5,
-      "messagesBounced": 7,
-      "meetingBooked": 0,
-      "createdAt": "2025-03-21T16:38:41.560Z"
-    },
-    {
-      "id": "cam_HdDCQxTzaLJhca4tm",
-      "name": "2504_FR_Omnichannel-Webinar",
-      "market": "FR",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 445,
-      "messagesSent": 965,
-      "opened": 367,
-      "clicked": 26,
-      "replied": 15,
-      "messagesBounced": 2,
-      "meetingBooked": 0,
-      "createdAt": "2025-04-02T12:05:28.219Z"
-    },
-    {
-      "id": "cam_vgo8qsYpq4aBwc7Gq",
-      "name": "2504_FR_Big-ICP_CRM-BP-1_LKD-Email",
-      "market": "FR",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 1225,
-      "messagesSent": 1937,
-      "opened": 773,
-      "clicked": 170,
-      "replied": 12,
-      "messagesBounced": 29,
-      "meetingBooked": 0,
-      "createdAt": "2025-04-04T08:02:44.489Z"
-    },
-    {
-      "id": "cam_JTXziwznyTWQxafaF",
-      "name": "2504_FR_Big-ICP_CRM-BP-1_LKD",
-      "market": "FR",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 690,
-      "messagesSent": 426,
-      "opened": 222,
-      "clicked": 0,
-      "replied": 26,
-      "messagesBounced": 0,
-      "meetingBooked": 0,
-      "createdAt": "2025-04-04T12:26:01.266Z"
-    },
-    {
-      "id": "cam_9n57Mn287esS8reH7",
-      "name": "2504_FR_Omnichannel-Webinar_Any-Senders",
-      "market": "FR",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 3786,
-      "messagesSent": 3464,
-      "opened": 1091,
-      "clicked": 193,
-      "replied": 4,
-      "messagesBounced": 55,
-      "meetingBooked": 0,
-      "createdAt": "2025-04-10T13:43:40.908Z"
-    },
-    {
-      "id": "cam_gEv5gNwwEoXBmBPgo",
-      "name": "2504_UK_Big-ICP_CRM-BP-1_LKD",
-      "market": "UKI",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 258,
-      "messagesSent": 105,
-      "opened": 72,
-      "clicked": 0,
-      "replied": 5,
-      "messagesBounced": 0,
-      "meetingBooked": 0,
-      "createdAt": "2025-04-11T09:10:11.067Z"
-    },
-    {
-      "id": "cam_CuktNQ2P7riSa5bq9",
-      "name": "2504_UK_Big-ICP_CRM-BP-1_LKD-Email",
-      "market": "UKI",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 519,
-      "messagesSent": 1060,
-      "opened": 513,
-      "clicked": 220,
-      "replied": 2,
-      "messagesBounced": 50,
-      "meetingBooked": 0,
-      "createdAt": "2025-04-11T09:12:55.593Z"
-    },
-    {
-      "id": "cam_rQepFA7XFGAxP5KAG",
-      "name": "2504_DE_Big-ICP_CRM-BP-1_LKD",
-      "market": "DACH",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 475,
-      "messagesSent": 318,
-      "opened": 172,
-      "clicked": 0,
-      "replied": 21,
-      "messagesBounced": 0,
-      "meetingBooked": 0,
-      "createdAt": "2025-04-11T09:20:17.127Z"
-    },
-    {
-      "id": "cam_Lc9rZGxbwFtEoyB6Q",
-      "name": "2504_DE_Big-ICP_CRM-BP-1_LKD-Email",
-      "market": "DACH",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 1222,
-      "messagesSent": 3041,
-      "opened": 1216,
-      "clicked": 370,
-      "replied": 20,
-      "messagesBounced": 89,
-      "meetingBooked": 0,
-      "createdAt": "2025-04-11T09:23:52.890Z"
-    },
-    {
-      "id": "cam_5xtoymbHJqJvCsaaa",
-      "name": "2504_ES_Big-ICP_CRM-BP-1_LKD",
-      "market": "Other",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 200,
-      "messagesSent": 157,
-      "opened": 87,
-      "clicked": 0,
-      "replied": 7,
-      "messagesBounced": 0,
-      "meetingBooked": 0,
-      "createdAt": "2025-04-11T09:28:44.322Z"
-    },
-    {
-      "id": "cam_KoqsL34ong4tMko2E",
-      "name": "2504_ES_Big-ICP_CRM-BP-1_LKD-Email",
-      "market": "Other",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 482,
-      "messagesSent": 1513,
-      "opened": 833,
-      "clicked": 207,
-      "replied": 16,
-      "messagesBounced": 40,
-      "meetingBooked": 0,
-      "createdAt": "2025-04-11T09:29:50.509Z"
+      "createdAt": "2024-10-31T10:21:24.025Z",
+      "sequenceId": "seq_yw7QbvgoJCao7oaXm"
     },
     {
       "id": "cam_9mXpsWDnbegAXvHEq",
@@ -570,7 +447,8 @@
       "replied": 9,
       "messagesBounced": 12,
       "meetingBooked": 0,
-      "createdAt": "2025-04-25T09:43:11.457Z"
+      "createdAt": "2025-04-25T09:43:11.457Z",
+      "sequenceId": "seq_Fz863ko524L5hwGpG"
     },
     {
       "id": "cam_ELjhCSyzRntPrSWSa",
@@ -585,7 +463,8 @@
       "replied": 15,
       "messagesBounced": 16,
       "meetingBooked": 0,
-      "createdAt": "2025-05-08T08:53:37.159Z"
+      "createdAt": "2025-05-08T08:53:37.159Z",
+      "sequenceId": "seq_Swvi2qt3Z7HDkuu3p"
     },
     {
       "id": "cam_fRzMZYFGyvptXg6Zy",
@@ -600,7 +479,8 @@
       "replied": 30,
       "messagesBounced": 59,
       "meetingBooked": 0,
-      "createdAt": "2025-05-08T09:02:17.491Z"
+      "createdAt": "2025-05-08T09:02:17.491Z",
+      "sequenceId": "seq_SdboEQkCgebtPCHJo"
     },
     {
       "id": "cam_aCaqGmA7u98duBsyP",
@@ -615,7 +495,8 @@
       "replied": 7,
       "messagesBounced": 59,
       "meetingBooked": 0,
-      "createdAt": "2025-05-08T09:04:38.623Z"
+      "createdAt": "2025-05-08T09:04:38.623Z",
+      "sequenceId": "seq_j7JFGBzZ6WNCCzzqe"
     },
     {
       "id": "cam_r3xiMuMqT9YZbiaQL",
@@ -630,7 +511,8 @@
       "replied": 8,
       "messagesBounced": 46,
       "meetingBooked": 0,
-      "createdAt": "2025-05-08T09:07:33.855Z"
+      "createdAt": "2025-05-08T09:07:33.855Z",
+      "sequenceId": "seq_Z4PuSf9DtbP3hvxqb"
     },
     {
       "id": "cam_qFNGzQdnA5w9YPrqt",
@@ -645,7 +527,8 @@
       "replied": 2,
       "messagesBounced": 1,
       "meetingBooked": 0,
-      "createdAt": "2025-06-02T18:32:48.836Z"
+      "createdAt": "2025-06-02T18:32:48.836Z",
+      "sequenceId": "seq_3nMKgwDZCahaBdv7b"
     },
     {
       "id": "cam_7Kyvkm2bDR3BdhfpH",
@@ -660,7 +543,8 @@
       "replied": 4,
       "messagesBounced": 14,
       "meetingBooked": 0,
-      "createdAt": "2025-06-04T02:13:25.700Z"
+      "createdAt": "2025-06-04T02:13:25.700Z",
+      "sequenceId": "seq_aqgPwh95ZqkGtiPPi"
     },
     {
       "id": "cam_RN7ze5AjvbGsfWDAB",
@@ -675,7 +559,8 @@
       "replied": 3,
       "messagesBounced": 61,
       "meetingBooked": 0,
-      "createdAt": "2025-06-04T14:35:24.720Z"
+      "createdAt": "2025-06-04T14:35:24.720Z",
+      "sequenceId": "seq_zi4JZwa3PsvXwhvNK"
     },
     {
       "id": "cam_GJc7vT5ii4YKhvy46",
@@ -690,7 +575,8 @@
       "replied": 5,
       "messagesBounced": 6,
       "meetingBooked": 0,
-      "createdAt": "2025-06-05T07:17:50.333Z"
+      "createdAt": "2025-06-05T07:17:50.333Z",
+      "sequenceId": "seq_iCfBxacWinbin2XKz"
     },
     {
       "id": "cam_BeWLKpXCntqB4poAX",
@@ -705,7 +591,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-06-05T19:57:17.664Z"
+      "createdAt": "2025-06-05T19:57:17.664Z",
+      "sequenceId": "seq_khXdkLHcmGGgJE542"
     },
     {
       "id": "cam_tWHo3CMpTTJ487NJ9",
@@ -720,7 +607,8 @@
       "replied": 23,
       "messagesBounced": 26,
       "meetingBooked": 0,
-      "createdAt": "2025-06-13T14:00:56.677Z"
+      "createdAt": "2025-06-13T14:00:56.677Z",
+      "sequenceId": "seq_YLHKpELLrqpCiBhKd"
     },
     {
       "id": "cam_Fvgtk3hwAb38YpqsE",
@@ -735,7 +623,8 @@
       "replied": 20,
       "messagesBounced": 77,
       "meetingBooked": 0,
-      "createdAt": "2025-06-13T14:04:31.953Z"
+      "createdAt": "2025-06-13T14:04:31.953Z",
+      "sequenceId": "seq_D5AizhvrFBYgELmqi"
     },
     {
       "id": "cam_qg9bRNz5AxDxFqduB",
@@ -750,7 +639,8 @@
       "replied": 0,
       "messagesBounced": 45,
       "meetingBooked": 0,
-      "createdAt": "2025-06-13T14:06:11.316Z"
+      "createdAt": "2025-06-13T14:06:11.316Z",
+      "sequenceId": "seq_WfpXh2JoyWvCLFEB5"
     },
     {
       "id": "cam_s3ikPuXxu7Adn8Ler",
@@ -765,7 +655,8 @@
       "replied": 4,
       "messagesBounced": 49,
       "meetingBooked": 0,
-      "createdAt": "2025-06-13T14:08:24.967Z"
+      "createdAt": "2025-06-13T14:08:24.967Z",
+      "sequenceId": "seq_jmwAbwpM8CHhzd8vj"
     },
     {
       "id": "cam_FYWJ5yp69ZQCnCeEF",
@@ -780,7 +671,8 @@
       "replied": 0,
       "messagesBounced": 27,
       "meetingBooked": 0,
-      "createdAt": "2025-06-17T09:04:52.907Z"
+      "createdAt": "2025-06-17T09:04:52.907Z",
+      "sequenceId": "seq_8F5C3hXFtXnTKYefR"
     },
     {
       "id": "cam_sfMdPL8GptGu7yQPK",
@@ -795,7 +687,8 @@
       "replied": 0,
       "messagesBounced": 49,
       "meetingBooked": 0,
-      "createdAt": "2025-06-17T09:09:43.823Z"
+      "createdAt": "2025-06-17T09:09:43.823Z",
+      "sequenceId": "seq_Qxgzgr6osD8JmNTy7"
     },
     {
       "id": "cam_b7iqKPLsWP3EFuJRs",
@@ -810,7 +703,8 @@
       "replied": 2,
       "messagesBounced": 32,
       "meetingBooked": 0,
-      "createdAt": "2025-06-17T09:11:47.260Z"
+      "createdAt": "2025-06-17T09:11:47.260Z",
+      "sequenceId": "seq_N6dTbphezWo7v3HNt"
     },
     {
       "id": "cam_AMDPRFR8GAxfkiP22",
@@ -825,7 +719,8 @@
       "replied": 3,
       "messagesBounced": 31,
       "meetingBooked": 0,
-      "createdAt": "2025-06-17T09:13:06.748Z"
+      "createdAt": "2025-06-17T09:13:06.748Z",
+      "sequenceId": "seq_YyfGB2yrqGhNADgc2"
     },
     {
       "id": "cam_zfWRmB2Ap77nZT63d",
@@ -840,7 +735,8 @@
       "replied": 6,
       "messagesBounced": 36,
       "meetingBooked": 0,
-      "createdAt": "2025-06-26T14:48:49.958Z"
+      "createdAt": "2025-06-26T14:48:49.958Z",
+      "sequenceId": "seq_PSxc8kn4otYy4Zca9"
     },
     {
       "id": "cam_gj5JpENsBNLPrWCZx",
@@ -855,7 +751,8 @@
       "replied": 2,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-06-26T14:49:52.699Z"
+      "createdAt": "2025-06-26T14:49:52.699Z",
+      "sequenceId": "seq_wJ2u88SSYiSZ89goh"
     },
     {
       "id": "cam_S9esEs4usqRG3Rsgb",
@@ -870,7 +767,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-07-08T11:14:45.868Z"
+      "createdAt": "2025-07-08T11:14:45.868Z",
+      "sequenceId": "seq_oH5Fd97AikSQdPxvn"
     },
     {
       "id": "cam_b8eCW2M9N3oS6W8Y2",
@@ -885,7 +783,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-07-15T12:00:03.461Z"
+      "createdAt": "2025-07-15T12:00:03.461Z",
+      "sequenceId": "seq_GKxvqfPY6YAL8nDsv"
     },
     {
       "id": "cam_yBAB5PcpDGuo9CerE",
@@ -900,7 +799,8 @@
       "replied": 30,
       "messagesBounced": 20,
       "meetingBooked": 0,
-      "createdAt": "2025-07-24T08:59:15.473Z"
+      "createdAt": "2025-07-24T08:59:15.473Z",
+      "sequenceId": "seq_xdHhCmSueDtAjsmg4"
     },
     {
       "id": "cam_pnpG4fuDjTC65khQY",
@@ -915,7 +815,8 @@
       "replied": 31,
       "messagesBounced": 21,
       "meetingBooked": 0,
-      "createdAt": "2025-07-24T13:41:54.155Z"
+      "createdAt": "2025-07-24T13:41:54.155Z",
+      "sequenceId": "seq_8KF2rn4iiEZ3QNk2i"
     },
     {
       "id": "cam_LGeCvFYgvp92y5Dxd",
@@ -930,7 +831,8 @@
       "replied": 40,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-08-13T14:09:47.504Z"
+      "createdAt": "2025-08-13T14:09:47.504Z",
+      "sequenceId": "seq_mdShuywhoSg4GjnGM"
     },
     {
       "id": "cam_AzadBvASJFYsgfyQE",
@@ -945,7 +847,8 @@
       "replied": 0,
       "messagesBounced": 12,
       "meetingBooked": 0,
-      "createdAt": "2025-08-25T21:04:32.556Z"
+      "createdAt": "2025-08-25T21:04:32.556Z",
+      "sequenceId": "seq_aQvjm52NQWeBssn5s"
     },
     {
       "id": "cam_pYg9jDqaEzy6FiyWG",
@@ -960,7 +863,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-08-26T01:40:46.735Z"
+      "createdAt": "2025-08-26T01:40:46.735Z",
+      "sequenceId": "seq_ruTz8GxSdPnScu225"
     },
     {
       "id": "cam_HoCBA5qJd6Dnq79cx",
@@ -975,7 +879,8 @@
       "replied": 18,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-09-02T21:35:30.216Z"
+      "createdAt": "2025-09-02T21:35:30.216Z",
+      "sequenceId": "seq_LNgtBpyPHyn8w6nnP"
     },
     {
       "id": "cam_4zmbkmJFKdx5tfP7y",
@@ -990,7 +895,8 @@
       "replied": 0,
       "messagesBounced": 16,
       "meetingBooked": 0,
-      "createdAt": "2025-09-04T16:21:15.258Z"
+      "createdAt": "2025-09-04T16:21:15.258Z",
+      "sequenceId": "seq_DqanBk6n3h95YRgRb"
     },
     {
       "id": "cam_buYecvPvP9gWsWCNS",
@@ -1005,7 +911,8 @@
       "replied": 7,
       "messagesBounced": 76,
       "meetingBooked": 0,
-      "createdAt": "2025-09-24T14:32:28.620Z"
+      "createdAt": "2025-09-24T14:32:28.620Z",
+      "sequenceId": "seq_rsWaZieGCDgKRftad"
     },
     {
       "id": "cam_EQ8LbLdpmymeMw2BK",
@@ -1020,7 +927,8 @@
       "replied": 11,
       "messagesBounced": 68,
       "meetingBooked": 0,
-      "createdAt": "2025-09-24T14:35:58.721Z"
+      "createdAt": "2025-09-24T14:35:58.721Z",
+      "sequenceId": "seq_tuZHcQrzgrpStHtKv"
     },
     {
       "id": "cam_Ka8nzNCJXg5XTbsKo",
@@ -1035,7 +943,8 @@
       "replied": 1,
       "messagesBounced": 8,
       "meetingBooked": 0,
-      "createdAt": "2025-09-24T14:36:21.943Z"
+      "createdAt": "2025-09-24T14:36:21.943Z",
+      "sequenceId": "seq_aQYyYaKRZCymkr6ch"
     },
     {
       "id": "cam_7WBo3GMETwgvz56QL",
@@ -1050,7 +959,8 @@
       "replied": 4,
       "messagesBounced": 9,
       "meetingBooked": 0,
-      "createdAt": "2025-09-24T14:36:34.626Z"
+      "createdAt": "2025-09-24T14:36:34.626Z",
+      "sequenceId": "seq_unbJwmBNZtsnzhmDT"
     },
     {
       "id": "cam_QTHFhJcT46yXWmNWt",
@@ -1065,22 +975,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-09-25T16:21:20.365Z"
-    },
-    {
-      "id": "cam_ddT3x2km8AigXthdq",
-      "name": "[ABX][Clay][FR] Past champions | Senior Marketer",
-      "market": "FR",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 9,
-      "messagesSent": 10,
-      "opened": 8,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0,
-      "createdAt": "2025-09-25T16:26:34.660Z"
+      "createdAt": "2025-09-25T16:21:20.365Z",
+      "sequenceId": "seq_gnRrK7KtpRi35GLeh"
     },
     {
       "id": "cam_wrQkTGSF4ZRCuB7Cz",
@@ -1095,7 +991,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-09-25T16:26:48.888Z"
+      "createdAt": "2025-09-25T16:26:48.888Z",
+      "sequenceId": "seq_uijbz9bvzgmx82hc4"
     },
     {
       "id": "cam_nXBjhLk4JMtcZwBaS",
@@ -1103,14 +1000,15 @@
       "market": "FR",
       "isField": false,
       "status": "paused",
-      "nbLeads": 4,
-      "messagesSent": 6,
-      "opened": 2,
+      "nbLeads": 0,
+      "messagesSent": 0,
+      "opened": 0,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-09-25T16:27:00.584Z"
+      "createdAt": "2025-09-25T16:27:00.584Z",
+      "sequenceId": "seq_dtjbgZMn24TSoXmYX"
     },
     {
       "id": "cam_sbkv77b4cjBwLBNWS",
@@ -1125,7 +1023,8 @@
       "replied": 0,
       "messagesBounced": 10,
       "meetingBooked": 0,
-      "createdAt": "2025-09-30T11:10:24.977Z"
+      "createdAt": "2025-09-30T11:10:24.977Z",
+      "sequenceId": "seq_BjnhErrkkjJJWZ5Cu"
     },
     {
       "id": "cam_QqM6vv454T5HNafkf",
@@ -1133,14 +1032,15 @@
       "market": "US",
       "isField": false,
       "status": "running",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
-      "clicked": 0,
+      "nbLeads": 60,
+      "messagesSent": 135,
+      "opened": 53,
+      "clicked": 9,
       "replied": 0,
-      "messagesBounced": 0,
+      "messagesBounced": 1,
       "meetingBooked": 0,
-      "createdAt": "2025-09-30T11:18:14.761Z"
+      "createdAt": "2025-09-30T11:18:14.761Z",
+      "sequenceId": "seq_TwsZhqnPjcCnHyDxm"
     },
     {
       "id": "cam_j3zdWwWBE9d6SLRAM",
@@ -1148,14 +1048,15 @@
       "market": "US",
       "isField": false,
       "status": "running",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
+      "nbLeads": 2044,
+      "messagesSent": 4655,
+      "opened": 1838,
+      "clicked": 209,
+      "replied": 5,
+      "messagesBounced": 136,
       "meetingBooked": 0,
-      "createdAt": "2025-09-30T11:18:24.640Z"
+      "createdAt": "2025-09-30T11:18:24.640Z",
+      "sequenceId": "seq_yCu2wm53aBDCoXNAE"
     },
     {
       "id": "cam_Ww6ujH99xTR5jybZ5",
@@ -1163,14 +1064,15 @@
       "market": "US",
       "isField": false,
       "status": "running",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
+      "nbLeads": 368,
+      "messagesSent": 665,
+      "opened": 247,
+      "clicked": 35,
+      "replied": 1,
+      "messagesBounced": 25,
       "meetingBooked": 0,
-      "createdAt": "2025-09-30T11:18:36.304Z"
+      "createdAt": "2025-09-30T11:18:36.304Z",
+      "sequenceId": "seq_uKcQMZ88WCTL52zya"
     },
     {
       "id": "cam_ugnSdqkxdNbv5zHza",
@@ -1178,14 +1080,15 @@
       "market": "DACH",
       "isField": false,
       "status": "paused",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
-      "clicked": 0,
+      "nbLeads": 58,
+      "messagesSent": 40,
+      "opened": 26,
+      "clicked": 4,
       "replied": 0,
-      "messagesBounced": 0,
+      "messagesBounced": 2,
       "meetingBooked": 0,
-      "createdAt": "2025-10-08T12:01:56.622Z"
+      "createdAt": "2025-10-08T12:01:56.622Z",
+      "sequenceId": "seq_biNMvvJ9jrtkAFwi2"
     },
     {
       "id": "cam_NwNq8scdsfGWosXA2",
@@ -1193,14 +1096,15 @@
       "market": "DACH",
       "isField": false,
       "status": "paused",
-      "nbLeads": 0,
+      "nbLeads": 16,
       "messagesSent": 0,
       "opened": 0,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-10-08T12:03:06.376Z"
+      "createdAt": "2025-10-08T12:03:06.376Z",
+      "sequenceId": "seq_w9kgW4PttZ2KNnxRx"
     },
     {
       "id": "cam_fha9dCjZ3TdMrm2BJ",
@@ -1208,14 +1112,15 @@
       "market": "DACH",
       "isField": false,
       "status": "paused",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
-      "clicked": 0,
+      "nbLeads": 349,
+      "messagesSent": 181,
+      "opened": 85,
+      "clicked": 24,
       "replied": 0,
-      "messagesBounced": 0,
+      "messagesBounced": 19,
       "meetingBooked": 0,
-      "createdAt": "2025-10-08T12:03:27.567Z"
+      "createdAt": "2025-10-08T12:03:27.567Z",
+      "sequenceId": "seq_Qnbf26KWnfPFbsZqM"
     },
     {
       "id": "cam_yTTXnixWdhLwBBvBZ",
@@ -1223,14 +1128,15 @@
       "market": "DACH",
       "isField": false,
       "status": "paused",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
-      "clicked": 0,
+      "nbLeads": 76,
+      "messagesSent": 32,
+      "opened": 13,
+      "clicked": 1,
       "replied": 0,
-      "messagesBounced": 0,
+      "messagesBounced": 1,
       "meetingBooked": 0,
-      "createdAt": "2025-10-08T12:03:52.049Z"
+      "createdAt": "2025-10-08T12:03:52.049Z",
+      "sequenceId": "seq_yjA4jpGcJRXsSpDKF"
     },
     {
       "id": "cam_3agwp4ABXCEWYWqt4",
@@ -1238,14 +1144,15 @@
       "market": "DACH",
       "isField": false,
       "status": "paused",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
+      "nbLeads": 507,
+      "messagesSent": 209,
+      "opened": 71,
+      "clicked": 3,
+      "replied": 6,
+      "messagesBounced": 4,
       "meetingBooked": 0,
-      "createdAt": "2025-10-13T15:54:37.869Z"
+      "createdAt": "2025-10-13T15:54:37.869Z",
+      "sequenceId": "seq_dCHkJ3hsjksyhviBn"
     },
     {
       "id": "cam_HTXsMdEE3BHukeKdj",
@@ -1253,14 +1160,15 @@
       "market": "FR",
       "isField": false,
       "status": "paused",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
+      "nbLeads": 479,
+      "messagesSent": 11,
+      "opened": 3,
       "clicked": 0,
-      "replied": 0,
+      "replied": 2,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-10-13T15:55:02.489Z"
+      "createdAt": "2025-10-13T15:55:02.489Z",
+      "sequenceId": "seq_cM7FmBP93Ls6tfdwv"
     },
     {
       "id": "cam_fSHcSYa4SWizx3HKy",
@@ -1268,14 +1176,15 @@
       "market": "Other",
       "isField": false,
       "status": "paused",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
+      "nbLeads": 1469,
+      "messagesSent": 15,
+      "opened": 5,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-10-14T08:17:52.861Z"
+      "createdAt": "2025-10-14T08:17:52.861Z",
+      "sequenceId": "seq_vHGwYSaxq6TewqmQx"
     },
     {
       "id": "cam_dQYp74RnMbGjgiYjg",
@@ -1290,7 +1199,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-10-14T09:19:37.443Z"
+      "createdAt": "2025-10-14T09:19:37.443Z",
+      "sequenceId": "seq_bANE2anvvyoHwYNNa"
     },
     {
       "id": "cam_pkxTj4WMoiaTj3psA",
@@ -1305,7 +1215,8 @@
       "replied": 8,
       "messagesBounced": 211,
       "meetingBooked": 0,
-      "createdAt": "2025-10-14T11:46:57.757Z"
+      "createdAt": "2025-10-14T11:46:57.757Z",
+      "sequenceId": "seq_Tjc56YfkXpJ6KhmhD"
     },
     {
       "id": "cam_nMu23w42x8PNajbfD",
@@ -1320,7 +1231,8 @@
       "replied": 0,
       "messagesBounced": 38,
       "meetingBooked": 0,
-      "createdAt": "2025-10-16T12:00:38.983Z"
+      "createdAt": "2025-10-16T12:00:38.983Z",
+      "sequenceId": "seq_bd5FxgkNeE93zEYQ9"
     },
     {
       "id": "cam_5nGfBSfdXL6bh9X4i",
@@ -1335,7 +1247,8 @@
       "replied": 2,
       "messagesBounced": 14,
       "meetingBooked": 0,
-      "createdAt": "2025-10-16T14:35:06.824Z"
+      "createdAt": "2025-10-16T14:35:06.824Z",
+      "sequenceId": "seq_zhuQmihDCvdPJSQAg"
     },
     {
       "id": "cam_7WLY92pKkc9hsgAvN",
@@ -1350,7 +1263,8 @@
       "replied": 7,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-10-22T15:43:12.469Z"
+      "createdAt": "2025-10-22T15:43:12.469Z",
+      "sequenceId": "seq_yTLRKButa6PfrJnTN"
     },
     {
       "id": "cam_3eTAC5LoaSJPKLsis",
@@ -1365,7 +1279,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-10-27T15:34:27.016Z"
+      "createdAt": "2025-10-27T15:34:27.016Z",
+      "sequenceId": "seq_RxJhz2uPoKgZs5Rsf"
     },
     {
       "id": "cam_ewcxuZNrRs7YPjhSL",
@@ -1380,7 +1295,8 @@
       "replied": 25,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-10-28T04:07:17.956Z"
+      "createdAt": "2025-10-28T04:07:17.956Z",
+      "sequenceId": "seq_DQtuw9deftP8ZnmCx"
     },
     {
       "id": "cam_QtHTX47uJdXb7SFbz",
@@ -1395,7 +1311,8 @@
       "replied": 7,
       "messagesBounced": 15,
       "meetingBooked": 0,
-      "createdAt": "2025-11-04T09:29:13.561Z"
+      "createdAt": "2025-11-04T09:29:13.561Z",
+      "sequenceId": "seq_vX8DWce9iT4upfzBQ"
     },
     {
       "id": "cam_TLtt64niqiCvXAhNf",
@@ -1410,7 +1327,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-11-04T17:36:44.334Z"
+      "createdAt": "2025-11-04T17:36:44.334Z",
+      "sequenceId": "seq_QzgPihb8kqGSibRWQ"
     },
     {
       "id": "cam_St88PPDuTJSdExMqQ",
@@ -1418,74 +1336,15 @@
       "market": "Other",
       "isField": false,
       "status": "paused",
-      "nbLeads": 92,
-      "messagesSent": 4,
-      "opened": 4,
-      "clicked": 0,
-      "replied": 2,
-      "messagesBounced": 0,
-      "meetingBooked": 0,
-      "createdAt": "2025-11-05T14:57:15.383Z"
-    },
-    {
-      "id": "cam_CxR9Bgea5TW6ZzCTb",
-      "name": "GDS Outreach by David",
-      "market": "Other",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 42,
-      "messagesSent": 2,
-      "opened": 2,
+      "nbLeads": 0,
+      "messagesSent": 0,
+      "opened": 0,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-11-11T18:30:17.942Z"
-    },
-    {
-      "id": "cam_MA6oRqm3nTWAn3hqw",
-      "name": "BF - US campaign",
-      "market": "US",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 3299,
-      "messagesSent": 6447,
-      "opened": 2239,
-      "clicked": 755,
-      "replied": 4,
-      "messagesBounced": 158,
-      "meetingBooked": 0,
-      "createdAt": "2025-11-18T20:18:59.605Z"
-    },
-    {
-      "id": "cam_GQPd6pQ7Gzz9EyK9M",
-      "name": "BF - FR campaign",
-      "market": "FR",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 1004,
-      "messagesSent": 1959,
-      "opened": 742,
-      "clicked": 182,
-      "replied": 2,
-      "messagesBounced": 43,
-      "meetingBooked": 0,
-      "createdAt": "2025-11-18T20:30:27.348Z"
-    },
-    {
-      "id": "cam_8FbbKKAKwmiJmDdAA",
-      "name": "BF - DACH campaign",
-      "market": "DACH",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 892,
-      "messagesSent": 1736,
-      "opened": 569,
-      "clicked": 140,
-      "replied": 3,
-      "messagesBounced": 41,
-      "meetingBooked": 0,
-      "createdAt": "2025-11-18T20:38:49.210Z"
+      "createdAt": "2025-11-05T14:57:15.383Z",
+      "sequenceId": "seq_Z6jYwkPCcgbtkS76S"
     },
     {
       "id": "cam_b6Qi4FKrubh83txfd",
@@ -1493,14 +1352,15 @@
       "market": "US",
       "isField": false,
       "status": "running",
-      "nbLeads": 1989,
-      "messagesSent": 339,
-      "opened": 339,
+      "nbLeads": 0,
+      "messagesSent": 0,
+      "opened": 0,
       "clicked": 0,
-      "replied": 29,
+      "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-12-02T21:41:13.477Z"
+      "createdAt": "2025-12-02T21:41:13.477Z",
+      "sequenceId": "seq_qcnBYDmJuqhw5Y3Tz"
     },
     {
       "id": "cam_2iFjid6pNf2hiMHtf",
@@ -1508,14 +1368,15 @@
       "market": "Other",
       "isField": false,
       "status": "paused",
-      "nbLeads": 598,
-      "messagesSent": 565,
-      "opened": 203,
+      "nbLeads": 0,
+      "messagesSent": 0,
+      "opened": 0,
       "clicked": 0,
-      "replied": 45,
-      "messagesBounced": 22,
+      "replied": 0,
+      "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-12-12T21:13:53.221Z"
+      "createdAt": "2025-12-12T21:13:53.221Z",
+      "sequenceId": "seq_6hNXtX9jtxD98Bnap"
     },
     {
       "id": "cam_ubiQ35Q9GmQ7JQ6Np",
@@ -1523,14 +1384,15 @@
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 15,
-      "messagesSent": 10,
-      "opened": 5,
+      "nbLeads": 0,
+      "messagesSent": 0,
+      "opened": 0,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-12-18T14:23:52.690Z"
+      "createdAt": "2025-12-18T14:23:52.690Z",
+      "sequenceId": "seq_9xWYKdbB3Q3FZW33w"
     },
     {
       "id": "cam_YAgvbLZiCXBhdKqFp",
@@ -1545,7 +1407,40 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2025-12-22T20:28:42.400Z"
+      "createdAt": "2025-12-22T20:28:42.400Z",
+      "sequenceId": "seq_sWwfGgtA2nMyJ55vJ"
+    },
+    {
+      "id": "cam_diNW8h2W27x2p5Zry",
+      "name": "Joe Outbound Cadence",
+      "market": "Other",
+      "isField": false,
+      "status": "archived",
+      "nbLeads": 81,
+      "messagesSent": 357,
+      "opened": 207,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 5,
+      "meetingBooked": 0,
+      "createdAt": "2026-01-06T15:12:18.080Z",
+      "sequenceId": "seq_oLceMn7S2kPCdXHYJ"
+    },
+    {
+      "id": "cam_JRRbaSdLgnge2fE3P",
+      "name": "Jan 2026- Outbound Cadence",
+      "market": "Other",
+      "isField": false,
+      "status": "archived",
+      "nbLeads": 199,
+      "messagesSent": 210,
+      "opened": 48,
+      "clicked": 0,
+      "replied": 2,
+      "messagesBounced": 40,
+      "meetingBooked": 0,
+      "createdAt": "2026-01-06T18:56:17.558Z",
+      "sequenceId": "seq_rFQMyrpG5ZA35NxJe"
     },
     {
       "id": "cam_6FeW7EFf6xyNawZuK",
@@ -1553,14 +1448,15 @@
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
+      "nbLeads": 160,
+      "messagesSent": 378,
+      "opened": 2,
       "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
+      "replied": 1,
+      "messagesBounced": 13,
       "meetingBooked": 0,
-      "createdAt": "2026-01-09T21:10:35.571Z"
+      "createdAt": "2026-01-09T21:10:35.571Z",
+      "sequenceId": "seq_AW94yeBoEbmcnWsKj"
     },
     {
       "id": "cam_FsojruwMGhDXtjdWb",
@@ -1575,7 +1471,8 @@
       "replied": 3,
       "messagesBounced": 1,
       "meetingBooked": 0,
-      "createdAt": "2026-01-12T10:03:15.122Z"
+      "createdAt": "2026-01-12T10:03:15.122Z",
+      "sequenceId": "seq_sfQcE4YXLLEZa5tKo"
     },
     {
       "id": "cam_evv9QkzwEefzCtC9o",
@@ -1590,7 +1487,8 @@
       "replied": 2,
       "messagesBounced": 5,
       "meetingBooked": 0,
-      "createdAt": "2026-01-13T09:15:43.329Z"
+      "createdAt": "2026-01-13T09:15:43.329Z",
+      "sequenceId": "seq_RR6r7DAeHjFNa3yjK"
     },
     {
       "id": "cam_Pv9FbmxmL4HGN66sY",
@@ -1605,7 +1503,8 @@
       "replied": 1,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-01-13T13:42:56.132Z"
+      "createdAt": "2026-01-13T13:42:56.132Z",
+      "sequenceId": "seq_YwsvEtqg5hyzrpMps"
     },
     {
       "id": "cam_3cKFLj5xYGJzZiD7J",
@@ -1620,7 +1519,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-01-14T11:13:19.215Z"
+      "createdAt": "2026-01-14T11:13:19.215Z",
+      "sequenceId": "seq_qzuvNJHZTk2y8j9tL"
     },
     {
       "id": "cam_nxut76cf4Wv8ZDccS",
@@ -1635,7 +1535,8 @@
       "replied": 3,
       "messagesBounced": 3,
       "meetingBooked": 0,
-      "createdAt": "2026-01-20T14:57:56.369Z"
+      "createdAt": "2026-01-20T14:57:56.369Z",
+      "sequenceId": "seq_QdZGrXMD8cSNHucZd"
     },
     {
       "id": "cam_QKdZ34gTug7SMEYkX",
@@ -1650,7 +1551,8 @@
       "replied": 1,
       "messagesBounced": 11,
       "meetingBooked": 0,
-      "createdAt": "2026-01-23T17:22:13.871Z"
+      "createdAt": "2026-01-23T17:22:13.871Z",
+      "sequenceId": "seq_GeDPBMKB4sGRzEP6n"
     },
     {
       "id": "cam_z9E69ygkn7aHzKTEY",
@@ -1665,7 +1567,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-01-26T21:24:39.445Z"
+      "createdAt": "2026-01-26T21:24:39.445Z",
+      "sequenceId": "seq_6tHPqEpHsFjB6YLbt"
     },
     {
       "id": "cam_by4AAmBqZ2XsKiznk",
@@ -1680,7 +1583,8 @@
       "replied": 0,
       "messagesBounced": 1,
       "meetingBooked": 0,
-      "createdAt": "2026-01-27T13:44:58.915Z"
+      "createdAt": "2026-01-27T13:44:58.915Z",
+      "sequenceId": "seq_b7CjCn3PRJL24DxuX"
     },
     {
       "id": "cam_HyGQKCavveQXjWous",
@@ -1695,7 +1599,8 @@
       "replied": 0,
       "messagesBounced": 3,
       "meetingBooked": 0,
-      "createdAt": "2026-01-27T17:24:28.725Z"
+      "createdAt": "2026-01-27T17:24:28.725Z",
+      "sequenceId": "seq_cRdBLZYfrDk2Ts5pb"
     },
     {
       "id": "cam_94kDoQpgrXsnbjiPs",
@@ -1710,7 +1615,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-01-27T18:06:57.658Z"
+      "createdAt": "2026-01-27T18:06:57.658Z",
+      "sequenceId": "seq_xvhdkZuomrvYGk4uL"
     },
     {
       "id": "cam_zPuRwhWEQS3cQhnZc",
@@ -1718,14 +1624,15 @@
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 1,
-      "messagesSent": 1,
+      "nbLeads": 0,
+      "messagesSent": 0,
       "opened": 0,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-01-27T19:23:44.012Z"
+      "createdAt": "2026-01-27T19:23:44.012Z",
+      "sequenceId": "seq_zr4FLMkiK8gjGBfw9"
     },
     {
       "id": "cam_62yDAyd7SYgRDPjPi",
@@ -1733,44 +1640,15 @@
       "market": "Other",
       "isField": false,
       "status": "paused",
-      "nbLeads": 4241,
-      "messagesSent": 2,
-      "opened": 6,
-      "clicked": 0,
-      "replied": 6,
-      "messagesBounced": 0,
-      "meetingBooked": 0,
-      "createdAt": "2026-01-27T22:14:25.083Z"
-    },
-    {
-      "id": "cam_G6ZcWraAMZidmG9RQ",
-      "name": "Nurture",
-      "market": "Other",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 1,
-      "messagesSent": 5,
-      "opened": 3,
+      "nbLeads": 0,
+      "messagesSent": 0,
+      "opened": 0,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-01-28T14:31:25.965Z"
-    },
-    {
-      "id": "cam_pzJN2DJXvqpj9Ys3u",
-      "name": "Nurture",
-      "market": "Other",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 1,
-      "messagesSent": 5,
-      "opened": 4,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0,
-      "createdAt": "2026-01-28T14:53:14.951Z"
+      "createdAt": "2026-01-27T22:14:25.083Z",
+      "sequenceId": "seq_4FyavTSgRpdsf4oPe"
     },
     {
       "id": "cam_dys7X2kW8fvpLAmjR",
@@ -1785,7 +1663,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-01-29T20:12:32.270Z"
+      "createdAt": "2026-01-29T20:12:32.270Z",
+      "sequenceId": "seq_NBaqH5AgYabCDYu9L"
     },
     {
       "id": "cam_PRY6bc6CqPo23RQks",
@@ -1800,7 +1679,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-02-04T20:14:37.814Z"
+      "createdAt": "2026-02-04T20:14:37.814Z",
+      "sequenceId": "seq_gAsmAKihmuqLR7GL5"
     },
     {
       "id": "cam_kzA8G34zHJsJoCvGg",
@@ -1815,7 +1695,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-02-06T19:23:42.279Z"
+      "createdAt": "2026-02-06T19:23:42.279Z",
+      "sequenceId": "seq_RHayfgTYrGrmA5auY"
     },
     {
       "id": "cam_9iFF6GfPGQpJixx3Z",
@@ -1830,7 +1711,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-02-09T18:43:23.143Z"
+      "createdAt": "2026-02-09T18:43:23.143Z",
+      "sequenceId": "seq_B5pEZ7C7toCAyDyg4"
     },
     {
       "id": "cam_Lb5JhFyCw8WwQLD9v",
@@ -1845,7 +1727,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-02-09T18:50:56.844Z"
+      "createdAt": "2026-02-09T18:50:56.844Z",
+      "sequenceId": "seq_wEXwinWY2uLpxNXBy"
     },
     {
       "id": "cam_WNz8LnfJE8Qj76S2z",
@@ -1860,7 +1743,24 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-02-09T18:51:54.160Z"
+      "createdAt": "2026-02-09T18:51:54.160Z",
+      "sequenceId": "seq_4yPDtiqQu9x62iR4r"
+    },
+    {
+      "id": "cam_BLyKaR3DPvikp7YbP",
+      "name": "Matthew Wingstop account outreach 2026 Jan-Feb Copy Copy",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 4,
+      "messagesSent": 5,
+      "opened": 4,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-02-13T21:20:54.975Z",
+      "sequenceId": "seq_x6djCLM3LnYzL9i7A"
     },
     {
       "id": "cam_egB4dkY6gd9cToHK9",
@@ -1875,7 +1775,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-02-17T17:24:12.819Z"
+      "createdAt": "2026-02-17T17:24:12.819Z",
+      "sequenceId": "seq_Hwxiogx5XHkAbHbz5"
     },
     {
       "id": "cam_SeNyHqC9QpC6kcAmd",
@@ -1883,14 +1784,31 @@
       "market": "Other",
       "isField": true,
       "status": "paused",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
+      "nbLeads": 20,
+      "messagesSent": 7,
+      "opened": 4,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-02-22T22:59:37.285Z"
+      "createdAt": "2026-02-22T22:59:37.285Z",
+      "sequenceId": "seq_BA9STvgSPjj22ei8E"
+    },
+    {
+      "id": "cam_PZsm8KDd59hWtHqZz",
+      "name": "Multi-Unit Franchising Conference Speakers",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 1,
+      "messagesSent": 1,
+      "opened": 1,
+      "clicked": 0,
+      "replied": 1,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-02-23T22:46:53.456Z",
+      "sequenceId": "seq_syZgHTS2E2z6actQc"
     },
     {
       "id": "cam_SmzFM8TiKNHRWGrmC",
@@ -1898,14 +1816,47 @@
       "market": "Other",
       "isField": true,
       "status": "paused",
-      "nbLeads": 0,
-      "messagesSent": 0,
+      "nbLeads": 118,
+      "messagesSent": 32,
+      "opened": 6,
+      "clicked": 0,
+      "replied": 3,
+      "messagesBounced": 3,
+      "meetingBooked": 0,
+      "createdAt": "2026-02-25T10:53:55.430Z",
+      "sequenceId": "seq_fb7AbQATbBz6kN2SR"
+    },
+    {
+      "id": "cam_xh87y6urL3DNduxhJ",
+      "name": "Brian's campaign (11)",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 17,
+      "messagesSent": 17,
       "opened": 0,
       "clicked": 0,
       "replied": 0,
+      "messagesBounced": 2,
+      "meetingBooked": 0,
+      "createdAt": "2026-02-26T22:16:43.939Z",
+      "sequenceId": "seq_xt7P8E64v9J8DhLZY"
+    },
+    {
+      "id": "cam_rgtiTM8Wxjt6XfRPB",
+      "name": "Joe 14 touchpoint cadence (targeted accounts)",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 18,
+      "messagesSent": 89,
+      "opened": 43,
+      "clicked": 3,
+      "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-02-25T10:53:55.430Z"
+      "createdAt": "2026-02-27T17:36:47.577Z",
+      "sequenceId": "seq_CtBgKLnJxLY46pSPp"
     },
     {
       "id": "cam_wb8cuYxk3mHr6zhcn",
@@ -1920,7 +1871,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-03-02T21:25:12.011Z"
+      "createdAt": "2026-03-02T21:25:12.011Z",
+      "sequenceId": "seq_ze6kbzRWgsnxsZ6NT"
     },
     {
       "id": "cam_dfZqEbnANzAubXjnj",
@@ -1935,7 +1887,8 @@
       "replied": 1,
       "messagesBounced": 5,
       "meetingBooked": 0,
-      "createdAt": "2026-03-02T21:38:35.250Z"
+      "createdAt": "2026-03-02T21:38:35.250Z",
+      "sequenceId": "seq_848zKdCWWLYwhW9zf"
     },
     {
       "id": "cam_xKefxoJHM2ousFEq4",
@@ -1950,7 +1903,8 @@
       "replied": 0,
       "messagesBounced": 12,
       "meetingBooked": 0,
-      "createdAt": "2026-03-03T18:18:28.050Z"
+      "createdAt": "2026-03-03T18:18:28.050Z",
+      "sequenceId": "seq_RJ36Qmu9iWWhcBgtN"
     },
     {
       "id": "cam_3opvqPaZZFrNrPFjF",
@@ -1965,7 +1919,8 @@
       "replied": 2,
       "messagesBounced": 1,
       "meetingBooked": 0,
-      "createdAt": "2026-03-03T22:57:37.637Z"
+      "createdAt": "2026-03-03T22:57:37.637Z",
+      "sequenceId": "seq_SLBk6nRGMhtLQn3t5"
     },
     {
       "id": "cam_rXXsPxuksP3wmwqNu",
@@ -1980,7 +1935,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-03-04T21:29:35.437Z"
+      "createdAt": "2026-03-04T21:29:35.437Z",
+      "sequenceId": "seq_ZexQ5DWHpXHLq6JYN"
     },
     {
       "id": "cam_3xFKoEdKXRm6eM7XR",
@@ -1995,7 +1951,8 @@
       "replied": 0,
       "messagesBounced": 7,
       "meetingBooked": 0,
-      "createdAt": "2026-03-05T21:58:47.428Z"
+      "createdAt": "2026-03-05T21:58:47.428Z",
+      "sequenceId": "seq_XHetDELPexmPZD2du"
     },
     {
       "id": "cam_LjYNrXk22b63gQxaX",
@@ -2010,7 +1967,8 @@
       "replied": 2,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-03-06T15:30:07.699Z"
+      "createdAt": "2026-03-06T15:30:07.699Z",
+      "sequenceId": "seq_xFr2erPSDc7sodjir"
     },
     {
       "id": "cam_XNGJfN3Tg23bfLui7",
@@ -2025,7 +1983,8 @@
       "replied": 6,
       "messagesBounced": 71,
       "meetingBooked": 0,
-      "createdAt": "2026-03-06T15:41:03.130Z"
+      "createdAt": "2026-03-06T15:41:03.130Z",
+      "sequenceId": "seq_bjdAChdrCtj5cGh7a"
     },
     {
       "id": "cam_pdW4RCFxFPREAfgdb",
@@ -2040,7 +1999,8 @@
       "replied": 1,
       "messagesBounced": 6,
       "meetingBooked": 0,
-      "createdAt": "2026-03-06T18:26:16.257Z"
+      "createdAt": "2026-03-06T18:26:16.257Z",
+      "sequenceId": "seq_SrHwrRr7PPFP5YMfa"
     },
     {
       "id": "cam_XJoBsbb7iuL8Ej5ku",
@@ -2048,29 +2008,15 @@
       "market": "Other",
       "isField": true,
       "status": "paused",
-      "nbLeads": 40,
-      "messagesSent": 11,
-      "opened": 9,
-      "clicked": 0,
-      "replied": 5,
-      "messagesBounced": 0,
-      "meetingBooked": 0,
-      "createdAt": "2026-03-07T02:06:46.502Z"
-    },
-    {
-      "id": "cam_7ynuYWJg37QGS5D2R",
-      "name": "AI - Linkedin - Tabetha’s Campaign",
-      "market": "Other",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 17,
-      "messagesSent": 57,
-      "opened": 29,
+      "nbLeads": 0,
+      "messagesSent": 0,
+      "opened": 0,
       "clicked": 0,
       "replied": 0,
-      "messagesBounced": 2,
+      "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-03-09T18:26:42.859Z"
+      "createdAt": "2026-03-07T02:06:46.502Z",
+      "sequenceId": "seq_qdLFWzeP5cEdGQf47"
     },
     {
       "id": "cam_wAPCucbGbjqQZTpjS",
@@ -2078,14 +2024,15 @@
       "market": "US",
       "isField": false,
       "status": "paused",
-      "nbLeads": 341,
-      "messagesSent": 765,
-      "opened": 341,
+      "nbLeads": 0,
+      "messagesSent": 0,
+      "opened": 0,
       "clicked": 0,
-      "replied": 3,
-      "messagesBounced": 17,
+      "replied": 0,
+      "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-03-10T00:07:52.556Z"
+      "createdAt": "2026-03-10T00:07:52.556Z",
+      "sequenceId": "seq_wmD2NWLdZ4AXHAugz"
     },
     {
       "id": "cam_esaaSMfGhm3yWsAya",
@@ -2100,7 +2047,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-03-10T15:20:48.881Z"
+      "createdAt": "2026-03-10T15:20:48.881Z",
+      "sequenceId": "seq_gS3YyR3p6wh3o8yCG"
     },
     {
       "id": "cam_xD4qEwmL6PtY87Bxt",
@@ -2115,7 +2063,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-03-10T19:57:18.916Z"
+      "createdAt": "2026-03-10T19:57:18.916Z",
+      "sequenceId": "seq_GkRrbzCste4H7hBin"
     },
     {
       "id": "cam_FHKunD6hG7zyvExAM",
@@ -2130,7 +2079,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-03-11T17:57:50.723Z"
+      "createdAt": "2026-03-11T17:57:50.723Z",
+      "sequenceId": "seq_SErCFvKqrYYYDkQJ6"
     },
     {
       "id": "cam_uGsc3RRX7tNgxY4js",
@@ -2145,7 +2095,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-03-11T19:37:48.427Z"
+      "createdAt": "2026-03-11T19:37:48.427Z",
+      "sequenceId": "seq_7wdFPQM2dPXqkNGoz"
     },
     {
       "id": "cam_KX5LrKcKp5cjWMSCc",
@@ -2160,7 +2111,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-03-11T19:56:40.252Z"
+      "createdAt": "2026-03-11T19:56:40.252Z",
+      "sequenceId": "seq_nxETJedZcQsSyMz7u"
     },
     {
       "id": "cam_sb2HX8hW7rCPjobgq",
@@ -2175,7 +2127,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-03-12T19:00:18.966Z"
+      "createdAt": "2026-03-12T19:00:18.966Z",
+      "sequenceId": "seq_WqfCBWQ4dpyLCRoLR"
     },
     {
       "id": "cam_KMKKDGBzbXb4oNDGh",
@@ -2190,7 +2143,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-03-16T17:44:37.284Z"
+      "createdAt": "2026-03-16T17:44:37.284Z",
+      "sequenceId": "seq_wyFatPPiefxG5r6yQ"
     },
     {
       "id": "cam_29KWd6aLyz9rj3o8G",
@@ -2205,7 +2159,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-03-19T21:14:01.513Z"
+      "createdAt": "2026-03-19T21:14:01.513Z",
+      "sequenceId": "seq_T5n2EzuP5nHz3NGfh"
     },
     {
       "id": "cam_NTZ3KhJ8jXSQz5nHg",
@@ -2220,7 +2175,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-03-23T18:57:20.661Z"
+      "createdAt": "2026-03-23T18:57:20.661Z",
+      "sequenceId": "seq_7fdSuwS5XyLh3HxiL"
     },
     {
       "id": "cam_jLBWJJFR4j9Fd3ekJ",
@@ -2235,7 +2191,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-03-23T20:15:33.807Z"
+      "createdAt": "2026-03-23T20:15:33.807Z",
+      "sequenceId": "seq_deLRywvJBY4Q45T2T"
     },
     {
       "id": "cam_RajbEu8xCQhqtdR4b",
@@ -2243,14 +2200,31 @@
       "market": "US",
       "isField": false,
       "status": "running",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
+      "nbLeads": 5,
+      "messagesSent": 2,
+      "opened": 1,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-04-09T21:08:17.984Z"
+      "createdAt": "2026-04-09T21:08:17.984Z",
+      "sequenceId": "seq_6oZCoHTfmDEbWHLx3"
+    },
+    {
+      "id": "cam_3TF8dtia3Zfp5EAoi",
+      "name": "2604_PTR_UK_Retail_Tech",
+      "market": "UKI",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 17,
+      "messagesSent": 25,
+      "opened": 7,
+      "clicked": 1,
+      "replied": 0,
+      "messagesBounced": 11,
+      "meetingBooked": 0,
+      "createdAt": "2026-04-10T09:42:37.966Z",
+      "sequenceId": "seq_hHKZ7xw8vtQMQ8XMA"
     },
     {
       "id": "cam_oKPpAkwir7nT49nGi",
@@ -2258,14 +2232,15 @@
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 0,
+      "nbLeads": 17,
       "messagesSent": 0,
       "opened": 0,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-04-10T13:34:41.300Z"
+      "createdAt": "2026-04-10T13:34:41.300Z",
+      "sequenceId": "seq_5atGEsRxgrc6AHbcR"
     },
     {
       "id": "cam_td9XYBhDTirZj7WzP",
@@ -2273,14 +2248,15 @@
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
+      "nbLeads": 25,
+      "messagesSent": 81,
+      "opened": 31,
       "clicked": 0,
       "replied": 0,
-      "messagesBounced": 0,
+      "messagesBounced": 5,
       "meetingBooked": 0,
-      "createdAt": "2026-04-10T14:09:01.067Z"
+      "createdAt": "2026-04-10T14:09:01.067Z",
+      "sequenceId": "seq_6noSX4ZRBjidPuEtt"
     },
     {
       "id": "cam_YqB9vrK6Jurhf4uLc",
@@ -2288,14 +2264,15 @@
       "market": "Other",
       "isField": false,
       "status": "paused",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
+      "nbLeads": 138,
+      "messagesSent": 231,
+      "opened": 163,
+      "clicked": 4,
+      "replied": 7,
+      "messagesBounced": 28,
       "meetingBooked": 0,
-      "createdAt": "2026-04-14T11:22:12.593Z"
+      "createdAt": "2026-04-14T11:22:12.593Z",
+      "sequenceId": "seq_47MeuhigbsgMNRFbi"
     },
     {
       "id": "cam_5ZJR9WGaNARm9u5XF",
@@ -2303,14 +2280,15 @@
       "market": "Other",
       "isField": false,
       "status": "paused",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
+      "nbLeads": 138,
+      "messagesSent": 38,
+      "opened": 28,
       "clicked": 0,
-      "replied": 0,
+      "replied": 3,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-04-14T11:42:04.546Z"
+      "createdAt": "2026-04-14T11:42:04.546Z",
+      "sequenceId": "seq_LPKz9FDWeygfJRSK2"
     },
     {
       "id": "cam_tmZCNA5dHvBeKHJYS",
@@ -2325,7 +2303,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-04-14T11:59:25.592Z"
+      "createdAt": "2026-04-14T11:59:25.592Z",
+      "sequenceId": "seq_ebtpSN8okWxYJHgZ7"
     },
     {
       "id": "cam_7nRjFKi6mnTeBhB48",
@@ -2340,7 +2319,8 @@
       "replied": 5,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-04-14T13:27:52.185Z"
+      "createdAt": "2026-04-14T13:27:52.185Z",
+      "sequenceId": "seq_3LovSXZG7PSoCZY5D"
     },
     {
       "id": "cam_2SqQhzKsTSK8BqBH6",
@@ -2355,7 +2335,8 @@
       "replied": 3,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-04-14T13:29:34.016Z"
+      "createdAt": "2026-04-14T13:29:34.016Z",
+      "sequenceId": "seq_WbN4Yh2hE92JiC4AL"
     },
     {
       "id": "cam_6mG8QFeXwJiag6ask",
@@ -2370,7 +2351,8 @@
       "replied": 11,
       "messagesBounced": 7,
       "meetingBooked": 0,
-      "createdAt": "2026-04-14T17:11:17.318Z"
+      "createdAt": "2026-04-14T17:11:17.318Z",
+      "sequenceId": "seq_tcLQGgeB6XdWKctzC"
     },
     {
       "id": "cam_TY3hTbhBaYkHaJK8C",
@@ -2385,7 +2367,8 @@
       "replied": 15,
       "messagesBounced": 7,
       "meetingBooked": 0,
-      "createdAt": "2026-04-14T17:31:49.857Z"
+      "createdAt": "2026-04-14T17:31:49.857Z",
+      "sequenceId": "seq_t7ytsXYsakEtspQm5"
     },
     {
       "id": "cam_cSAAQcJuZZfyWcYnG",
@@ -2400,7 +2383,8 @@
       "replied": 7,
       "messagesBounced": 7,
       "meetingBooked": 0,
-      "createdAt": "2026-04-15T16:22:47.165Z"
+      "createdAt": "2026-04-15T16:22:47.165Z",
+      "sequenceId": "seq_C24qMLxL8CFiSwW9o"
     },
     {
       "id": "cam_g9NnAf7jyWn5BtuYH",
@@ -2415,7 +2399,8 @@
       "replied": 0,
       "messagesBounced": 8,
       "meetingBooked": 0,
-      "createdAt": "2026-04-16T00:12:23.962Z"
+      "createdAt": "2026-04-16T00:12:23.962Z",
+      "sequenceId": "seq_oGCjzMgST6JrRMKGR"
     },
     {
       "id": "cam_4sdAz27AFAqseE2Dy",
@@ -2430,7 +2415,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-04-16T00:21:22.106Z"
+      "createdAt": "2026-04-16T00:21:22.106Z",
+      "sequenceId": "seq_M8yfXeKeHEYegLWnt"
     },
     {
       "id": "cam_E4xypnLtDKqShv53E",
@@ -2445,22 +2431,8 @@
       "replied": 0,
       "messagesBounced": 1,
       "meetingBooked": 0,
-      "createdAt": "2026-04-16T00:26:55.954Z"
-    },
-    {
-      "id": "cam_EuzFuNjeAajDpEhde",
-      "name": "Channing LI connect",
-      "market": "Other",
-      "isField": false,
-      "status": "ended",
-      "nbLeads": 6,
-      "messagesSent": 0,
-      "opened": 0,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0,
-      "createdAt": "2026-04-17T16:02:22.372Z"
+      "createdAt": "2026-04-16T00:26:55.954Z",
+      "sequenceId": "seq_NEK9onhA3LQHWLpGa"
     },
     {
       "id": "cam_ZKRgdAwomDb7bBDF4",
@@ -2468,14 +2440,15 @@
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 120,
-      "messagesSent": 200,
-      "opened": 77,
-      "clicked": 5,
+      "nbLeads": 0,
+      "messagesSent": 0,
+      "opened": 0,
+      "clicked": 0,
       "replied": 0,
-      "messagesBounced": 8,
+      "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-04-20T11:19:06.918Z"
+      "createdAt": "2026-04-20T11:19:06.918Z",
+      "sequenceId": "seq_ox8ui3gLqhhznDvBf"
     },
     {
       "id": "cam_Ggb9EkgDoBosxhu6P",
@@ -2490,7 +2463,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-04-20T13:52:50.544Z"
+      "createdAt": "2026-04-20T13:52:50.544Z",
+      "sequenceId": "seq_LRfSk9PJ2J5XxwGZo"
     },
     {
       "id": "cam_btergBLGs9bqA5Pkm",
@@ -2498,14 +2472,15 @@
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 32,
-      "messagesSent": 63,
-      "opened": 19,
+      "nbLeads": 0,
+      "messagesSent": 0,
+      "opened": 0,
       "clicked": 0,
       "replied": 0,
-      "messagesBounced": 1,
+      "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-04-20T14:25:26.669Z"
+      "createdAt": "2026-04-20T14:25:26.669Z",
+      "sequenceId": "seq_kCrR8GykoTwkPoM8Q"
     },
     {
       "id": "cam_gbBKGATfM8ZLpgj6q",
@@ -2513,14 +2488,15 @@
       "market": "Other",
       "isField": false,
       "status": "paused",
-      "nbLeads": 1825,
-      "messagesSent": 42,
-      "opened": 22,
-      "clicked": 2,
+      "nbLeads": 0,
+      "messagesSent": 0,
+      "opened": 0,
+      "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-04-20T17:44:51.445Z"
+      "createdAt": "2026-04-20T17:44:51.445Z",
+      "sequenceId": "seq_gcR2B85QhxzHcQhv5"
     },
     {
       "id": "cam_7ECNG2CHKPBH8WaEr",
@@ -2528,29 +2504,15 @@
       "market": "Other",
       "isField": false,
       "status": "paused",
-      "nbLeads": 279,
-      "messagesSent": 303,
-      "opened": 176,
-      "clicked": 26,
-      "replied": 14,
-      "messagesBounced": 44,
-      "meetingBooked": 0,
-      "createdAt": "2026-04-22T09:49:02.344Z"
-    },
-    {
-      "id": "cam_7TozsLeTKfYemMYLJ",
-      "name": "Alium",
-      "market": "Other",
-      "isField": false,
-      "status": "archived",
-      "nbLeads": 19,
-      "messagesSent": 3,
-      "opened": 3,
+      "nbLeads": 0,
+      "messagesSent": 0,
+      "opened": 0,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-04-22T18:18:12.888Z"
+      "createdAt": "2026-04-22T09:49:02.344Z",
+      "sequenceId": "seq_JLrqXuJMhBvBZiF5g"
     },
     {
       "id": "cam_fjxMFb9L8tXJGHPAc",
@@ -2565,7 +2527,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-04-23T07:50:46.948Z"
+      "createdAt": "2026-04-23T07:50:46.948Z",
+      "sequenceId": "seq_chZBXrj66FrFogTHS"
     },
     {
       "id": "cam_9TGHFmrcNDicWf8xv",
@@ -2580,7 +2543,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-04-23T18:16:35.577Z"
+      "createdAt": "2026-04-23T18:16:35.577Z",
+      "sequenceId": "seq_u9tgjn9gvwq32SpQs"
     },
     {
       "id": "cam_DdfcWjfpqHErXuWRG",
@@ -2595,7 +2559,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-04-28T19:34:12.116Z"
+      "createdAt": "2026-04-28T19:34:12.116Z",
+      "sequenceId": "seq_W7EPG3MDE8iovn2yk"
     },
     {
       "id": "cam_kR66CvonjDLTeajCt",
@@ -2610,7 +2575,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-05-05T07:40:08.711Z"
+      "createdAt": "2026-05-05T07:40:08.711Z",
+      "sequenceId": "seq_sQ6PRyuewZwac5Jzx"
     },
     {
       "id": "cam_dAqpRrBy69iKkJQug",
@@ -2625,7 +2591,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-05-07T17:07:33.616Z"
+      "createdAt": "2026-05-07T17:07:33.616Z",
+      "sequenceId": "seq_kzujxg4spcD7FdwEy"
     },
     {
       "id": "cam_Wo5MAAHfGkd5Bjiyg",
@@ -2640,7 +2607,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-05-07T21:14:54.169Z"
+      "createdAt": "2026-05-07T21:14:54.169Z",
+      "sequenceId": "seq_cfkoEyCAhwZYnW86R"
     },
     {
       "id": "cam_TnNaqa7BtJpwgJkrA",
@@ -2655,7 +2623,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-05-08T13:29:49.558Z"
+      "createdAt": "2026-05-08T13:29:49.558Z",
+      "sequenceId": "seq_3D4KtEjoiKxd8XHe4"
     },
     {
       "id": "cam_RQrjtfSqcFK3nTNk3",
@@ -2670,7 +2639,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-05-08T17:53:45.907Z"
+      "createdAt": "2026-05-08T17:53:45.907Z",
+      "sequenceId": "seq_WLhSQhBSP3w4amji9"
     },
     {
       "id": "cam_Zk5NSruZdbdEzhjno",
@@ -2685,7 +2655,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-05-13T09:17:03.867Z"
+      "createdAt": "2026-05-13T09:17:03.867Z",
+      "sequenceId": "seq_kvzzP2tqv2drxnGmE"
     },
     {
       "id": "cam_hjHB3WQ9qYg6FzY9x",
@@ -2700,7 +2671,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-05-18T18:51:55.611Z"
+      "createdAt": "2026-05-18T18:51:55.611Z",
+      "sequenceId": "seq_tqqTMZN6iAC6rf3Sj"
     },
     {
       "id": "cam_gPExNoQNhps33PeDP",
@@ -2715,7 +2687,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-05-19T09:05:51.320Z"
+      "createdAt": "2026-05-19T09:05:51.320Z",
+      "sequenceId": "seq_DKufHB5CJm2YrbQw8"
     },
     {
       "id": "cam_3gJPezrKax574QtuS",
@@ -2730,7 +2703,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-05-19T09:27:26.325Z"
+      "createdAt": "2026-05-19T09:27:26.325Z",
+      "sequenceId": "seq_owoEogNHoLimY7YoC"
     },
     {
       "id": "cam_ikAAGJY9xDvYGzWCG",
@@ -2745,7 +2719,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-05-19T09:28:39.250Z"
+      "createdAt": "2026-05-19T09:28:39.250Z",
+      "sequenceId": "seq_KEwyPFKtoHeFpJz5R"
     },
     {
       "id": "cam_NCET7oE8nXdK2T6Po",
@@ -2760,7 +2735,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-05-20T11:30:29.415Z"
+      "createdAt": "2026-05-20T11:30:29.415Z",
+      "sequenceId": "seq_BNohe5hTTrGxLJXbX"
     },
     {
       "id": "cam_a3ZEYb9hCs3BmPTiB",
@@ -2775,7 +2751,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-05-20T11:49:26.504Z"
+      "createdAt": "2026-05-20T11:49:26.504Z",
+      "sequenceId": "seq_LWzAZ9SfLCYBeiQJj"
     },
     {
       "id": "cam_EkcxE5bj3rHL3Cvqc",
@@ -2790,7 +2767,24 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-05-20T11:54:59.545Z"
+      "createdAt": "2026-05-20T11:54:59.545Z",
+      "sequenceId": "seq_nquaR4RGsQuJdWPJv"
+    },
+    {
+      "id": "cam_Bgaf2mGFj59qPncst",
+      "name": "DT Email API - Gaming companies",
+      "market": "Other",
+      "isField": false,
+      "status": "ended",
+      "nbLeads": 32,
+      "messagesSent": 183,
+      "opened": 37,
+      "clicked": 4,
+      "replied": 0,
+      "messagesBounced": 3,
+      "meetingBooked": 0,
+      "createdAt": "2026-05-21T17:10:58.970Z",
+      "sequenceId": "seq_nHLcDFq2bnGT7cQjy"
     },
     {
       "id": "cam_YbzhFQHEgWqKumHBF",
@@ -2805,7 +2799,8 @@
       "replied": 2,
       "messagesBounced": 5,
       "meetingBooked": 0,
-      "createdAt": "2026-05-22T00:12:18.116Z"
+      "createdAt": "2026-05-22T00:12:18.116Z",
+      "sequenceId": "seq_hdSnWRZPwyxyhrHY8"
     },
     {
       "id": "cam_irLQxCggLj7nGZW79",
@@ -2820,7 +2815,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-05-22T00:55:27.792Z"
+      "createdAt": "2026-05-22T00:55:27.792Z",
+      "sequenceId": "seq_wTRBiTkyexPnrgyvR"
     },
     {
       "id": "cam_fqSargbJ5CAxcANM2",
@@ -2835,7 +2831,8 @@
       "replied": 1,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-05-22T01:06:52.277Z"
+      "createdAt": "2026-05-22T01:06:52.277Z",
+      "sequenceId": "seq_QncQAs6BEC8mL5bNo"
     },
     {
       "id": "cam_eHHPFwXHoipiogT63",
@@ -2850,7 +2847,8 @@
       "replied": 60,
       "messagesBounced": 57,
       "meetingBooked": 0,
-      "createdAt": "2026-05-22T15:19:43.748Z"
+      "createdAt": "2026-05-22T15:19:43.748Z",
+      "sequenceId": "seq_3LpyCa3v4YL6cLjs4"
     },
     {
       "id": "cam_jYHwCLjMXeMkeisJD",
@@ -2865,7 +2863,8 @@
       "replied": 0,
       "messagesBounced": 2,
       "meetingBooked": 0,
-      "createdAt": "2026-05-26T14:31:54.911Z"
+      "createdAt": "2026-05-26T14:31:54.911Z",
+      "sequenceId": "seq_ycbXAjfy73KkMkPWN"
     },
     {
       "id": "cam_N63zZwNPJLdbKmica",
@@ -2880,7 +2879,8 @@
       "replied": 0,
       "messagesBounced": 22,
       "meetingBooked": 0,
-      "createdAt": "2026-05-27T11:52:48.992Z"
+      "createdAt": "2026-05-27T11:52:48.992Z",
+      "sequenceId": "seq_fMMQr7Qo369zpgbxQ"
     },
     {
       "id": "cam_CXrmd7kHqLffrZBN6",
@@ -2895,7 +2895,8 @@
       "replied": 0,
       "messagesBounced": 1,
       "meetingBooked": 0,
-      "createdAt": "2026-06-03T19:05:59.015Z"
+      "createdAt": "2026-06-03T19:05:59.015Z",
+      "sequenceId": "seq_Mmq7yrk73SJWsjvuo"
     },
     {
       "id": "cam_yvnwsu6d83LEogMRY",
@@ -2910,7 +2911,8 @@
       "replied": 0,
       "messagesBounced": 2,
       "meetingBooked": 0,
-      "createdAt": "2026-06-03T20:53:36.517Z"
+      "createdAt": "2026-06-03T20:53:36.517Z",
+      "sequenceId": "seq_ETnAMZzowANnvdPFW"
     },
     {
       "id": "cam_aoc9fehTaBQzRbdSw",
@@ -2925,7 +2927,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-06-04T12:00:53.133Z"
+      "createdAt": "2026-06-04T12:00:53.133Z",
+      "sequenceId": "seq_WAH9G7BeraAESjF3N"
     },
     {
       "id": "cam_8YBC4GrTuRDAGxjSr",
@@ -2940,7 +2943,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-06-04T15:33:34.904Z"
+      "createdAt": "2026-06-04T15:33:34.904Z",
+      "sequenceId": "seq_dgv4v4nmJqMSZQHiC"
     },
     {
       "id": "cam_qiZYpypBxEaYMFp5e",
@@ -2955,7 +2959,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-06-04T16:41:52.999Z"
+      "createdAt": "2026-06-04T16:41:52.999Z",
+      "sequenceId": "seq_kpxJMs2P6NrBfmJcw"
     },
     {
       "id": "cam_f2ZbHeB3fsFBmq5Jb",
@@ -2970,22 +2975,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-06-04T18:59:34.674Z"
-    },
-    {
-      "id": "cam_sJavKe9aCXw9JGwKX",
-      "name": "TR | TA | Copy",
-      "market": "Other",
-      "isField": false,
-      "status": "draft",
-      "nbLeads": 1,
-      "messagesSent": 0,
-      "opened": 0,
-      "clicked": 0,
-      "replied": 0,
-      "messagesBounced": 0,
-      "meetingBooked": 0,
-      "createdAt": "2026-06-04T19:12:16.812Z"
+      "createdAt": "2026-06-04T18:59:34.674Z",
+      "sequenceId": "seq_zDmopH8NHcWuXx9ME"
     },
     {
       "id": "cam_nQqZmNk3qua6aAJLD",
@@ -2993,14 +2984,15 @@
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 52,
-      "messagesSent": 143,
-      "opened": 61,
+      "nbLeads": 0,
+      "messagesSent": 0,
+      "opened": 0,
       "clicked": 0,
       "replied": 0,
-      "messagesBounced": 2,
+      "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-06-04T19:33:52.497Z"
+      "createdAt": "2026-06-04T19:33:52.497Z",
+      "sequenceId": "seq_NyGJE8yugoQiiPTFa"
     },
     {
       "id": "cam_zsGKTDepAHsKXua8W",
@@ -3008,14 +3000,15 @@
       "market": "Other",
       "isField": false,
       "status": "paused",
-      "nbLeads": 1152,
-      "messagesSent": 687,
-      "opened": 180,
-      "clicked": 29,
-      "replied": 1,
-      "messagesBounced": 200,
+      "nbLeads": 0,
+      "messagesSent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-06-05T12:03:21.081Z"
+      "createdAt": "2026-06-05T12:03:21.081Z",
+      "sequenceId": "seq_Xoq6Mn4wzKTP4AhsD"
     },
     {
       "id": "cam_MKor92Cf9ePb6MTpw",
@@ -3030,7 +3023,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-06-05T14:10:21.096Z"
+      "createdAt": "2026-06-05T14:10:21.096Z",
+      "sequenceId": "seq_74AGHayyp8vG9K39M"
     },
     {
       "id": "cam_cjkdYRBDEZFaXXYxo",
@@ -3045,7 +3039,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-06-11T12:07:30.854Z"
+      "createdAt": "2026-06-11T12:07:30.854Z",
+      "sequenceId": "seq_NGRN4oBYA5RnJLH6Q"
     },
     {
       "id": "cam_wxAfs5pxXeqZtQLRw",
@@ -3060,7 +3055,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-06-24T19:50:04.581Z"
+      "createdAt": "2026-06-24T19:50:04.581Z",
+      "sequenceId": "seq_fMHrGxSkt46YgBQx9"
     },
     {
       "id": "cam_CD3X6C3mSZPpatdJb",
@@ -3075,7 +3071,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-06-24T21:16:43.649Z"
+      "createdAt": "2026-06-24T21:16:43.649Z",
+      "sequenceId": "seq_YA3XcGrbRBq78sdcG"
     },
     {
       "id": "cam_7AiXxLCApCseDp83Y",
@@ -3090,7 +3087,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-06-26T11:20:06.369Z"
+      "createdAt": "2026-06-26T11:20:06.369Z",
+      "sequenceId": "seq_AS3mamiAG8j9KyeCi"
     },
     {
       "id": "cam_QM6PsHiPs4h9KeMjR",
@@ -3105,7 +3103,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-06-30T11:45:47.179Z"
+      "createdAt": "2026-06-30T11:45:47.179Z",
+      "sequenceId": "seq_RvWnrs579gGeu4hyb"
     },
     {
       "id": "cam_qhz86ahnYuRynseuZ",
@@ -3120,7 +3119,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-06-30T12:01:27.647Z"
+      "createdAt": "2026-06-30T12:01:27.647Z",
+      "sequenceId": "seq_HLYFZpWN58xdRqMuh"
     },
     {
       "id": "cam_beZsmJBENzqB4isLr",
@@ -3135,7 +3135,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-01T13:38:45.102Z"
+      "createdAt": "2026-07-01T13:38:45.102Z",
+      "sequenceId": "seq_9TAqLuANwzhb22suC"
     },
     {
       "id": "cam_R7sK7qj9LnF3mahHj",
@@ -3150,7 +3151,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-03T12:31:54.359Z"
+      "createdAt": "2026-07-03T12:31:54.359Z",
+      "sequenceId": "seq_7f5Jn58A7YnWQcfmn"
     },
     {
       "id": "cam_bsuQYNFLxEw9yEYnC",
@@ -3165,7 +3167,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-06T20:08:41.707Z"
+      "createdAt": "2026-07-06T20:08:41.707Z",
+      "sequenceId": "seq_XcNLmK47qFKZerNuS"
     },
     {
       "id": "cam_LJJiB57Yjq8CiF6iY",
@@ -3173,14 +3176,15 @@
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 0,
-      "messagesSent": 0,
+      "nbLeads": 1,
+      "messagesSent": 1,
       "opened": 0,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-07T18:16:41.923Z"
+      "createdAt": "2026-07-07T18:16:41.923Z",
+      "sequenceId": "seq_qt47x4bTn82eeJxAb"
     },
     {
       "id": "cam_k73naho6QzfA64Txi",
@@ -3188,14 +3192,15 @@
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 0,
-      "messagesSent": 0,
+      "nbLeads": 1,
+      "messagesSent": 1,
       "opened": 0,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-07T19:11:48.568Z"
+      "createdAt": "2026-07-07T19:11:48.568Z",
+      "sequenceId": "seq_vDErWftEHk59JNPtt"
     },
     {
       "id": "cam_52aczXxoQPJAgeipa",
@@ -3203,14 +3208,15 @@
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 0,
-      "messagesSent": 0,
-      "opened": 0,
+      "nbLeads": 1,
+      "messagesSent": 1,
+      "opened": 1,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-07T19:22:46.898Z"
+      "createdAt": "2026-07-07T19:22:46.898Z",
+      "sequenceId": "seq_3SurzbDRYEaJ4yWwG"
     },
     {
       "id": "cam_KzhdSh6Z4oCXnKY36",
@@ -3218,29 +3224,31 @@
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 0,
-      "messagesSent": 0,
+      "nbLeads": 1,
+      "messagesSent": 1,
       "opened": 0,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-07T19:25:57.129Z"
+      "createdAt": "2026-07-07T19:25:57.129Z",
+      "sequenceId": "seq_Fv9jeWkyNBbr8n9T2"
     },
     {
       "id": "cam_zEm5WZypzd6tea8t5",
       "name": "UKI 🇬🇧 | Gifting Sequence",
       "market": "UKI",
       "isField": false,
-      "status": "draft",
+      "status": "running",
       "nbLeads": 99,
-      "messagesSent": 0,
-      "opened": 0,
+      "messagesSent": 16,
+      "opened": 5,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T08:05:02.425Z"
+      "createdAt": "2026-07-08T08:05:02.425Z",
+      "sequenceId": "seq_zn6vxaegvBPc3KS6m"
     },
     {
       "id": "cam_hE4WXPd6QBz2iWcQX",
@@ -3255,7 +3263,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T10:18:51.519Z"
+      "createdAt": "2026-07-08T10:18:51.519Z",
+      "sequenceId": "seq_XRBKJNfscWh66aTmH"
     },
     {
       "id": "cam_F6FRsXv4muvRJiB8T",
@@ -3264,13 +3273,14 @@
       "isField": false,
       "status": "running",
       "nbLeads": 4,
-      "messagesSent": 0,
-      "opened": 0,
+      "messagesSent": 1,
+      "opened": 1,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T11:13:46.280Z"
+      "createdAt": "2026-07-08T11:13:46.280Z",
+      "sequenceId": "seq_cCFiMnyHpzwzAWK74"
     },
     {
       "id": "cam_RTNAH5vdYKPWykDSc",
@@ -3285,7 +3295,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T14:22:42.176Z"
+      "createdAt": "2026-07-08T14:22:42.176Z",
+      "sequenceId": "seq_GQoz6nZcmGKY5ZvYb"
     },
     {
       "id": "cam_MS3f5KuXRJG5aHfbT",
@@ -3300,7 +3311,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T14:41:46.271Z"
+      "createdAt": "2026-07-08T14:41:46.271Z",
+      "sequenceId": "seq_7cFGxu6oRNz5iWthM"
     },
     {
       "id": "cam_YT6XJor8dAs5LoYvB",
@@ -3315,7 +3327,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T14:51:21.981Z"
+      "createdAt": "2026-07-08T14:51:21.981Z",
+      "sequenceId": "seq_JYkPvptBXT6f8yYRh"
     },
     {
       "id": "cam_tWGwj8w2sRwicQRyF",
@@ -3330,7 +3343,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T14:56:36.816Z"
+      "createdAt": "2026-07-08T14:56:36.816Z",
+      "sequenceId": "seq_kSXB23bqq9D8PkWXT"
     },
     {
       "id": "cam_Sxe2gCvfdSw3Q8roF",
@@ -3340,12 +3354,13 @@
       "status": "running",
       "nbLeads": 1,
       "messagesSent": 1,
-      "opened": 0,
+      "opened": 1,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T15:02:37.333Z"
+      "createdAt": "2026-07-08T15:02:37.333Z",
+      "sequenceId": "seq_LkHubJLNGzoL83nWt"
     },
     {
       "id": "cam_LmqXeQLk7PLmv8szb",
@@ -3360,7 +3375,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T15:10:51.788Z"
+      "createdAt": "2026-07-08T15:10:51.788Z",
+      "sequenceId": "seq_n4FZqMJDbhPDcFHaz"
     },
     {
       "id": "cam_WZtKq7YhgMASh4qrH",
@@ -3375,7 +3391,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T15:25:40.698Z"
+      "createdAt": "2026-07-08T15:25:40.698Z",
+      "sequenceId": "seq_u9ZRRQiPXQERmF4bH"
     },
     {
       "id": "cam_FX47hidWYGvT9pg9W",
@@ -3390,7 +3407,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T17:15:36.195Z"
+      "createdAt": "2026-07-08T17:15:36.195Z",
+      "sequenceId": "seq_S4Ntj4LzeQRecXNWe"
     },
     {
       "id": "cam_ZxmQki4qEzP2MvLN8",
@@ -3399,13 +3417,14 @@
       "isField": false,
       "status": "running",
       "nbLeads": 2,
-      "messagesSent": 0,
+      "messagesSent": 1,
       "opened": 0,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T17:32:20.511Z"
+      "createdAt": "2026-07-08T17:32:20.511Z",
+      "sequenceId": "seq_eSWzAnTprtapckkTu"
     },
     {
       "id": "cam_veTqFdYKL2kxSWN5t",
@@ -3420,7 +3439,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T17:39:32.623Z"
+      "createdAt": "2026-07-08T17:39:32.623Z",
+      "sequenceId": "seq_5ybfEkP5tnRE5Kjgw"
     },
     {
       "id": "cam_MJyqc78xkGSzhkcW3",
@@ -3435,7 +3455,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T17:42:50.650Z"
+      "createdAt": "2026-07-08T17:42:50.650Z",
+      "sequenceId": "seq_4uGMTn7pd78qcoRYF"
     },
     {
       "id": "cam_SpKueueJa3sQGwqrY",
@@ -3443,14 +3464,15 @@
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 1,
-      "messagesSent": 1,
+      "nbLeads": 0,
+      "messagesSent": 0,
       "opened": 0,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T17:44:50.880Z"
+      "createdAt": "2026-07-08T17:44:50.880Z",
+      "sequenceId": "seq_pydMSEfedCFk6GaYK"
     },
     {
       "id": "cam_wpDLq2Eaw8peWMzEs",
@@ -3458,14 +3480,15 @@
       "market": "Other",
       "isField": false,
       "status": "running",
-      "nbLeads": 1,
-      "messagesSent": 1,
+      "nbLeads": 0,
+      "messagesSent": 0,
       "opened": 0,
       "clicked": 0,
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T17:45:01.675Z"
+      "createdAt": "2026-07-08T17:45:01.675Z",
+      "sequenceId": "seq_wwCu3PvJDvTYakjpr"
     },
     {
       "id": "cam_6FktYAufzCEbDNs4M",
@@ -3480,7 +3503,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T17:58:49.592Z"
+      "createdAt": "2026-07-08T17:58:49.592Z",
+      "sequenceId": "seq_XEXj7msiu97XjyrFh"
     },
     {
       "id": "cam_KiWyXYwq7mmA9ZfTH",
@@ -3495,7 +3519,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T18:02:51.857Z"
+      "createdAt": "2026-07-08T18:02:51.857Z",
+      "sequenceId": "seq_fDDapjN3xRrmWvvEA"
     },
     {
       "id": "cam_QagmDje3QdkefLdRc",
@@ -3510,7 +3535,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T18:02:54.804Z"
+      "createdAt": "2026-07-08T18:02:54.804Z",
+      "sequenceId": "seq_7b9CMmrRvwbucYZpy"
     },
     {
       "id": "cam_6rTej2N3v8knxB7hc",
@@ -3525,7 +3551,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T18:03:26.374Z"
+      "createdAt": "2026-07-08T18:03:26.374Z",
+      "sequenceId": "seq_zSwDP7f49fZR3j6Za"
     },
     {
       "id": "cam_5R6zsd3p3fqoQn9e8",
@@ -3540,7 +3567,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T18:17:55.932Z"
+      "createdAt": "2026-07-08T18:17:55.932Z",
+      "sequenceId": "seq_Kq46RmsmGC3m5QA4y"
     },
     {
       "id": "cam_s56CiAEAL2Gh5vZkK",
@@ -3555,7 +3583,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T18:18:35.858Z"
+      "createdAt": "2026-07-08T18:18:35.858Z",
+      "sequenceId": "seq_ERcaN7WCqx2A7vzX6"
     },
     {
       "id": "cam_Ea3ycLNMSi5bpaPoQ",
@@ -3570,7 +3599,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T18:31:40.197Z"
+      "createdAt": "2026-07-08T18:31:40.197Z",
+      "sequenceId": "seq_6q6496eFuSrWyC665"
     },
     {
       "id": "cam_6gCRMLbb4JapEeAX6",
@@ -3585,7 +3615,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T18:31:42.452Z"
+      "createdAt": "2026-07-08T18:31:42.452Z",
+      "sequenceId": "seq_QDdJtdkaGYfcn7yRy"
     },
     {
       "id": "cam_E8KaqML2focSMWmmM",
@@ -3600,7 +3631,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T18:31:44.740Z"
+      "createdAt": "2026-07-08T18:31:44.740Z",
+      "sequenceId": "seq_BYHasNHkXSbJyuxGy"
     },
     {
       "id": "cam_Xmb5rbaZAMreMGec7",
@@ -3615,7 +3647,8 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T18:46:38.189Z"
+      "createdAt": "2026-07-08T18:46:38.189Z",
+      "sequenceId": "seq_G5c4B2cawRx97u3yo"
     },
     {
       "id": "cam_G4qdgwNnmGpqbntvq",
@@ -3630,7 +3663,24 @@
       "replied": 0,
       "messagesBounced": 0,
       "meetingBooked": 0,
-      "createdAt": "2026-07-08T18:47:07.316Z"
+      "createdAt": "2026-07-08T18:47:07.316Z",
+      "sequenceId": "seq_Z5pqK3YfdDzgEvLJj"
+    },
+    {
+      "id": "cam_DS52uLMSzvGRLyWth",
+      "name": "GROW NYC (registered attendees)",
+      "market": "Other",
+      "isField": false,
+      "status": "paused",
+      "nbLeads": 0,
+      "messagesSent": 0,
+      "opened": 0,
+      "clicked": 0,
+      "replied": 0,
+      "messagesBounced": 0,
+      "meetingBooked": 0,
+      "createdAt": "2026-07-09T19:45:58.648Z",
+      "sequenceId": "seq_warA4y7aRTiE7HgsM"
     }
   ]
 }

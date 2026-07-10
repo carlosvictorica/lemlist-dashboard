@@ -378,7 +378,7 @@ function renderCampaigns(rows) {
     const statusLabel = isRunning ? 'active' : c.status;
     const fieldBadge = c.isField ? '<span class="field-badge">Field</span>' : '';
     return `<tr>
-      <td><div class="cam-name" title="${c.name}"><a href="https://app.lemlist.com/teams/tea_th6x545B9uRHQ4dty/campaigns-next/${c.id}/overview" target="_blank" style="color:var(--text);text-decoration:none;border-bottom:0.5px solid var(--border2);">${c.name}</a>${fieldBadge}</div></td>
+      <td><div class="cam-name" title="${c.name}"><a href="https://app.lemlist.com/teams/tea_th6x545B9uRHQ4dty/campaigns-next/${c.id}${c.sequenceId ? '/sequences/' + c.sequenceId : ''}/overview" target="_blank" style="color:var(--text);text-decoration:none;border-bottom:0.5px solid var(--border2);">${c.name}</a>${fieldBadge}</div></td>
       <td><span class="market-tag tag-${c.market}" style="font-size:11px;padding:2px 7px;border-radius:20px">${c.market}</span></td>
       <td><span class="cam-status ${isRunning ? 'running' : ''}">${statusLabel}</span></td>
       <td>${c.nbLeads.toLocaleString()}</td>

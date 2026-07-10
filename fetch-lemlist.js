@@ -51,7 +51,7 @@ async function fetchAllCampaigns() {
 }
 
 async function fetchStats(campaignId) {
-  const url = `https://api.lemlist.com/api/v2/campaigns/${campaignId}/stats`;
+  const url = `https://api.lemlist.com/api/v2/campaigns/${campaignId}/stats?startDate=2025-01-01T00:00:00.000Z&endDate=${new Date().toISOString()}`;
   try { return await get(url); }
   catch(e) { return null; }
 }
@@ -121,7 +121,8 @@ async function main() {
       replied: s.replied || 0,
       messagesBounced: s.messagesBounced || 0,
       meetingBooked: s.meetingBooked || 0,
-      createdAt: c.createdAt || null
+      createdAt: c.createdAt || null,
+      sequenceId: c.sequenceId || null
     };
   }).filter(c => c.messagesSent > 0 || c.nbLeads > 0 || c.status === 'running' || c.status === 'paused');
 
